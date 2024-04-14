@@ -9,17 +9,17 @@ import { Component, ElementRef, Renderer2, HostListener, OnInit } from '@angular
 export class EclipseComponent implements OnInit {
   private observer: IntersectionObserver;
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private renderer: Renderer2,) {}
 
   ngOnInit() {
     this.setupIntersectionObserver();
   }
 
   private setupIntersectionObserver() {
-    const moonElement = this.el.nativeElement.querySelector('.moon');
+    const moonElement = this.el.nativeElement.querySelector('.container');
 
     const options = {
-      threshold: 0.5
+      threshold: 0.8
     };
 
     const callback = (entries, observer) => {
@@ -37,12 +37,22 @@ export class EclipseComponent implements OnInit {
   }
 
   private handleIntersection(target: Element) {
-    target.classList.add('animate-moon');
+    const moon = this.el.nativeElement.querySelector('.moon');
+    moon.classList.remove('animate-moon-out')
+    moon.classList.add('animate-moon');
+    const container = this.el.nativeElement.querySelector('.container');
+    this.renderer.addClass(container, 'animate-in');
+    this.renderer.removeClass(container, 'animate-out');
   }
 
   private handleIntersectionExit(target: Element) {
     // Element is no longer intersecting (exited viewport)
-    target.classList.remove('animate-moon');
+    const moon = this.el.nativeElement.querySelector('.moon');
+    moon.classList.remove('animate-moon');
+    moon.classList.add('animate-moon-out')
+    const container = this.el.nativeElement.querySelector('.container');
+    this.renderer.addClass(container, 'animate-out');
+    this.renderer.removeClass(container, 'animate-in');
     this.resetIntersectionObserver();
   }
 

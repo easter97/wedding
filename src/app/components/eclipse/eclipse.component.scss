@@ -1,5 +1,6 @@
 // colors
-$background: #182C51;
+$background: #192428;
+$sky-dark: #182C51;
 $moon: #C7938B;
 $peak: #efdbd8;
 $mobile: 768px;
@@ -7,13 +8,14 @@ $mobile: 768px;
 // keyframes
 @keyframes cresent {
     0% {
-      transform: translate(100px, -100px) scale(0.9);
+      transform: translate(300px, -300px) scale(0.9);
       box-shadow: none;
+      background-color: #dfd7cf;
     }
     100% {
       transform: translate(0px, 0px) scale(1.02);
       box-shadow: 0 0 10px lighten($moon, 30%), 0 0 80px 8px $moon;
-      background-color: $peak;
+      background-color: $background;
     }
     // 60% {
     //   transform: translate(0px, 0px) scale(1.02);
@@ -24,6 +26,39 @@ $mobile: 768px;
     //   transform: translate(200px, -200px) scale(0.9);
     //   box-shadow: none;
     // }
+  }
+  @keyframes cresent-out {
+    0% {
+        transform: translate(0px, 0px) scale(1.02);
+        box-shadow: 0 0 10px lighten($moon, 30%), 0 0 80px 8px $moon;
+        background-color: $background;
+      }
+      100% {
+        transform: translate(-300px, 300px) scale(0.9);
+        box-shadow: none;
+        background-color: #dfd7cf;
+      }
+  }
+  @keyframes bg-in {
+    0% {
+      background-color: #dfd7cf;
+      color: black;
+    }
+    100% {
+      background-color: $sky-dark;
+      color: white;
+    }
+  }
+  @keyframes bg-out {
+    
+    0% {
+      background-color: $sky-dark;
+      color: white;
+    }
+    100% {
+      background-color: #dfd7cf;
+      color: black;
+    }
   }
 
 
@@ -41,24 +76,41 @@ $mobile: 768px;
 
 .container{
     position: relative;
+    padding-top: 200px;
     z-index: -1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  background-image: linear-gradient(30deg, $background, darken($background, 13%));
+  flex-direction: column;
+//   background-image: linear-gradient(30deg, $background, darken($background, 13%));
   overflow: hidden;
+  transition: all 2s ease;
+  &.animate-in{
+      animation: 3.2s bg-in linear forwards;
+  }
+  &.animate-out{
+    animation: 3.2s bg-out linear forwards;
+}
+    .text{
+        margin: 100px;
+        // font-size: 35px;
+        z-index: 3;
+    }
+
+  
 }
 
 .moon{
   
-  background-color: $moon;
+  background-color: white;
   width: 256px;
   height: 256px;
   border-radius: 50%;
   position: relative;
+  box-shadow: 0 0 10px lighten(whitesmoke, 30%), 0 0 80px 8px whitesmoke;
   &::before{
     content: '';
-    background-image: linear-gradient(30deg, darken($background,4.6%), darken($background, 8.3%));
+    // background-image: linear-gradient(30deg, darken($background,4.6%), darken($background, 8.3%));
     position: absolute;
     display: block;
     height: 100%;
@@ -72,6 +124,11 @@ $mobile: 768px;
 .animate-moon {
     &::before{
         animation: 3.2s cresent linear forwards;
+      }
+}
+.animate-moon-out{
+    &::before{
+        animation: 3.2s cresent-out linear forwards;
       }
 }
 

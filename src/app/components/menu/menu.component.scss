@@ -1,0 +1,16 @@
+.menu {
+
+    width: 100px;
+    height: 200px;
+    padding: 20px;
+    position: sticky;
+    top: 100px;
+    right: 0px;
+    margin-left:auto;
+    display: flex;
+    flex-direction: column;
+    .active{
+        color:red;
+    }
+  }
+  

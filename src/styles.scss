@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Manuscribe';
+    src: url('./assets/fonts/ManuscribeFree-Regular.otf');
+  }
+  @font-face {
+    font-family: 'NCL';
+    src: url('./assets/fonts/NCLBahieWaonid-Demo.otf');
+  }
+  @font-face {
+    font-family: 'Scoth';
+    src: url('./assets/fonts/Scoth\ Brace\ -\ Demo.ttf');
+  }
+  @font-face {
+    font-family: 'Amoun';
+    src: url('./assets/fonts/Amoun.ttf');
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Scoth', sans-serif;
+  }
+  p{
+    font-family: 'Amoun', sans-serif;
+    letter-spacing: 1px;
+  }
+  html{
+      background: #dfd7cf;
+  }
+  body{
+      margin: 0px;
+  }
