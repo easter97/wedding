@@ -1,4 +1,6 @@
+
 /* You can add global styles to this file, and also import other style files */
+@import './vars.scss';
 @font-face {
     font-family: 'Manuscribe';
     src: url('./assets/fonts/ManuscribeFree-Regular.otf');
@@ -15,17 +17,70 @@
     font-family: 'Amoun';
     src: url('./assets/fonts/Amoun.ttf');
   }
+  @font-face {
+    font-family: 'Lanche';
+    src: url('./assets/fonts/Lanche_Demo.ttf');
+  }
+  @font-face {
+    font-family: 'Kuano';
+    src: url('./assets/fonts/Kuano_Demo.ttf');
+  }
+  @font-face {
+    font-family: 'Perfect Strangers';
+    src: url('./assets/fonts/PerfectStrangers_DEMO.ttf');
+  }
+  @font-face {
+    font-family: 'Quackey';
+    src: url('./assets/fonts/QuackeyFree-Regular.otf');
+  }
+  @font-face {
+    font-family: 'Caghen';
+    src: url('./assets/fonts/Caghen_Demo.ttf');
+  }
+  @font-face {
+    font-family: 'Mayfest';
+    src: url('./assets/fonts/Mayfest_Regular\ -\ Demo.ttf');
+  }
+  @font-face {
+    font-family: 'Goodies';
+    src: url('./assets/fonts/Goodies\ demo.otf');
+  }
+  @font-face {
+    font-family: 'Ethereal';
+    src: url('./assets/fonts/Ethereal-Thin.otf');
+  }
   
-  h1,h2,h3,h4,h5,h6 {
-    font-family: 'Scoth', sans-serif;
+  h1{
+    font-family: 'Quackey', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  h2,h3,h4,h5,h6 {
+    font-family: 'Quackey', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
   }
   p{
-    font-family: 'Amoun', sans-serif;
-    letter-spacing: 1px;
+    font-family: 'Ethereal', sans-serif;
   }
   html{
-      background: #dfd7cf;
+      background: $neutral-background;
   }
   body{
       margin: 0px;
   }
+  button{
+    font-family: 'Quackey', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    &:hover{
+      background-color: $sky-dark;
+    }
+  }
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

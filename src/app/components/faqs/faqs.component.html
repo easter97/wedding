@@ -1,0 +1,175 @@
+
+<div class=container>
+    <h1>FAQs</h1>
+    <cdk-accordion class="example-accordion">
+
+        <cdk-accordion-item
+    
+          #faq1="cdkAccordionItem"
+          class="example-accordion-item"
+          role="button"
+          tabindex="0"
+>
+          <div class="example-accordion-item-header" (click)="faq1.toggle()" [ngClass]="faq1.expanded ? 'open' : ''">
+            <span class="example-accordion-item-description">
+              What date should I RSVP by?
+            </span>
+          </div>
+          <div
+            class="example-accordion-item-body"
+            role="region"
+            [style.display]="faq1.expanded ? '' : 'none'"
+            [attr.id]="'accordion-body-' "
+            [attr.aria-labelledby]="'accordion-header-' ">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+            excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
+            veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
+          </div>
+        </cdk-accordion-item>
+        <cdk-accordion-item
+    
+        #faq2="cdkAccordionItem"
+        class="example-accordion-item"
+        role="button"
+        tabindex="0"
+>
+        <div class="example-accordion-item-header" (click)="faq2.toggle()" [ngClass]="faq2.expanded ? 'open' : ''">
+          <span class="example-accordion-item-description">
+            Will your wedding be indoors or outdoors?
+          </span>
+        </div>
+        <div
+          class="example-accordion-item-body"
+          role="region"
+          [style.display]="faq2.expanded ? '' : 'none'"
+          
+          [attr.id]="'accordion-body-' "
+          [attr.aria-labelledby]="'accordion-header-' ">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+          excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
+          veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
+        </div>
+      </cdk-accordion-item>
+
+      <cdk-accordion-item
+    
+      #faq3="cdkAccordionItem"
+      class="example-accordion-item"
+      role="button"
+      tabindex="0"
+>
+      <div class="example-accordion-item-header" (click)="faq3.toggle()" [ngClass]="faq3.expanded ? 'open' : ''">
+        <span class="example-accordion-item-description">
+          What is the dress code for your wedding?
+        </span>
+      </div>
+      <div
+        class="example-accordion-item-body"
+        role="region"
+        [style.display]="faq3.expanded ? '' : 'none'"
+        [attr.id]="'accordion-body-' "
+        [attr.aria-labelledby]="'accordion-header-' ">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+        excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
+        veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
+      </div>
+    </cdk-accordion-item>
+
+    <cdk-accordion-item
+    
+    #faq4="cdkAccordionItem"
+    class="example-accordion-item"
+    role="button"
+    tabindex="0"
+>
+    <div class="example-accordion-item-header" (click)="faq4.toggle()" [ngClass]="faq4.expanded ? 'open' : ''">
+      <span class="example-accordion-item-description">
+       What will the weather be like in the area?
+      </span>
+    </div>
+    <div
+      class="example-accordion-item-body"
+      role="region"
+      [style.display]="faq4.expanded ? '' : 'none'"
+      [attr.id]="'accordion-body-' "
+      [attr.aria-labelledby]="'accordion-header-' ">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+      excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
+      veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
+    </div>
+  </cdk-accordion-item>
+
+  <cdk-accordion-item
+    
+  #faq5="cdkAccordionItem"
+  class="example-accordion-item"
+  role="button"
+  tabindex="0"
+>
+  <div class="example-accordion-item-header" (click)="faq5.toggle()" [ngClass]="faq5.expanded ? 'open' : ''">
+    <span class="example-accordion-item-description">
+      Will there be other events to attend on the wedding weekend?
+    </span>
+  </div>
+  <div
+    class="example-accordion-item-body"
+    role="region"
+    [style.display]="faq5.expanded ? '' : 'none'"
+    [attr.id]="'accordion-body-' "
+    [attr.aria-labelledby]="'accordion-header-' ">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+    excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
+    veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
+  </div>
+</cdk-accordion-item>
+
+<cdk-accordion-item
+    
+#faq6="cdkAccordionItem"
+class="example-accordion-item"
+role="button"
+tabindex="0"
+>
+<div class="example-accordion-item-header" (click)="faq6.toggle()" [ngClass]="faq6.expanded ? 'open' : ''">
+  <span class="example-accordion-item-description">
+    How long should we stay at the resort?
+  </span>
+</div>
+<div
+  class="example-accordion-item-body"
+  role="region"
+  [style.display]="faq6.expanded ? '' : 'none'"
+  [attr.id]="'accordion-body-' "
+  [attr.aria-labelledby]="'accordion-header-' ">
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+  excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
+  veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
+</div>
+</cdk-accordion-item>
+
+<cdk-accordion-item
+    
+#faq7="cdkAccordionItem"
+class="example-accordion-item"
+role="button"
+tabindex="0"
+>
+<div class="example-accordion-item-header" (click)="faq7.toggle()" [ngClass]="faq7.expanded ? 'open' : ''">
+  <span class="example-accordion-item-description">
+    I have more questions about your wedding, who can I reach out to?
+  </span>
+</div>
+<div
+  class="example-accordion-item-body"
+  role="region"
+  [style.display]="faq7.expanded ? '' : 'none'"
+  [attr.id]="'accordion-body-' "
+  [attr.aria-labelledby]="'accordion-header-' ">
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+  excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
+  veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
+</div>
+</cdk-accordion-item>
+      
+    </cdk-accordion>
+</div>

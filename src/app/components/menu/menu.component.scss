@@ -1,16 +1,35 @@
-.menu {
-
-    width: 100px;
-    height: 200px;
+.menu-container{
     padding: 20px;
-    position: sticky;
+    position: fixed;
     top: 100px;
     right: 0px;
     margin-left:auto;
-    display: flex;
-    flex-direction: column;
-    .active{
-        color:red;
+    display: block;
+    .menu{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        line-height: 30px; 
+        a{
+            color:white;
+            text-decoration: none;
+            &.visited{
+                color: white;
+            }
+            &.active{
+                &::before {
+                    content: "";
+                    background-color: white;
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 100%;
+                    display: inline-block;
+                    margin-right: 8px;
+                    box-shadow: 0 0 5px lighten(whitesmoke, 30%), 0 0 10px 1px whitesmoke;
+                  }
+            }
+        }
     }
+    
   }
   

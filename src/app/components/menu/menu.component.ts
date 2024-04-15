@@ -21,8 +21,15 @@ export class MenuComponent {
     // Check which section is currently in view based on scroll position
     if (this.isElementInViewport(document.getElementById('home'))) {
       this.activeSection = 'home';
-    } else if (this.isElementInViewport(document.getElementById('eclipse'))) {
+    } 
+    else if (this.isElementInViewport(document.getElementById('ourStory'))) {
+      this.activeSection = 'ourStory';
+    }
+    else if (this.isElementInViewport(document.getElementById('proposal'))) {
       this.activeSection = 'proposal';
+    }
+    else if (this.isElementInViewport(document.getElementById('photos'))) {
+      this.activeSection = 'photos';
     }
     else{
       this.activeSection='';
@@ -44,10 +51,13 @@ export class MenuComponent {
       return false;
     }
     const rect = element.getBoundingClientRect();
+    // if(element == document.getElementById('home')){
+    //   console.log(rect, window.innerHeight)
+    // }
+    
     let center = rect.top + rect.height / 2;
     return (
-
-      center<= (window.innerHeight || document.documentElement.clientHeight) && center >=0
+      rect.bottom >0 && rect.top-rect.height<window.innerHeight
 
     );
   }

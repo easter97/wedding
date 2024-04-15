@@ -12,12 +12,22 @@ export class EclipseComponent implements OnInit {
   constructor(private el: ElementRef, private renderer: Renderer2,) {}
 
   ngOnInit() {
+    // this.setupIntersectionObserver();
+  }
+  ngAfterViewInit(){
     this.setupIntersectionObserver();
+
   }
 
   private setupIntersectionObserver() {
-    const moonElement = this.el.nativeElement.querySelector('.container');
-
+    // const moonElement = this.el.nativeElement.querySelector('.container');
+    let observeElement;
+    if(window.matchMedia("(max-width: 768px)").matches){
+      observeElement = this.el.nativeElement.querySelector('.moon');
+    }
+    else{
+      observeElement = this.el.nativeElement.querySelector('.container');
+    }
     const options = {
       threshold: 0.8
     };
@@ -33,7 +43,7 @@ export class EclipseComponent implements OnInit {
     };
 
     this.observer = new IntersectionObserver(callback, options);
-    this.observer.observe(moonElement);
+    this.observer.observe(observeElement);
   }
 
   private handleIntersection(target: Element) {
