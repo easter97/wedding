@@ -8,6 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class MenuComponent {
   activeSection='home'
+  displayMenu=false;
   // Scroll event listener to update active section based on scroll position
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -22,11 +23,24 @@ export class MenuComponent {
     if (this.isElementInViewport(document.getElementById('home'))) {
       this.activeSection = 'home';
     } 
+
+    else if (this.isElementInViewport(document.getElementById('bigDay'))) {
+      this.activeSection = 'bigDay';
+    }
     else if (this.isElementInViewport(document.getElementById('ourStory'))) {
       this.activeSection = 'ourStory';
     }
-    else if (this.isElementInViewport(document.getElementById('proposal'))) {
-      this.activeSection = 'proposal';
+
+
+    else if (this.isElementInViewport(document.getElementById('schedule'))) {
+      this.activeSection = 'schedule';
+    }
+
+    else if (this.isElementInViewport(document.getElementById('registry'))) {
+      this.activeSection = 'registry';
+    }
+    else if (this.isElementInViewport(document.getElementById('rsvp'))) {
+      this.activeSection = 'rsvp';
     }
     else if (this.isElementInViewport(document.getElementById('photos'))) {
       this.activeSection = 'photos';
@@ -57,9 +71,12 @@ export class MenuComponent {
     
     let center = rect.top + rect.height / 2;
     return (
-      rect.bottom >0 && rect.top-rect.height<window.innerHeight
+      rect.bottom >5 && rect.top-rect.height<window.innerHeight
 
     );
+  }
+  toggleMenu(){
+    this.displayMenu = !this.displayMenu;
   }
 
 

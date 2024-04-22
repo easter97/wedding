@@ -1,8 +1,51 @@
-<div class=menu-container>
+<div class=header [ngClass]="this.activeSection!='home' ? 'expanded' : ''">
+  <div class=left>
+    <a pageScroll href="#home" [class.active]="this.activeSection=='home'">home</a>
+    
+    <a pageScroll href="#bigDay" [class.active]="this.activeSection=='bigDay'">the big day</a>
+    <a pageScroll href="#ourStory" [class.active]="this.activeSection=='ourStory'">our story</a>
+    <a pageScroll href="#travel" [class.active]="this.activeSection=='travel'">travel</a>
+  </div>
+  
+  <div class=center>
+    <!-- <h1>Amanda</h1> -->
+    <img src="../../../assets/images/AV-clear.png" >
+    <!-- <h1>Volney</h1> -->
+  </div>
+  <div class=right>
+
+  <a pageScroll href="#schedule" [class.active]="this.activeSection=='schedule'">events</a>
+  <a pageScroll href="#registry" [class.active]="this.activeSection=='registry'">registry</a>
+  <a pageScroll href="#rsvp" [class.active]="this.activeSection=='rsvp'">rsvp</a>
+  <a pageScroll href="#photos" [class.active]="this.activeSection=='photos'">photos</a>  
+  </div>
+  
+</div>
+<div class=mobile-header >
+  <div class=icon (click)="toggleMenu()">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+  </div>
+  <div class=center (click)="toggleMenu()">
+    <h1>Amanda</h1>
+    <img src="../../../assets/images/av-logo-white.png" >
+    <h1>Volney</h1>
+  </div>
+  <div class=menu-items [class.expanded]="displayMenu">
+    <a pageScroll href="#home" [class.active]="this.activeSection=='home'" (click)="toggleMenu()">home</a>
+    
+    <a pageScroll href="#bigDay" [class.active]="this.activeSection=='bigDay'" (click)="toggleMenu()">the big day</a>
+    <a pageScroll href="#ourStory" [class.active]="this.activeSection=='ourStory'" (click)="toggleMenu()">our story</a>
+  <a pageScroll href="#schedule" [class.active]="this.activeSection=='schedule'" (click)="toggleMenu()">events</a>
+  <a pageScroll href="#registry" [class.active]="this.activeSection=='registry'">registry</a>
+  <a pageScroll href="#travel" [class.active]="this.activeSection=='travel'" (click)="toggleMenu()">travel</a>
+  <a pageScroll href="#rsvp" [class.active]="this.activeSection=='rsvp'" (click)="toggleMenu()">rsvp</a>
+  <a pageScroll href="#photos" [class.active]="this.activeSection=='photos'" (click)="toggleMenu()">photos</a>  
+  </div>
+  
+</div>
+<!-- <div class=menu-container>
 <div class=menu>
-      <a pageScroll href="#home" [class.active]="this.activeSection=='home'">home</a>
-    <a pageScroll href="#ourstory" [class.active]="this.activeSection=='ourStory'">our story</a>
-    <a pageScroll href="#proposal" [class.active]="this.activeSection=='proposal'">proposal</a>
+      
     <a pageScroll href="#thebigday" [class.active]="this.activeSection=='thebigday'">the big day</a>
     <a pageScroll href="#schedule" [class.active]="this.activeSection=='schedule'">schedule</a>
     <a pageScroll href="#travel" [class.active]="this.activeSection=='travel'">travel</a>
@@ -11,4 +54,4 @@
 </div>
 
 
-</div>
+</div> -->

@@ -1,63 +1,163 @@
 @import "../../../vars.scss";
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    flex-direction: column;
+// .container{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     padding-top: 81px;
+//     flex-direction: column;
+//     min-height: 100vh;
+//     .content{
+//       display: flex;
+//       align-items: flex-start;
+//       justify-content: center;
+//       flex-wrap: wrap;
+//       padding: 50px;
+//       width: 75%;
+//       .image{
+//         position: relative;
+//         height: 90%;
+//         margin: 50px;
+//         img{
+//             height: 100%;
+//                 width: auto;
+//         }
+//         .text{
+//             position: absolute;
+//             top: 25%;
+//             left: 50%;
+//             transform: translate(-50%, -50%);
+//             // background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+//             padding: 20px;
+//             color: white;
+//             text-align: center;
+//             text-transform: uppercase;
+//             font-family: "Brogadier";
+//             font-size: 50px;
+//         }
+//     }
+      
+//   }
+    // background: linear-gradient(0deg, black 50%, white 50%);
     cdk-accordion{
-        width: 60%;
-        font-family: 'Ethereal', sans-serif;
+        width: 100%;
+        height: 100%;
+        font-family: 'Tropical', sans-serif;
+        margin: 50px;
+            /* Hide accordion items that are not expanded */
+    &:has(.open){
+      cdk-accordion-item:not(.open) {
+      display: none;
     }
+  }
+    }
+
+
     .example-accordion {
         display: block;
-        max-width: 500px;
+        // max-width: 600px;
+        background-color: $neutral-background;
       }
+
+      .arrow-icon {
+        min-width: 12px;
+        min-height: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border-top: 2px solid black;
+        // border-right: 2px solid black;
+        // transform: rotate(-45deg);
+        transition: transform 0.3s ease;
+      }
+      
+      .arrow-rotate {
+        transform: rotate(180deg);
+      }
+      
       
       .example-accordion-item {
         display: block;
-        border: solid 1px #ccc;
-      }
-      
-      .example-accordion-item + .example-accordion-item {
-        border-top: none;
-      }
-      
-      .example-accordion-item-header {
-        display: flex;
-        align-content: center;
-        justify-content: space-between;
+        height: 61px;
+        border: solid 1px black;
+        border-right: none;
+        border-left: none;
+        transition: height .3s ease;
         &.open{
-            background-color: #eee
+          height: 100%;
+          border-top: solid 1px black;
         }
       }
       
-      .example-accordion-item-description {
-        font-size: 0.85em;
-        color: #999;
+      .example-accordion-item + .example-accordion-item {
+        &:not(.open) {
+          border-top: none;
+        }
+        
       }
       
-      .example-accordion-item-header,
-      .example-accordion-item-body {
+      .question-header {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        margin: 5px;
+        // &.open{
+        //     background-color: #eee
+        // }
+      }
+      
+      .question {
+        font-size: 16px;
+        color: black;
+        // text-align: center;
+        margin-left: 10px;
+        flex-grow: 1;
+      }
+      
+      .question-header,
+      .answer {
         padding: 16px;
+        text-align: justify;
       }
 
-      .example-accordion-item-body {
-        background-color: #eee;
+      .answer {
+        // background-color: #eee;
+        line-height: 30px;
+        font-family: "Libre";
+        font-size: 14px;
+        // height: 0px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
       }
       
-      .example-accordion-item-header:hover {
+      .question-header:hover {
         cursor: pointer;
-        background-color: #eee;
+        .question{
+          color: $moon;
+        }
+        .arrow-icon{
+          fill: $moon;
+        }
+        
+        // background-color: #eee;
       }
-      
-      .example-accordion-item:first-child {
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
+
+// }
+@media (max-width: 768px) {
+
+    cdk-accordion{
+      width: 100%;
+      font-family: 'Tropical', sans-serif;
+      margin: 0px;
+      min-height: 670px;
+    }  
+    .example-accordion-item{
+      height: auto;
+      &.open{
+        min-height: 670px;
       }
-      
-      .example-accordion-item:last-child {
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
-      }
-}
+    }
+  }
+  
+// }

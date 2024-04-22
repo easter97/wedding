@@ -14,6 +14,11 @@ import { FaqsComponent } from './components/faqs/faqs.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
 import {CdkAccordionModule} from '@angular/cdk/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RsvpComponent } from './components/rsvp/rsvp.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { RegistryComponent } from './components/registry/registry.component';
+import { CountdownComponent } from './components/countdown/countdown.component';
+import { BigDayComponent } from './components/big-day/big-day.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PhotosComponent,
     OurStoryComponent,
     FaqsComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    RsvpComponent,
+    RegistryComponent,
+    CountdownComponent,
+    BigDayComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +42,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NgxPageScrollModule,
     BrowserAnimationsModule,
     CdkAccordionModule,
+    LazyLoadImageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

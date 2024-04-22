@@ -1,0 +1,19 @@
+// colors
+$background: black;
+$sky-dark: #091120;
+$moon: #C7938B;
+$peak: #efdbd8;
+$mobile: 768px;
+$menu: #ebe7e2;
+$light-background: #f7f5f3;
+$neutral-background: #f1eeea;
+$dark-background: #bcb8b4;
+:root {
+    --menu-height: 81px;
+  }
+  
+  @media (max-width: 750px) {
+    :root {
+      --menu-height: 66px;
+    }
+  }

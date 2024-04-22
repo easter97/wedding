@@ -6,12 +6,12 @@
     src: url('./assets/fonts/ManuscribeFree-Regular.otf');
   }
   @font-face {
-    font-family: 'NCL';
-    src: url('./assets/fonts/NCLBahieWaonid-Demo.otf');
+    font-family: 'Libre';
+    src: url('./assets/fonts/LibreBaskerville-Regular.otf');
   }
   @font-face {
-    font-family: 'Scoth';
-    src: url('./assets/fonts/Scoth\ Brace\ -\ Demo.ttf');
+    font-family: 'Tropical';
+    src: url('./assets/fonts/tropical-avenue.ttf');
   }
   @font-face {
     font-family: 'Amoun';
@@ -26,24 +26,24 @@
     src: url('./assets/fonts/Kuano_Demo.ttf');
   }
   @font-face {
-    font-family: 'Perfect Strangers';
-    src: url('./assets/fonts/PerfectStrangers_DEMO.ttf');
+    font-family: 'Kerad';
+    src: url('./assets/fonts/kerad-serif-2.ttf');
   }
   @font-face {
     font-family: 'Quackey';
     src: url('./assets/fonts/QuackeyFree-Regular.otf');
   }
   @font-face {
-    font-family: 'Caghen';
-    src: url('./assets/fonts/Caghen_Demo.ttf');
+    font-family: 'Brogadier';
+    src: url('./assets/fonts/brogadier.ttf');
   }
   @font-face {
     font-family: 'Mayfest';
     src: url('./assets/fonts/Mayfest_Regular\ -\ Demo.ttf');
   }
   @font-face {
-    font-family: 'Goodies';
-    src: url('./assets/fonts/Goodies\ demo.otf');
+    font-family: 'Feonie';
+    src: url('./assets/fonts/feonie-2.otf');
   }
   @font-face {
     font-family: 'Ethereal';
@@ -51,17 +51,23 @@
   }
   
   h1{
-    font-family: 'Quackey', sans-serif;
+    font-family: 'Tropical', sans-serif;
     letter-spacing: 2px;
     text-align: center;
+    text-transform: uppercase;
   }
-  h2,h3,h4,h5,h6 {
-    font-family: 'Quackey', sans-serif;
+  h2,h3,h4{
+    font-family: 'Tropical', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  h5,h6{
+    font-family: 'Ethereal', serif;
     letter-spacing: 1px;
     text-align: center;
   }
   p{
-    font-family: 'Ethereal', sans-serif;
+    font-family: 'Libre', sans-serif;
   }
   html{
       background: $neutral-background;
@@ -79,7 +85,8 @@
     padding: 5px 10px 5px 10px;
     cursor: pointer;
     &:hover{
-      background-color: $sky-dark;
+      background-color: $moon;
+      color: black;
     }
   }
 // html, body { height: 100%; }

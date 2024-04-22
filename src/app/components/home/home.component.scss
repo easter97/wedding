@@ -1,8 +1,10 @@
+@import '../../../vars.scss';
 .home-container{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
     .columns{
         display: flex;
         flex-direction: row;
@@ -76,6 +78,10 @@
             h2{
                 text-transform: uppercase;
             }
+            button{
+                font-size: 25px;
+                margin: 15px;
+            }
         }
     }
     .vertical-line {
@@ -93,8 +99,10 @@
 @media (max-width: 768px) {
     .home-container{
         height: unset;
+        padding-top: var(--menu-height);
         .columns{
             .photo{
+                order: -1; /* Move item 2 to the top */
                 .monogram{
                     img{
                         width: 75px;

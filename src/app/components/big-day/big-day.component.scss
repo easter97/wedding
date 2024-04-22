@@ -1,0 +1,80 @@
+@import '../../../vars.scss';
+:host{
+    .container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        // padding-top: 81px;
+        background-image: url('../../../assets/images//beach-background.jpg');
+        background-size: cover; /* Ensures the background image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating vertically */
+        .content{
+            width: 75%;
+            box-sizing: border-box;
+            height: 100%;
+            padding-top: var(--menu-height);
+            background: $neutral-background
+        }
+    }
+    .header{
+        h5{
+            text-transform: uppercase;
+        }
+    }
+    .info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // width: 100%;
+        height: 60%;
+        .wedding{
+            margin-top: 50px;
+        }
+        h2{
+            text-transform: uppercase;
+        }
+        .text{
+            text-align: center;
+            max-width: 500px;
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+    .faqs{
+        width: 35vw;
+        height: 100%;
+    }
+    .info,.faqs{
+        margin: 50px;
+    }
+    app-countdown{
+        width: 80%;
+    }
+    @media (max-width:750px) {
+        .container{
+            height: auto;
+            .content{
+                flex-wrap: wrap;
+                width: 90%;
+            } 
+        }
+        .info{
+            flex-wrap: wrap;
+            margin: 10px;
+        }
+        .faqs{
+            width:100%;
+            margin: 10px;
+            min-height: 670px;
+            // app-faqs{
+            //     // display: inline-block;
+            //     min-height: 670px;
+            // }
+        }
+        
+    }
+}
