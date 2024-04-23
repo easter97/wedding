@@ -60,8 +60,8 @@
       }
 
       .arrow-icon {
-        min-width: 12px;
-        min-height: 12px;
+        min-width: 15px;
+        min-height: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -137,7 +137,10 @@
           color: $accent;
         }
         .arrow-icon{
-          fill: $accent;
+          svg{
+            fill: $accent;
+          }
+          
         }
         
         // background-color: #eee;
