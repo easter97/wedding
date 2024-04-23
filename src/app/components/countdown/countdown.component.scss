@@ -1,3 +1,4 @@
+@import '../../../vars.scss';
 .count-down-timer {
     // box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 20%);
     text-align: center;
@@ -35,6 +36,7 @@
              font-size: 25px;
             font-style: italic;
             text-transform: uppercase; 
+            // color: $accent;
           }
           p{
               font-size: 40px;

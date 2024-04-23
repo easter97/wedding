@@ -60,6 +60,7 @@
     font-family: 'Tropical', sans-serif;
     letter-spacing: 1px;
     text-align: center;
+    color: $accent;
   }
   h5,h6{
     font-family: 'Ethereal', serif;
@@ -85,8 +86,8 @@
     padding: 5px 10px 5px 10px;
     cursor: pointer;
     &:hover{
-      background-color: $moon;
-      color: black;
+      background-color: $accent;
+      color: white;
     }
   }
 // html, body { height: 100%; }

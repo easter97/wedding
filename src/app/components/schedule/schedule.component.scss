@@ -56,5 +56,23 @@ $timeline: #CCD5DB;
 @media (max-width:750px) {
     .container{
         height: auto;
+        h2{
+            height: 65px;
+            font-size: 20px;
+        }
+        .events{
+            .event{
+                margin: 15px;
+                width: 150px;
+                .event-image{
+                    width: 150px;
+                    height: 150px;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+            
+        }
     }
 }

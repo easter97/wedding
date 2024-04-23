@@ -22,25 +22,30 @@
             .monogram{
                 position: absolute;
                 img{
-                    height: 300px;
-                    width: 300px;
+                    height: 200px;
+                    width: 200px;
                 }
                 
-                left: calc(50%-150px);
-                top: 20px;
+                left: 8%;
+                top: 8%;
             }
             flex-grow: 2;
             .image{
-                height: 90%;
+                height: 75vh;
                 width: auto;
 
-                box-shadow: -50px -50px 0 -40px black, 50px 50px 0 -40px black;
+                box-shadow: -50px -50px 0 -40px $accent, 50px 50px 0 -40px $accent;
                 margin: 20px;
 
             }
             .description{
-                font-family: "Lanche", serif;
-                font-style: italic;
+                font-family: "Quackey", serif;
+                text-transform: uppercase;
+                font-size: 25px;
+                span{
+                    font-family: "Ethereal", serif;
+                }
+                // font-style: italic;
             }
             .info{
                 margin-top: 50px;

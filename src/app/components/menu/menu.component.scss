@@ -43,7 +43,7 @@
       z-index: 999;
       height: 0px;
       position: fixed;
-      background-color: $menu;
+      background-color: $accent;
     //   border-bottom: 1px solid black;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
       overflow: hidden;
@@ -70,35 +70,42 @@
       }
       a{
           margin:15px;
-        color:black;
+        color:white;
         text-decoration: none;
         text-transform: uppercase;
         font-style: italic;
         font-family: "Kerad";
+        display: flex;
         &::before {
             content: "";
-            // background-color: $moon;
-            height: 8px;
-            width: 8px;
-            border-radius: 100%;
-            display: inline-block;
-            margin-right: 8px;
-            // box-shadow: 0 0 5px lighten(whitesmoke, 30%), 0 0 10px 1px whitesmoke;
-          }
-        &.visited{
-            color: black;
-        }
-        &.active{
-            &::before {
-                content: "";
-                background-color: $moon;
-                height: 8px;
-                width: 8px;
-                border-radius: 100%;
+            align-self: center;
+            // border-top: 1px solid black;
+                height: 0px;
+                width: 15px;
+                // border-radius: 100%;
                 display: inline-block;
                 margin-right: 8px;
-                box-shadow: 0 0 5px lighten(whitesmoke, 30%), 0 0 10px 1px whitesmoke;
+          }
+        &.visited{
+            color: white;
+        }
+        &.active{
+            
+            &::before {
+                content: "";
+                align-self: center;
+                // background-color: $moon;
+                border-top: 1px solid white;
+                height: 0px;
+                width: 15px;
+                // border-radius: 100%;
+                display: inline-block;
+                margin-right: 8px;
+                // box-shadow: 0 0 5px lighten(whitesmoke, 30%), 0 0 10px 1px whitesmoke;
               }
+        }
+        &:hover{
+            color: black;
         }
     }
   }
@@ -119,10 +126,11 @@
             width: 20px;
           }
           height: 0px;
-          background: black;
+          background: $accent;
           .center h1{
               font-size: 20px;
               color: white;
+            //   font-family: "Quackey", serif;
           }
         //   &.expanded{
             display: block;
@@ -139,6 +147,11 @@
                 color: white;
                 &.visited{
                     color: white;
+                }
+                &.active{
+                    &::before{
+                        border-top: 1px solid white;
+                    }
                 }
             }
         //   }
