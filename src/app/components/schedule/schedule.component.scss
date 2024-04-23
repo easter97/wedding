@@ -76,3 +76,58 @@ $timeline: #CCD5DB;
         }
     }
 }
+
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .container{
+        height: auto;
+        h2{
+            height: 65px;
+            font-size: 20px;
+        }
+        .events{
+            .event{
+                margin: 15px;
+                width: 150px;
+                .event-image{
+                    width: 150px;
+                    height: 150px;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+            
+        }
+    }
+    
+}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1180px) 
+and (orientation : landscape) {
+    .container{
+        height: auto;
+        h2{
+            height: 50px;
+            font-size: 20px;
+        }
+        .events{
+            .event{
+                margin: 15px;
+                width: 200px;
+                .event-image{
+                    width: 200px;
+                    height: 200px;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+            
+        }
+    }
+}

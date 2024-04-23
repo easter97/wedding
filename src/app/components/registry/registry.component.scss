@@ -16,7 +16,7 @@
     .image{
         position: relative;
         img{
-            height: 75vh;
+            height: 75svh;
                 width: auto;
         }
         .text{
@@ -61,4 +61,50 @@
         }
     }
     
+}
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .container{
+        .content{
+            width: 100%;
+        }
+        .image{
+            img{
+                height: 60svh;
+                width: auto;
+            }
+        } 
+        .message{
+            font-size: 14px;
+            line-height: 20px;
+            margin: 10px;
+        }
+    }
+    
+}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1180px) 
+and (orientation : landscape) {
+    .container{
+        .content{
+            // width: 90%;
+            flex-wrap: nowrap;
+        }
+        
+        .image{
+            img{
+                height: 60svh;
+                width: auto;
+            }
+        } 
+        .message{
+            font-size: 14px;
+            line-height: 20px;
+            // margin: 10px;
+        }
+    }
 }

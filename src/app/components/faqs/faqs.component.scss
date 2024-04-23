@@ -61,6 +61,8 @@
 
       .arrow-icon {
         min-width: 15px;
+        width: 15px;
+        height: 15px;
         min-height: 15px;
         display: flex;
         align-items: center;
@@ -159,6 +161,42 @@
       height: auto;
       &.open{
         min-height: 670px;
+      }
+    }
+  }
+  @media only screen
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) 
+  and (orientation : portrait) {
+    cdk-accordion{
+      width: 100%;
+      font-family: 'Tropical', sans-serif;
+      margin: 0px;
+      min-height: 670px;
+    }  
+    .example-accordion-item{
+      height: auto;
+      &.open{
+        min-height: 670px;
+      }
+    }
+      
+  }
+  /* iPads (landscape) ----------- */
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1180px) 
+  and (orientation : landscape) {
+    cdk-accordion{
+      width: 100%;
+      font-family: 'Tropical', sans-serif;
+      margin: 0px;
+      min-height: 650px;
+    }  
+    .example-accordion-item{
+      height: auto;
+      &.open{
+        min-height: 650px;
       }
     }
   }
