@@ -19,3 +19,9 @@ cp index.html 404.html
 # Optional: Navigate back to the original directory
 cd -
 
+#commit and push to git
+last_commit=$(git log --pretty=format:'%h' -n 1)
+git add .
+git commit -am "Deploy logic for $last_commit"
+git push
+
