@@ -107,7 +107,7 @@
         background-size: cover;
         text-shadow: black 1px 0 10px;
         .content{
-            margin-top: 60px;
+            margin-top: 70px;
             flex-wrap: wrap;
             // width: 100%;
             
@@ -122,13 +122,13 @@
                     left: -70px;
                 }
                 &.v{
-                    top: 75vh;
+                    top: 70svh;
                     right: -75px;
                 }
             }
             .std{
                 order: -1;
-                height: 100vh;
+                height: 100svh;
               .monogram{
                     margin: 20px;
                     margin-bottom: 10px;
