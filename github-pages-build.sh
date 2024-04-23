@@ -13,7 +13,7 @@ elif [ ${#commit_hashes[@]} -eq 1 ]; then
 else
     # Extract the first and last commit hashes
     first_commit="${commit_hashes[0]}"
-    last_commit="${commit_hashes[-1]}"
+    last_commit="${commit_hashes[${#commit_hashes[@]}-1]}"
 
     # Construct the commit message
     commit_message="Deploy build for [${first_commit}...${last_commit}]"
