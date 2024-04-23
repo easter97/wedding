@@ -5,7 +5,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   templateUrl: './rsvp.component.html',
   styleUrls: ['./rsvp.component.scss']
 })
-export class RsvpComponent implements OnInit {
+export class RsvpComponent {
 
   
   @ViewChild('myIframe') iframe: ElementRef;
