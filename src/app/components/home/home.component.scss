@@ -101,15 +101,13 @@
 
 @media (max-width: 768px) {
     .home-container{
-        height: auto;
-        min-height: 100svh;
         padding-top: var(--menu-height);
         color: white;
         background-image: url('https://images.squarespace-cdn.com/content/v1/62965e811f7199435ae4367a/1698538903095-QWNMJ4VQJ59H6DCQLDMU/4+tips+on+How+to+Style+an+engagement+session+-+houston+wedding+and+couples+photographer+%288%29.jpg');
         background-size: cover;
         text-shadow: black 1px 0 10px;
         .content{
-            margin-top: 20px;
+            margin-top: 10px;
             flex-wrap: wrap;
             // width: 100%;
             
@@ -132,6 +130,7 @@
                 height: 100vh;
               .monogram{
                     margin: 20px;
+                    margin-bottom: 10px;
                     img{
                         height: 100px;
                         width: 100px;
@@ -142,6 +141,9 @@
                     letter-spacing: 10px;
                     margin: 5px;
                 } 
+                .wedding{
+                    margin: 10px;
+                }
                 .names{
                     margin: 5px;
                     h1{
@@ -152,7 +154,7 @@
                         font-family: "Tropical";
                     }  
                     h1{
-                        font-size: 30px;
+                        font-size: 25px;
                     }
                 }
                 .divider{
