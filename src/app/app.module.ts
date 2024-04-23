@@ -19,6 +19,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { RegistryComponent } from './components/registry/registry.component';
 import { CountdownComponent } from './components/countdown/countdown.component';
 import { BigDayComponent } from './components/big-day/big-day.component';
+import { TravelComponent } from './travel/travel.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BigDayComponent } from './components/big-day/big-day.component';
     RsvpComponent,
     RegistryComponent,
     CountdownComponent,
-    BigDayComponent
+    BigDayComponent,
+    TravelComponent
   ],
   imports: [
     BrowserModule,
