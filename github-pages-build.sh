@@ -3,7 +3,7 @@
 # Build Angular app for production
 echo 'Building Angular app for production...'
 
-ng build --prod --base-href ./
+ng build --prod --base-href "https://easter97.github.io/wedding/"
 
 # Navigate to the 'docs' directory
 cd docs
