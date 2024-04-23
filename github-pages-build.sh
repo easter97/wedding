@@ -34,7 +34,7 @@ first_commit="${commit_hashes[0]}"
 last_commit="${commit_hashes[-1]}"
 
 # Construct the commit message
-commit_message="Deploy build for ${first_commit}...${last_commit}"
+commit_message="Deploy build for [${first_commit}...${last_commit}]"
 
 # Commit and push with the generated message
 git add .
