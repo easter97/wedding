@@ -140,10 +140,13 @@
                 .date{
                     font-size:15px;
                     letter-spacing: 10px;
-                    margin: 10px;
+                    margin: 5px;
                 } 
                 .names{
-                    margin: 10px;
+                    margin: 5px;
+                    h1{
+                        margin: 10px;
+                    }
                     .and{
                         font-size: 50px;
                         font-family: "Tropical";
@@ -153,13 +156,16 @@
                     }
                 }
                 .divider{
-                    margin: 10px;
+                    margin: 5px;
                     border-color: white;
                 }
                 .info{
-                    margin: 15px;
+                    margin: 20px;
                     font-size: 12px;
-                    line-height: 25px;
+                    line-height: 20px;
+                    p{
+                        margin: 5px;
+                    }
                 }
             }
             .photo{
