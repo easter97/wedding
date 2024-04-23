@@ -1,6 +1,6 @@
 @import '../../../vars.scss';
 .home-container{
-    height: 100dvh;
+    height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,8 +101,8 @@
 
 @media (max-width: 768px) {
     .home-container{
-        // height: 100vh;
-        // min-height: -webkit-fill-available;
+        height: auto;
+        min-height: 100svh;
         padding-top: var(--menu-height);
         color: white;
         background-image: url('https://images.squarespace-cdn.com/content/v1/62965e811f7199435ae4367a/1698538903095-QWNMJ4VQJ59H6DCQLDMU/4+tips+on+How+to+Style+an+engagement+session+-+houston+wedding+and+couples+photographer+%288%29.jpg');
