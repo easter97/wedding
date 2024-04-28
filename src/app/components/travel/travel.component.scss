@@ -1,0 +1,170 @@
+@import '../../../vars.scss';
+.container{
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    // background-color: $dark-background;
+    .content{
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: var(--menu-height);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        &.faq{
+            justify-content: flex-start;
+            app-faqs{
+                width: 60%;
+            }
+            h4{
+                text-transform: uppercase;
+                color: $dark-background;
+                // font-style: italic;
+                margin-bottom: 50px;
+            }
+        }
+        .desc{
+            text-align: center;
+            // font-size: 12px;
+            text-transform: uppercase;
+            font-family: "Kerad";
+            width: 60%;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+        .info{
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2,h4{
+                text-transform: uppercase;
+            }
+            h4{
+                font-family: "Kerad";
+                font-style: italic;
+                margin-bottom: 50px;
+            }
+            h2{
+                letter-spacing: 5px;
+            }
+            .agent,.other{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:space-between;
+                width: 45%;
+                height: 50vh;
+                margin: 15px;
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content:flex-start;
+                    p{
+                        width: 65%;
+                        text-align: center;
+                        line-height: 30px;
+                    }  
+                }
+                
+            }
+            .divider{
+                align-self: center;
+                height: 60%;
+                border-left: 1px solid black;
+                width: 0;
+            }
+        }
+        
+    }
+}
+@media (max-width:750px) {
+    .container{
+        // height: auto;
+        .content{
+            // flex-wrap: wrap;
+            width: 100%;
+            padding: 10px;
+            &.faq{
+                app-faqs{
+                    width: 100%;
+                }
+            }
+            .info{
+                height: auto;
+                flex-wrap: wrap;
+                .agent,.other{
+                    height: auto;
+                    width: 100%;
+                    .text{
+                        p{
+                            font-size: 12px;
+                            width: 100%;
+                        }  
+                    }
+                }
+                
+                
+            }
+        } 
+    }
+    
+}
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .container{
+        height: auto;
+        .content{
+            flex-wrap: wrap;
+            width: 90%;
+        } 
+    }
+    .info{
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    .faqs{
+        width:100%;
+        margin: 10px;
+        // min-height: 650px;
+        // app-faqs{
+        //     // display: inline-block;
+        //     min-height: 670px;
+        // }
+    }
+    
+}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1180px) 
+and (orientation : landscape) {
+    .container{
+        height: auto;
+        .content{
+            flex-wrap: wrap;
+            width: 90%;
+        } 
+    }
+    .info{
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    .faqs{
+        width:100%;
+        margin: 10px;
+        // min-height: 650px;
+        // app-faqs{
+        //     // display: inline-block;
+        //     min-height: 670px;
+        // }
+    }
+}
