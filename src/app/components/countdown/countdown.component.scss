@@ -1,4 +1,5 @@
 @import '../../../vars.scss';
+
 .count-down-timer {
     // box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 20%);
     text-align: center;
@@ -9,6 +10,12 @@
     // border-radius: 6px;
     padding: 25px;
     font-family: "Kerad";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
   
     > p {
       margin: 5px 0 15px 0;
@@ -17,12 +24,13 @@
     .wrapper {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
       
       .times {
         display: flex;
         width: 100%;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
       }
   
 
@@ -31,7 +39,8 @@
         * {
         //   letter-spacing: -5px;
           position: relative;
-          margin: 25px;
+          margin: 10px;
+          margin-top: 25px;
           .desc{
              font-size: 25px;
             font-style: italic;

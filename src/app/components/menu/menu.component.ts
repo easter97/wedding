@@ -30,6 +30,9 @@ export class MenuComponent {
     else if (this.isElementInViewport(document.getElementById('ourStory'))) {
       this.activeSection = 'ourStory';
     }
+    else if (this.isElementInViewport(document.getElementById('travel'))) {
+      this.activeSection = 'travel';
+    }
 
 
     else if (this.isElementInViewport(document.getElementById('schedule'))) {

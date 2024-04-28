@@ -16,7 +16,17 @@
             box-sizing: border-box;
             height: 100%;
             padding-top: var(--menu-height);
-            background: $neutral-background
+            background: $neutral-background;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .divider{
+                width: 75%;
+                height: 0px;
+                margin: 25px;
+                border-top: 1px solid $dark-background;
+              }
         }
     }
     .header{
@@ -29,7 +39,7 @@
         align-items: center;
         justify-content: center;
         // width: 100%;
-        height: 60%;
+        height: 70%;
         .wedding{
             margin-top: 50px;
         }
@@ -44,15 +54,63 @@
             }
         }
     }
-    .faqs{
-        width: 35vw;
+    .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 100%;
+        .party{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .person{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 20px;
+                .image{
+                    width: 125px; /* Set the desired width for the event container */
+                    height: 125px; /* Set the desired height for the event container */
+                    overflow: hidden; /* Hide any content that exceeds the container dimensions */
+                    position: relative; /* Establish a positioning context */
+                    border-radius: 100%;
+                    margin: 15px;
+                }
+                img{
+                    width: 100%; /* Ensure the image occupies 100% of the container's width */
+                    height: 100%; /* Ensure the image occupies 100% of the container's height */
+                    object-fit: cover; /* Maintain the aspect ratio of the image and cover the entire container */
+                    object-position: center; /* Position the image at the center of the container */
+                    display: block; /* Ensure the image is displayed as a block element */
+                }
+                .name,.title{
+                    text-align: center;
+                    // margin: 5px;
+                }
+                .name{
+                    color: $accent;
+                    font-family: "Quackey";
+                    margin: 5px;
+                }
+                .title{
+                    color: $dark-background;
+                    font-family: "Kerad";
+                    font-style: italic;
+                    text-transform: uppercase;
+                }
+            }
+        }
     }
-    .info,.faqs{
-        margin: 50px;
+    .text,.details{
+        padding: 50px;
+        // flex-grow: 1;
+        min-width: 43%;
     }
     app-countdown{
-        width: 80%;
+        width: 100%;
     }
     @media (max-width:750px) {
         .container{
@@ -66,14 +124,9 @@
             flex-wrap: wrap;
             margin: 10px;
         }
-        .faqs{
+        .details{
             width:100%;
             margin: 10px;
-            min-height: 650px;
-            // app-faqs{
-            //     // display: inline-block;
-            //     min-height: 670px;
-            // }
         }
         
     }
@@ -92,14 +145,9 @@
             flex-wrap: wrap;
             margin: 10px;
         }
-        .faqs{
+        .details{
             width:100%;
             margin: 10px;
-            min-height: 650px;
-            // app-faqs{
-            //     // display: inline-block;
-            //     min-height: 670px;
-            // }
         }
         
     }
@@ -119,14 +167,9 @@
             flex-wrap: wrap;
             margin: 10px;
         }
-        .faqs{
+        .details{
             width:100%;
             margin: 10px;
-            min-height: 650px;
-            // app-faqs{
-            //     // display: inline-block;
-            //     min-height: 670px;
-            // }
         }
     }
 }

@@ -1,44 +1,36 @@
 
-<!-- <div class=container>
-  <div class=content>
-    
-    <div class=image>
-      <img src="https://i.pinimg.com/736x/44/78/8e/44788e8bd8f793b9db9cf8895b04b4a1.jpg" />
-      <div class=text>FAQs</div>
-    </div> -->
-    
-    <cdk-accordion class="example-accordion">
-
-      <cdk-accordion-item
-        *ngFor="let faq of faqs"
-        #faqItem="cdkAccordionItem"
-        class="example-accordion-item"
-        role="button"
-        tabindex="0"
-        [ngClass]="faqItem.expanded ? 'open' : ''"
->
-        <div class="question-header" (click)="faqItem.toggle()" [ngClass]="faqItem.expanded ? 'open' : ''">
-          <div class="arrow-icon" [ngClass]="{ 'arrow-rotate': faqItem.expanded }">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><g id="Right-2" data-name="Right"><polygon points="17.5 5.999 16.793 6.706 22.086 11.999 1 11.999 1 12.999 22.086 12.999 16.792 18.294 17.499 19.001 24 12.499 17.5 5.999" /></g></svg>
+    <ng-container *ngFor="let category of faqs">
+      <cdk-accordion class="example-accordion">
+        <h2>{{category.name}}</h2>
+        <cdk-accordion-item
+          *ngFor="let faq of category.questions"
+          #faqItem="cdkAccordionItem"
+          class="example-accordion-item"
+          role="button"
+          tabindex="0"
+          [ngClass]="faqItem.expanded ? 'open' : ''"
+  >
+          <div class="question-header" (click)="faqItem.toggle()" [ngClass]="faqItem.expanded ? 'open' : ''">
+            <!-- <div class="arrow-icon" [ngClass]="{ 'arrow-rotate': faqItem.expanded }">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><g id="Right-2" data-name="Right"><polygon points="17.5 5.999 16.793 6.706 22.086 11.999 1 11.999 1 12.999 22.086 12.999 16.792 18.294 17.499 19.001 24 12.499 17.5 5.999" /></g></svg>
+            </div> -->
+            <div class="question">
+              {{faq.question}}
+            </div>
           </div>
-          <div class="question">
-            {{faq.question}}
+          <div
+            class="answer"
+            role="region"
+            [ngClass]="faqItem.expanded ? 'expanded' : ''"
+            [attr.id]="'accordion-body-' "
+            [attr.aria-labelledby]="'accordion-header-' "
+            [innerHTML]="faq.answer"
+            >
+            
           </div>
-        </div>
-        <div
-          class="answer"
-          role="region"
-          [style.height]="faqItem.expanded ? 'auto' : '0px'"
-          [attr.id]="'accordion-body-' "
-          [attr.aria-labelledby]="'accordion-header-' "
-          [innerHTML]="faq.answer"
-          >
-          
-        </div>
-      </cdk-accordion-item>
+        </cdk-accordion-item>
+        
+  
       
-
-    
-  </cdk-accordion>
-  <!-- </div> -->
-  <!-- </div> -->
+    </cdk-accordion>
+    </ng-container>

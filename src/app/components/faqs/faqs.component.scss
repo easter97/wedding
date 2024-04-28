@@ -41,15 +41,21 @@
     // background: linear-gradient(0deg, black 50%, white 50%);
     cdk-accordion{
         width: 100%;
-        height: 95%;
+        height: 100%;
         font-family: 'Tropical', sans-serif;
-        margin: 50px;
+        &:not(:first-of-type){
+          margin-top: 100px;
+        }
+        // margin: 50px;
             /* Hide accordion items that are not expanded */
-    &:has(.open){
-      cdk-accordion-item:not(.open) {
-      display: none;
+  //   &:has(.open){
+  //     cdk-accordion-item:not(.open) {
+  //     display: none;
+  //   }
+  // }
     }
-  }
+    h2{
+      text-transform: uppercase;
     }
 
 
@@ -80,21 +86,21 @@
       
       .example-accordion-item {
         display: block;
-        height: 61px;
-        border: solid 1px black;
+        border: solid 1px $dark-background;
         border-right: none;
         border-left: none;
-        transition: height .3s ease;
+        padding: 0 50px 0 50px;
+        transition: max-height .3s ease-in-out;
         &.open{
-          height: 100%;
-          border-top: solid 1px black;
+          border-top: solid 1px $dark-background;
+          
         }
       }
       
       .example-accordion-item + .example-accordion-item {
-        &:not(.open) {
+        // &:not(.open) {
           border-top: none;
-        }
+        // }
         
       }
       
@@ -102,7 +108,7 @@
         display: flex;
         align-content: center;
         justify-content: space-between;
-        margin: 5px;
+        margin: 15px;
         // &.open{
         //     background-color: #eee
         // }
@@ -111,9 +117,13 @@
       .question {
         font-size: 16px;
         color: black;
-        // text-align: center;
-        margin-left: 10px;
+        text-align: center;
+        // margin-left: 10px;
         flex-grow: 1;
+        font-family: 'Kerad';
+        text-transform: uppercase;
+        font-style: italic;
+        letter-spacing: .5px;
       }
       
       .question-header,
@@ -128,9 +138,16 @@
         font-family: "Libre";
         font-size: 14px;
         // height: 0px;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        max-height: 0px;
+        
+        transition: all .3s ease-in-out;
+        &.expanded{
+          max-height: 700px;
+          padding-bottom: 15px;
+        }
       }
       
       .question-header:hover {
@@ -151,18 +168,12 @@
 // }
 @media (max-width: 768px) {
 
-    cdk-accordion{
-      width: 100%;
-      font-family: 'Tropical', sans-serif;
-      margin: 0px;
-      min-height: 670px;
-    }  
-    .example-accordion-item{
-      height: auto;
-      &.open{
-        min-height: 670px;
-      }
+  .answer{
+    &.expanded{
+      max-height: 1500px;
     }
+  }
+
   }
   @media only screen
   and (min-device-width : 768px) 
