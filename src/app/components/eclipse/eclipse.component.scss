@@ -6,7 +6,7 @@
   0% {
     transform: translate(300px, -300px) scale(0.9);
     box-shadow: none;
-    background-color: #dfd7cf;
+    background-color: $neutral-background;
   }
   100% {
     transform: translate(0px, 0px) scale(1.02);
