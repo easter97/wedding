@@ -32,7 +32,7 @@
             .date{
                 font-size: 25px;
                 font-family: "Ethereal";
-                letter-spacing: 20px;
+                letter-spacing: 5px;
                 margin: 20px;
             }
             .wedding{
@@ -50,6 +50,7 @@
                 .and{
                     font-size: 100px;
                     font-family: "Tropical";
+                    color: $dark-background;
                 }  
             }
             .divider{
