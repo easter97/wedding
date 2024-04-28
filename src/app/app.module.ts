@@ -19,7 +19,12 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { RegistryComponent } from './components/registry/registry.component';
 import { CountdownComponent } from './components/countdown/countdown.component';
 import { BigDayComponent } from './components/big-day/big-day.component';
-import { TravelComponent } from './travel/travel.component';
+import { TravelComponent } from './components/travel/travel.component';
+import { PasswordComponent } from './components/password/password.component';
+import { ContainerComponent } from './components/container/container.component';
+import { AuthService } from './auth/auth.service';
+import { AuthGuard } from './auth/auth.guard';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,9 @@ import { TravelComponent } from './travel/travel.component';
     RegistryComponent,
     CountdownComponent,
     BigDayComponent,
-    TravelComponent
+    TravelComponent,
+    PasswordComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,
@@ -45,8 +52,10 @@ import { TravelComponent } from './travel/travel.component';
     BrowserAnimationsModule,
     CdkAccordionModule,
     LazyLoadImageModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [ AuthService, AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
