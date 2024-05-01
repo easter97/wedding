@@ -270,6 +270,9 @@ text-transform: uppercase;
     .us-container{
       position: unset;
       margin-top: -200px;
+      .content{
+        flex-wrap: wrap;
+      }
     }
   }
   }

@@ -29,7 +29,7 @@ export class EclipseComponent implements OnInit {
       observeElement = this.el.nativeElement.querySelector('.container');
     }
     const options = {
-      threshold: 0.68
+      threshold: 0.65
     };
 
     const callback = (entries, observer) => {
