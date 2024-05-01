@@ -115,7 +115,7 @@
       }
       
       .question {
-        font-size: 16px;
+        font-size: .95rem;
         color: black;
         text-align: center;
         // margin-left: 10px;
@@ -128,15 +128,15 @@
       
       .question-header,
       .answer {
-        padding: 16px;
+        padding: .8rem;
         text-align: justify;
       }
 
       .answer {
         // background-color: #eee;
-        line-height: 30px;
-        font-family: "Libre";
-        font-size: 14px;
+        line-height: .8rem;
+        font-family: "Lora";
+        font-size: .8rem;
         // height: 0px;
         overflow: hidden;
         margin: 0;

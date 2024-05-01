@@ -8,7 +8,7 @@
 
 
     // border-radius: 6px;
-    padding: 25px;
+    // padding: 25px;
     font-family: "Kerad";
     display: flex;
     justify-content: center;
@@ -40,15 +40,15 @@
         //   letter-spacing: -5px;
           position: relative;
           margin: 10px;
-          margin-top: 25px;
+          // margin-top: 25px;
           .desc{
-             font-size: 25px;
+             font-size: 1rem;
             font-style: italic;
             text-transform: uppercase; 
             // color: $accent;
           }
           p{
-              font-size: 40px;
+              font-size: 2rem;
           }
           
         //   font: normal 40px Kerad, sans-serif;

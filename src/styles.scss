@@ -14,18 +14,6 @@
     src: url('./assets/fonts/tropical-avenue.ttf');
   }
   @font-face {
-    font-family: 'Amoun';
-    src: url('./assets/fonts/Amoun.ttf');
-  }
-  @font-face {
-    font-family: 'Lanche';
-    src: url('./assets/fonts/Lanche_Demo.ttf');
-  }
-  @font-face {
-    font-family: 'Kuano';
-    src: url('./assets/fonts/Kuano_Demo.ttf');
-  }
-  @font-face {
     font-family: 'Kerad';
     src: url('./assets/fonts/kerad-serif-2.ttf');
   }
@@ -34,33 +22,51 @@
     src: url('./assets/fonts/QuackeyFree-Regular.otf');
   }
   @font-face {
-    font-family: 'Brogadier';
-    src: url('./assets/fonts/brogadier.ttf');
-  }
-  @font-face {
-    font-family: 'Mayfest';
-    src: url('./assets/fonts/Mayfest_Regular\ -\ Demo.ttf');
-  }
-  @font-face {
-    font-family: 'Feonie';
-    src: url('./assets/fonts/feonie-2.otf');
-  }
-  @font-face {
     font-family: 'Ethereal';
     src: url('./assets/fonts/Ethereal-Thin.otf');
   }
-  
+  @font-face {
+    font-family: 'Argue';
+    src: url('./assets/fonts/Argue\ DEMO.otf');
+  }
+  @font-face {
+    font-family: 'Qeilab';
+    src: url('./assets/fonts/Qeilab.otf');
+  }
+  @font-face {
+    font-family: 'Magic Bright';
+    src: url('./assets/fonts/Magic\ Bright\ Serif\ Regular.otf');
+  }
+  @font-face {
+    font-family: 'Moora Light';
+    src: url('./assets/fonts/MOORA\ LIGHT\ REGULER.otf');
+  }
+  @font-face {
+    font-family: 'Cherolina';
+    src: url('./assets/fonts/Cherolina.ttf');
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   h1{
-    font-family: 'Tropical', sans-serif;
+    font-family: 'Argue';
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 1.35rem;
+  }
+  h5{
+    font-size: .65rem;
+    margin: .65rem;
   }
   h2,h3,h4{
-    font-family: 'Tropical', sans-serif;
+    font-family: 'Magic Bright', sans-serif;
     letter-spacing: 1px;
     text-align: center;
     color: $accent;
+    font-weight: normal;
   }
   h5,h6{
     font-family: 'Ethereal', serif;
@@ -68,7 +74,12 @@
     text-align: center;
   }
   p{
-    font-family: 'Libre', sans-serif;
+    font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: .8rem;
+
   }
   html{
       background: $neutral-background;
@@ -77,7 +88,8 @@
       margin: 0px;
   }
   button{
-    font-family: 'Quackey', sans-serif;
+    font-family: 'Magic Bright', sans-serif;
+    font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
@@ -86,19 +98,30 @@
     border: none;
     padding: 5px 10px 5px 10px;
     font-size: 20px;
+    line-height: 25px;
     cursor: pointer;
     &:hover{
       background-color: $accent;
       color: white;
     }
   }
-  a{
+  a:not(:has(button)){
     color: $accent;
     &:visited{
       color: $accent;
     }
     &:hover{
       color: $accent-dark;
+    }
+  }
+  a:has(button){
+    color: white;
+    text-decoration:none;
+    &:visited{
+      color: white;
+    }
+    &:hover{
+      color: white;
     }
   }
 // html, body { height: 100%; }

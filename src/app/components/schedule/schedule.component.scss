@@ -7,7 +7,7 @@ $timeline: #CCD5DB;
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: var(--menu-height);
     h2{
         text-transform: uppercase;
@@ -16,7 +16,7 @@ $timeline: #CCD5DB;
         text-align: center;
         // font-size: 30px;
         // margin: 25px;
-        height: 45px;
+        height: 4.5rem;
     }
     h2,h5{
         margin: 10px;
@@ -27,15 +27,15 @@ $timeline: #CCD5DB;
         align-items: flex-start;
         justify-content: center;
         .event{
-            margin: 50px;
-            width: 300px;
+            margin: 2rem;
+            width: 12.5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             .event-image {
-                width: 300px; /* Set the desired width for the event container */
-                height: 300px; /* Set the desired height for the event container */
+                width: 12.5rem; /* Set the desired width for the event container */
+                height: 12.5rem; /* Set the desired height for the event container */
                 overflow: hidden; /* Hide any content that exceeds the container dimensions */
                 position: relative; /* Establish a positioning context */
                 img {
