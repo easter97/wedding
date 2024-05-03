@@ -27,15 +27,15 @@ $timeline: #CCD5DB;
         align-items: flex-start;
         justify-content: center;
         .event{
-            margin: 2rem;
-            width: 12.5rem;
+            margin: 3rem;
+            width: 15rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             .event-image {
-                width: 12.5rem; /* Set the desired width for the event container */
-                height: 12.5rem; /* Set the desired height for the event container */
+                width: 15rem; /* Set the desired width for the event container */
+                height: 15rem; /* Set the desired height for the event container */
                 overflow: hidden; /* Hide any content that exceeds the container dimensions */
                 position: relative; /* Establish a positioning context */
                 img {

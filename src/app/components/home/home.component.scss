@@ -19,6 +19,7 @@
             justify-content: space-evenly;
             flex-grow: 1;
             position: relative;
+            z-index: 5;
             // min-height: 100svh;
             .monogram{
                 margin: 20px;
@@ -94,6 +95,7 @@
             height: 90vh; /* Set the desired height */
             overflow: hidden; /* Ensure the image does not overflow the container */
             box-shadow: -50px -50px 0 -40px $accent, 50px 50px 0 -40px $accent;
+            margin: 10px;
             img {
                 width: 100%; /* Make the image fill the container horizontally */
                 height: 100%; /* Make the image fill the container vertically */
@@ -108,13 +110,13 @@
               text-transform: uppercase;
               font-family: "Tropical";
               color: $dark-background;
-            //   z-index: -1;
+              z-index: -1;
               &.a{
-                  top: 150px;
+                  top: -8svh;
                   left: -100px;
               }
               &.v{
-                  top: 70svh;
+                  top: 64svh;
                   right: -100px;
               }
           }
@@ -122,6 +124,7 @@
           
     }
 }
+
 
 @media only screen
 and (min-device-width : 768px) 
@@ -139,14 +142,14 @@ and (orientation : portrait) {
                 color: white;
                 opacity: 0.5;
                 -webkit-opacity: 0.5; /* WebKit browser e.g. Safari */
-                &.a{
-                    // top: 100px;
-                    left: -175px;
-                }
-                &.v{
-                    // top: 70svh;
-                    right: -175px;
-                }
+                // &.a{
+                //     // top: 100px;
+                //     left: -175px;
+                // }
+                // &.v{
+                //     // top: 70svh;
+                //     right: -175px;
+                // }
             }
             .std{
                 .monogram{
@@ -166,22 +169,23 @@ and (orientation : portrait) {
 }
 /* iPads (landscape) ----------- */
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1180px) 
-and (orientation : landscape) {
+and (min-width: 48em)
+and (max-width: 64em) {
   .home-container{
       .content{
           height: 100svh;
           align-items: center;
           .photo{
-              height: 50svh;
+              min-height: 50svh;
+              max-width: 25%;
               width: auto;
+              
           }
           .name{
             font-size: 45px;
             text-shadow: none;
             &.a{
-                // top: 100px;
+                top: calc(0svh + 100px);
                 left: -50px;
             }
             &.v{
@@ -198,7 +202,7 @@ and (orientation : landscape) {
                 margin-bottom: 10px;
                 // img{
                     height:100px;
-                    width:100px;
+                    width:150px;
                     // background-image: url('~src/assets/images/av-logo-white.png');
                 // }
             } 

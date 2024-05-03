@@ -25,6 +25,7 @@ import { ContainerComponent } from './components/container/container.component';
 import { AuthService } from './auth/auth.service';
 import { AuthGuard } from './auth/auth.guard';
 import { FormsModule } from '@angular/forms';
+import 'add-to-calendar-button';
 
 @NgModule({
   declarations: [
