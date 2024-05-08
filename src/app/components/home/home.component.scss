@@ -112,7 +112,7 @@
               color: $dark-background;
               z-index: -1;
               &.a{
-                  top: -8svh;
+                top: calc(0svh + 140px);
                   left: -100px;
               }
               &.v{

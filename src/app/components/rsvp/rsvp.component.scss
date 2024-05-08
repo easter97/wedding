@@ -16,6 +16,10 @@
         border:none;
         overflow:hidden;
     }
+
+}
+::ng-deep #atcb-reference{
+        color: red;
 }
 @media(max-width: 768px) {
     .container{
