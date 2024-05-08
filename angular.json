@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "wedding:build"
+            "buildTarget": "wedding:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "wedding:build:production"
+              "buildTarget": "wedding:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "wedding:build"
+            "buildTarget": "wedding:build"
           }
         },
         "test": {

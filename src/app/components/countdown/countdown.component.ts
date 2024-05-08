@@ -9,7 +9,8 @@ export class CountdownComponent {
 
   date: any;
   now: any;
-  targetDate: any = new Date(Date.UTC(2025, 7, 1, 22, 0, 0));
+  targetDate: any = new Date(Date.UTC(2025, 9, 11, 22, 0, 0));
+  
   targetTime: any = this.targetDate.getTime();
   difference: number;
   months: Array<string> = [

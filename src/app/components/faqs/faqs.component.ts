@@ -37,7 +37,7 @@ export class FaqsComponent implements OnInit {
             <li>Flights: $200 - $400 (depending on your location of departure)</li>
             <li>Lodging: $300 - $400 per night, per person (this price varies with your room type and location)</li>
           </ul>
-          <p>Guests may choose to spend more on things like upgraded rooms (Excellence Club) or excursions. Since the resort is all inclusive, no need to worry about food and drink, once you arrive you are set!</p>
+          <p>Guests may choose to spend more on things like upgraded rooms (Preferred Club) or excursions. Since the resort is all inclusive, no need to worry about food and drink, once you arrive you are set!</p>
           <p>For a couple staying at the resort for 3 nights we would estimate a total cost of $2400.</p>
           <p>For an individual staying at the resort for 3 nights we would estimate a total cost of $1500.</p>`
         },
@@ -108,7 +108,7 @@ export class FaqsComponent implements OnInit {
         },
         {
           question: "I have more questions about your wedding, who can I reach out to?",
-          answer: `  For questions regarding travel we advise you to contact our travel agent [travel agent info] at (123) 456-7890 or travel@agent.com. For questions about the resort you can reach out to [Excellence contact] at excellence@questions.com. If you need to contact us directly regarding the wedding you can email wedding@amandaeaster.com.      `
+          answer: `  For questions regarding travel we advise you to contact our travel agent [travel agent info] at (123) 456-7890 or travel@agent.com. For questions about the resort you can reach out to [Secrets contact] at secrets@questions.com. If you need to contact us directly regarding the wedding you can email wedding@amandaeaster.com.      `
         },
       ]
     },
