@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { AuthService } from 'src/app/auth/auth.service';
 import { NgForm } from '@angular/forms';
 import { environment } from '../../../environments/environment';
@@ -12,10 +12,14 @@ import { environment } from '../../../environments/environment';
 export class PasswordComponent implements OnInit {
   fade=false;
   loginUserData: User = {password: '' };
+  returnUrl;
   
   @ViewChild('f') form : NgForm;
-  constructor(private _auth: AuthService, private router: Router) {}
-  ngOnInit() {}
+  constructor(private _auth: AuthService, private router: Router, private route: ActivatedRoute,) {}
+  ngOnInit() {
+    // Get return URL from route parameters or default to '/'
+    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/home';
+  }
 
   loginUser() {
     if (
@@ -24,7 +28,7 @@ export class PasswordComponent implements OnInit {
       console.log('login success');
       localStorage.setItem('token', environment.secretToken);
       this.fade=true;
-      this.router.navigate(['/home']);
+      this.router.navigateByUrl(this.returnUrl);
     }
     else{
       console.log('wrong')
