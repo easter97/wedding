@@ -319,8 +319,9 @@ and (max-width: 64em) {
                     margin: 20px;
                     margin-bottom: 10px;
                     // img{
-                        height:150px;
-                        width:150px;
+                        height:100px;
+                        min-height: 100px;
+                        width:100px;
                         // background-image: url('~src/assets/images/av-logo-white.png');
                     // }
                 } 
@@ -373,7 +374,7 @@ and (max-width: 64em) {
         align-items: center;
         justify-content: center;
         background-color: $sage;
-        height: 100svh;
+        height: 100vh;
         width: 100vw;
         .photo{
            width: 100%; /* Set the desired width */
