@@ -153,7 +153,7 @@
       .question-header:hover {
         cursor: pointer;
         .question{
-          color: $accent;
+          color: $rose;
         }
         .arrow-icon{
           svg{
@@ -183,7 +183,7 @@
       width: 100%;
       font-family: 'Tropical', sans-serif;
       margin: 0px;
-      min-height: 670px;
+      // min-height: 670px;
     }  
     .example-accordion-item{
       height: auto;

@@ -2,18 +2,21 @@
 .home-container{
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     box-sizing: border-box;
+    background-image: url('~src/assets/images/background.png');
+    background-size: cover;
     .content{
         display: flex;
         width: 95%;
         justify-content: space-around;
         align-items: center;
-        height: 100vh;
+        height: 80vh;
         overflow: hidden;
         .std{
             display: flex;
+            box-sizing: border-box;
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
@@ -21,11 +24,13 @@
             position: relative;
             z-index: 5;
             // min-height: 100svh;
+            height: 100%;
+            padding: 1rem;
             .monogram{
-                margin: 20px;
-                width: 150px;
-                height: 150px;
-                min-height: 150px;
+                margin: 1rem;
+                width: 125px;
+                height: 125px;
+                min-height: 145px;
                 background-image: url('~src/assets/images/AV-clear.png');
                 background-size: cover;
                 // img{
@@ -47,6 +52,7 @@
                 // text-transform: uppercase;
                 font-size: 3rem;
                 margin: 10px;
+                line-height: 2rem;
                 .f002{
                         font-feature-settings: "aalt" 1;
                 }
@@ -60,12 +66,16 @@
                 align-items: center;
                 justify-content: center;
                 // font-size: 2em;
+               
                 width: 75%;
                 .and{
-                    font-size: 65px;
+                    font-size: 3rem;
                     font-family: "Tropical";
                     color: $dark-background;
-                }  
+                } 
+                h1{
+                    margin: .75rem;
+                } 
             }
             .divider{
                 height: 0;
@@ -83,6 +93,8 @@
                 font-size: 14px;
                 p{
                     margin: .25rem;
+                    font-size: .75rem;
+                    line-height: 1.25rem;
                 }
             }
             button{
@@ -91,10 +103,10 @@
             }
         }
         .photo {
-            width: 25%; /* Set the desired width */
-            height: 90vh; /* Set the desired height */
+            width: 35%; /* Set the desired width */
+            height: 60vh; /* Set the desired height */
             overflow: hidden; /* Ensure the image does not overflow the container */
-            box-shadow: -50px -50px 0 -40px $accent, 50px 50px 0 -40px $accent;
+            box-shadow: -50px -50px 0 -40px $rust, 50px 50px 0 -40px $rust;
             margin: 10px;
             img {
                 width: 100%; /* Make the image fill the container horizontally */
@@ -109,20 +121,25 @@
               font-size: 65px;
               text-transform: uppercase;
               font-family: "Tropical";
-              color: $dark-background;
+              color: $forest;
               z-index: -1;
+              opacity: 0.5;
+              -webkit-opacity: 0.5; /* WebKit browser e.g. Safari */
               &.a{
                 top: calc(0svh + 140px);
-                  left: -100px;
+                  left: -3rem;
               }
               &.v{
-                  top: 64svh;
-                  right: -100px;
+                  top: 58svh;
+                  right: -3rem;
               }
           }
           
           
     }
+}
+.mobile-photo{
+    display: none;
 }
 
 
@@ -130,16 +147,38 @@
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+    .mobile-photo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $sage;
+        height: 100svh;
+        width: 100vw;
+        .photo{
+           width: 100%; /* Set the desired width */
+            height: 100%; /* Set the desired height */
+            // overflow: hidden; /* Ensure the image does not overflow the container */
+            // box-shadow: -50px -50px 0 -40px $rust, 50px 50px 0 -40px $rust;
+            // margin: 10px;
+            img {
+                width: 100%; /* Make the image fill the container horizontally */
+                height: 100%; /* Make the image fill the container vertically */
+                object-fit: cover; /* Scale the image to cover the entire container */
+                
+              } 
+        }
+        
+    }
     .home-container{
-        color: white;
-        background-image: url('https://images.squarespace-cdn.com/content/v1/62965e811f7199435ae4367a/1698538903095-QWNMJ4VQJ59H6DCQLDMU/4+tips+on+How+to+Style+an+engagement+session+-+houston+wedding+and+couples+photographer+%288%29.jpg');
-        background-size: cover;
-        text-shadow: black 1px 0 10px;
+        // color: white;
+        // background-image: url('https://images.squarespace-cdn.com/content/v1/62965e811f7199435ae4367a/1698538903095-QWNMJ4VQJ59H6DCQLDMU/4+tips+on+How+to+Style+an+engagement+session+-+houston+wedding+and+couples+photographer+%288%29.jpg');
+        // background-size: cover;
+        // text-shadow: black 1px 0 10px;
         .content{
             .name{
                 // font-size: 45px;
                 text-shadow: none;
-                color: white;
+                // color: white;
                 opacity: 0.5;
                 -webkit-opacity: 0.5; /* WebKit browser e.g. Safari */
                 // &.a{
@@ -151,14 +190,14 @@ and (orientation : portrait) {
                 //     right: -175px;
                 // }
             }
-            .std{
-                .monogram{
-                    background-image: url('~src/assets/images/av-logo-white.png');
-                }
-                .divider{
-                    border-color: white;
-                }
-            }
+            // .std{
+            //     .monogram{
+            //         background-image: url('~src/assets/images/av-logo-white.png');
+            //     }
+            //     .divider{
+            //         border-color: white;
+            //     }
+            // }
             .photo{
                 display:none;
             }  
@@ -173,7 +212,7 @@ and (min-width: 48em)
 and (max-width: 64em) {
   .home-container{
       .content{
-          height: 100svh;
+          height: 80svh;
           align-items: center;
           .photo{
               min-height: 50svh;
@@ -189,7 +228,7 @@ and (max-width: 64em) {
                 left: -50px;
             }
             &.v{
-                top: 80svh;
+                top: 60svh;
                 right: -55px;
             }
         }
@@ -201,7 +240,7 @@ and (max-width: 64em) {
                 margin: 20px;
                 margin-bottom: 10px;
                 // img{
-                    height:100px;
+                    height:125px;
                     width:150px;
                     // background-image: url('~src/assets/images/av-logo-white.png');
                 // }
@@ -247,20 +286,20 @@ and (max-width: 64em) {
 @media (max-width: 768px) {
     .home-container{
         padding-top: var(--menu-height);
-        color: white;
-        background-image: url('https://i.pinimg.com/564x/d9/6b/c8/d96bc8b9643f8790f90c810e815241f3.jpg');
-        background-size: cover;
-        text-shadow: black 1px 0 10px;
+        // color: white;
+        // background-image: url('https://i.pinimg.com/564x/d9/6b/c8/d96bc8b9643f8790f90c810e815241f3.jpg');
+        // background-size: cover;
+        // text-shadow: black 1px 0 10px;
         .content{
             // margin-top: 60px;
             flex-wrap: wrap;
             // width: 100%;
-            height: calc(100svh - var(--menu-height));
+            height: calc(80svh - var(--menu-height));
             
             .name{
                 font-size: 45px;
                 text-shadow: none;
-                color: white;
+                // color: white;
                 opacity: 0.5;
                 -webkit-opacity: 0.5; /* WebKit browser e.g. Safari */
                 &.a{
@@ -268,20 +307,21 @@ and (max-width: 64em) {
                     left: -70px;
                 }
                 &.v{
-                    top: 70svh;
+                    top: 60svh;
                     right: -75px;
                 }
             }
             .std{
                 order: -1;
-                height: 100%;
+                padding: 2rem;
+                // height: 100%;
               .monogram{
                     margin: 20px;
                     margin-bottom: 10px;
                     // img{
-                        height:100px;
+                        height:150px;
                         width:150px;
-                        background-image: url('~src/assets/images/av-logo-white.png');
+                        // background-image: url('~src/assets/images/av-logo-white.png');
                     // }
                 } 
                 .date{
@@ -307,7 +347,7 @@ and (max-width: 64em) {
                 }
                 .divider{
                     margin: 5px;
-                    border-color: white;
+                    // border-color: white;
                 }
                 .info{
                     margin: 1.5rem;
@@ -328,6 +368,27 @@ and (max-width: 64em) {
             
         }
     }
-    
+    .mobile-photo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $sage;
+        height: 100svh;
+        width: 100vw;
+        .photo{
+           width: 100%; /* Set the desired width */
+            height: 100%; /* Set the desired height */
+            // overflow: hidden; /* Ensure the image does not overflow the container */
+            // box-shadow: -50px -50px 0 -40px $rust, 50px 50px 0 -40px $rust;
+            // margin: 10px;
+            img {
+                width: 100%; /* Make the image fill the container horizontally */
+                height: 100%; /* Make the image fill the container vertically */
+                object-fit: cover; /* Scale the image to cover the entire container */
+                
+              } 
+        }
+        
+    }
 
 }

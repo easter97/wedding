@@ -43,7 +43,7 @@
       z-index: 999;
       height: 0px;
       position: fixed;
-      background-color: $accent;
+      background-color: $rust;
     //   border-bottom: 1px solid black;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
       overflow: hidden;
@@ -105,7 +105,7 @@
               }
         }
         &:hover{
-            color: black;
+            color: $coral;
         }
     }
   }
@@ -126,7 +126,7 @@
             width: 20px;
           }
           height: 0px;
-          background: $accent;
+          background: $rust;
           .center h1{
               font-size: 20px;
               color: white;

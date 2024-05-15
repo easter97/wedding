@@ -69,13 +69,19 @@
     font-family: 'Magic Bright', sans-serif;
     letter-spacing: 1px;
     text-align: center;
-    color: $accent;
     font-weight: normal;
+  }
+  h2{
+    color: $forest;
+  }
+  h3,h4{
+    color: $rose
   }
   h5,h6{
     font-family: 'Ethereal', serif;
     letter-spacing: 1px;
     text-align: center;
+    color: $rust;
   }
   p{
     font-family: "Lora", serif;
@@ -105,17 +111,17 @@
     line-height: 25px;
     cursor: pointer;
     &:hover{
-      background-color: $accent;
+      background-color: $terracotta;
       color: white;
     }
   }
   a:not(:has(button)){
-    color: $accent;
+    color: $rust;
     &:visited{
-      color: $accent;
+      color: $rust;
     }
     &:hover{
-      color: $accent-dark;
+      color: $terracotta;
     }
   }
   a:has(button){

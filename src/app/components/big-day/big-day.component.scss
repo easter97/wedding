@@ -7,7 +7,7 @@
         justify-content: space-between;
         flex-direction: column;
         // padding-top: 81px;
-        background-image: url('~src/assets/images/beach-background.jpg');
+        background-image: url('https://muralsyourway.vtexassets.com/arquivos/ids/233673/Green-Leaves-Of-Monstera-Philodendron-Wall-Mural.jpg?v=638164487524500000');
         background-size: cover; /* Ensures the background image covers the entire container */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the background image from repeating vertically */
@@ -32,6 +32,10 @@
     .header{
         h5{
             text-transform: uppercase;
+            color: black;
+        }
+        h1{
+            // color: $forest;
         }
     }
     .info{
@@ -89,19 +93,19 @@
                 .name,.title{
                     text-align: center;
                     // margin: 5px;
-                    font-size: .8rem;
+                    font-size: .9rem;
                 }
                 .name{
-                    color: $accent;
-                    font-family: "Quackey";
+                    // color: $navy;
+                    font-family: "Ethereal";
                     margin: 3px;
                 }
                 .title{
-                    color: $dark-background;
+                    color: $rust;
                     font-family: "Kerad";
                     font-style: italic;
                     text-transform: uppercase;
-                    font-size: 11px;
+                    font-size: .75rem;
                 }
             }
         }
@@ -139,18 +143,22 @@
     and (orientation : portrait) {
         .container{
             height: auto;
+            min-height: 100svh;
             .content{
                 flex-wrap: wrap;
                 width: 90%;
+                height: 100svh;
             } 
         }
         .info{
             flex-wrap: wrap;
             margin: 10px;
+            height: auto;
         }
         .details{
             width:100%;
             margin: 10px;
+            height: auto;
         }
         
     }

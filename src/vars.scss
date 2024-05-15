@@ -1,5 +1,5 @@
 // colors
-$background: #22272b;
+
 $sky-dark: #454f57;
 $moon: #fdfce8;
 $peak: #efdbd8;
@@ -8,8 +8,19 @@ $menu: #ebe7e2;
 $light-background: #f7f5f3;
 $neutral-background: #f1eeea;
 $dark-background: #bcb8b4;
-$accent: #819171;
+$accent: #777a5e;
 $accent-dark: #67745a;
+
+$navy: #30354B;
+$forest: #295427;
+$sage: #777a5e;
+$sand: #d6cdc2;
+$dune: #C3A483;
+$coral: #E1AA8E;
+$rose: #bb7b6d;
+$rust: #b45434;
+$terracotta: #8A3519;
+$background: $navy;
 :root {
     --menu-height: 81px;
   }

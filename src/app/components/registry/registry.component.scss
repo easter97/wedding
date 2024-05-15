@@ -69,10 +69,11 @@ and (orientation : portrait) {
     .container{
         .content{
             width: 100%;
+            flex-wrap: wrap;
         }
         .image{
             img{
-                height: 60svh;
+                height: 50svh;
                 width: auto;
             }
         } 
