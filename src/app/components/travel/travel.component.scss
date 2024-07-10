@@ -16,6 +16,49 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        &.updates-preview{
+            min-height: unset;
+            padding-top: unset;
+            padding: 1rem;
+            margin-top: var(--menu-height);;
+            background-color: $rose;
+            color: $neutral-background;
+            .divider{
+                width: 75%;
+                height: 0px;
+                margin: 10px;
+                border-top: 1px solid $neutral-background;            
+            }
+            h4{
+                text-transform: uppercase;
+                color: $neutral-background;
+                // font-style: italic;
+                margin-bottom: 50px;
+            }
+            .update-title{
+                color: $neutral-background;
+            }
+            .update-body{
+                width: 80%;
+                text-align: justify;
+            }
+            .date{
+                text-transform: uppercase;
+                color: $neutral-background;
+                font-size: .75rem;
+            }
+            .updates-nav{
+                display: flex;
+                *{
+                    margin: 1rem;
+                }
+                p{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
         &.faq{
             justify-content: flex-start;
             app-faqs{
