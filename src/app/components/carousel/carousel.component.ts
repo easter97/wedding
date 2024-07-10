@@ -9,7 +9,11 @@ import { interval } from 'rxjs';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
-  images: string[] = ['https://i.pinimg.com/564x/d9/6b/c8/d96bc8b9643f8790f90c810e815241f3.jpg','https://images.squarespace-cdn.com/content/v1/62965e811f7199435ae4367a/1698538903095-QWNMJ4VQJ59H6DCQLDMU/4+tips+on+How+to+Style+an+engagement+session+-+houston+wedding+and+couples+photographer+%288%29.jpg?','https://source.unsplash.com/random/400x400/?couple&1',];
+  images: string[] = [
+  "./assets/images/gallery/engagement-4.jpg",
+  "./assets/images/gallery/engagement-2.jpg",
+  "./assets/images/gallery/engagement-3.jpg",
+  "./assets/images/gallery/engagement-7.jpg",];
   currentIndex = 0;
 
   constructor() { }

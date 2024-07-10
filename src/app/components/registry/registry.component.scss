@@ -15,18 +15,25 @@
     }
     .image{
         position: relative;
+        height: 600px;
+        width: 400px;
+        min-width: 400px;
         img{
-            height: 75svh;
-                width: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images cover the entire container while maintaining aspect ratio */
         }
         .text{
             position: absolute;
-            top: 50%;
+            top: 10%;
             left: 50%;
             transform: translate(-50%, -50%);
             // background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
             padding: 20px;
-            color: white;
+            color: $forest;
             text-align: center;
             text-transform: uppercase;
             font-size: 50px;
@@ -50,8 +57,8 @@
         }
         .image{
             img{
-                width: 250px;
-                        height: auto;
+                // width: 250px;
+                //         height: auto;
             }
         } 
         .message{
@@ -73,8 +80,8 @@ and (orientation : portrait) {
         }
         .image{
             img{
-                height: 50svh;
-                width: auto;
+                // height: 50svh;
+                // width: auto;
             }
         } 
         .message{
@@ -98,8 +105,8 @@ and (orientation : landscape) {
         
         .image{
             img{
-                height: 60svh;
-                width: auto;
+                // height: 60svh;
+                // width: auto;
             }
         } 
         .message{
