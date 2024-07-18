@@ -2,10 +2,14 @@
   <div class=container>
     <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
     <h1>So, are you in?</h1>
-      <iframe 
+      <iframe #myIframe
           src="https://avclub.anrsvp.com/?embed=true"
           >
   </iframe>
+  <!-- <div class="thanks" *ngIf="isThankYouPresent">
+    Your response has been recorded!
+  </div> -->
+  <!-- <button (click)="showFrame()"></button> -->
   <add-to-calendar-button 
   name="Amanda + Volney Wedding"
   description="Join us in Cancun for our wedding!"
