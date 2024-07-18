@@ -19,11 +19,12 @@ export class FaqsComponent implements OnInit {
         },
         {
           question: "Can I bring a plus one?",
-          answer: `  Limited to the number of guests listed on your invitation / rsvp      `
+          answer: `We are thrilled to share our special day with you! Please note that the number of guests is limited to those listed on your invitation. If a plus one is included, their name or "and guest" will be specified on the invitation. This helps us ensure that we can accommodate everyone comfortably and make the day as special as possible for all attendees.`
         },
         {
           question: "Can I bring my children?",
-          answer: `  nope      `
+          answer: `<p>Our chosen resort in Cancun is an adults-only venue, so unfortunately, we are unable to accomodate children at our wedding. This includes all children under the age of 18.</p>
+          <p>For those above the age of 18, only individuals whose names are specifically included on the invitation are invited. While we'll miss all your little ones, we look forward to celebrating with the whole family stateside.</p>`
         },
       ],
     },
@@ -43,11 +44,11 @@ export class FaqsComponent implements OnInit {
         },
         {
           question: "Do I need to book through the travel agent?",
-          answer: `no`
+          answer: `Our guests will be responsible for booking air travel themselves to allow for the greatest flexibility in schedule and payment options (miles, points, etc.). We do recommend our guests book the lodging through our travel agents as we have reserved rooms at a discounted rate. This also helps the bride and groom keep track of confirmed bookings and guest schedules.`
         },
         {
           question: "How long should I stay at the resort?",
-          answer: `  The length of your stay is entirely up to you and your party. We would love for our guests to use this opportunity to relax and vacation as long as they would like. You can check the schedule of events on this site to determine when you would like to arrive so you can RSVP accordingly. We recommend our guests arrive no later than the morning of the ceremony to enjoy the resort and ensure room for any potential complications with travel.      `
+          answer: `<p>The length of your stay is entirely up to you and your party. We would love for our guests to use this opportunity to relax and vacation as long as they would like. You can check the schedule of events on this site to determine when you would like to arrive so you can RSVP accordingly. </p> <p>We recommend our guests plan for a three days stay to enjoy all the resort has to offer and ensure room for any potential complications with travel.      </p>`
         },
       ]
     },
@@ -56,13 +57,13 @@ export class FaqsComponent implements OnInit {
       questions: [
         {
           question: "Will your wedding be indoors or outdoors?",
-          answer: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
-          excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
-          veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?`
+          answer: `<p>Barring any inclimate weather, our ceremony will be held on the beach. Our guests should wear attire that is comfortable for the outdoors and sand. The reception will also be held outside, but on a paved area away from the beach.</p>
+          <p>If the weather is not cooperative, our backup ceremony and reception will be either indoors or in a covered area.</p>`
         },
         {
           question: "What will the weather be like in the area?",
-          answer: `idk`
+          answer: `<p>In October, Cancun experiences warm temperatures, with daytime highs around 88°F (31°C) and nighttime lows around 75°F (24°C). It's part of the wet season, so you can expect rain on about 11 to 23 days of the month, often in short, heavy showers. Humidity is high, often making it feel hotter than the actual temperature. The sea remains warm at approximately 84°F (28°C), making it ideal for swimming and water activities.</p>
+          <p>Despite the rain, there are plenty of sunny periods, averaging about 8 hours of sunshine per day.</p>`
         },
         {
           question: "Do I need a passport to travel to Mexico?",
@@ -108,7 +109,8 @@ export class FaqsComponent implements OnInit {
         },
         {
           question: "I have more questions about your wedding, who can I reach out to?",
-          answer: `  For questions regarding travel we advise you to contact our travel agent [travel agent info] at (123) 456-7890 or travel@agent.com. For questions about the resort you can reach out to [Secrets contact] at secrets@questions.com. If you need to contact us directly regarding the wedding you can email wedding@amandaeaster.com.      `
+          answer: `<p>Updates regarding travel, booking, deadlines, and more will be posted above this FAQ section periodically. You can also subscribe to these updates by including your email address in your RSVP.</p>
+          <p>For questions regarding travel or the resort we advise you to contact our travel agent Lety at hola@holaweddings.com, 1-888-472-7077 or +52 5510361373. If you need to contact us directly regarding the wedding you can email wedding@amandaeaster.com.      </p>`
         },
       ]
     },
