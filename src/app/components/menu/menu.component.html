@@ -30,17 +30,24 @@
     <!-- <img src="./assets/images/av-logo-white.png" >
     <h1>Volney</h1> -->
   </div>
-  <div class=menu-items [class.expanded]="displayMenu" >
+  <div class=body>
+    <div class=menu-items [class.expanded]="displayMenu" >
     <a pageScroll href="#home" [class.active]="this.activeSection=='home'" (click)="toggleMenu()">home</a>
     
     <a pageScroll href="#bigDay" [pageScrollAdjustHash]="true" [class.active]="this.activeSection=='bigDay'" (click)="toggleMenu()">the big day</a>
     <a pageScroll href="#ourStory" [pageScrollAdjustHash]="true" [class.active]="this.activeSection=='ourStory'" (click)="toggleMenu()">our story</a>
-  <a pageScroll href="#schedule" [pageScrollAdjustHash]="true" [class.active]="this.activeSection=='schedule'" (click)="toggleMenu()">events</a>
-  <a pageScroll href="#registry" [pageScrollAdjustHash]="true" [class.active]="this.activeSection=='registry'" (click)="toggleMenu()">registry</a>
-  <a pageScroll href="#travel" [pageScrollAdjustHash]="true" [class.active]="this.activeSection=='travel'" (click)="toggleMenu()">travel</a>
-  <a pageScroll href="#rsvp" [pageScrollAdjustHash]="true" [class.active]="this.activeSection=='rsvp'" (click)="toggleMenu()">rsvp</a>
-  <a pageScroll href="#photos" [pageScrollAdjustHash]="true" [class.active]="this.activeSection=='photos'" (click)="toggleMenu()">photos</a>  
+    <a pageScroll href="#travel" [pageScrollAdjustHash]="true" [class.active]="this.activeSection=='travel'" (click)="toggleMenu()">travel</a>
+    <a pageScroll href="#schedule" [pageScrollAdjustHash]="true" [class.active]="this.activeSection=='schedule'" (click)="toggleMenu()">events</a>
+    <a pageScroll href="#registry" [pageScrollAdjustHash]="true" [class.active]="this.activeSection=='registry'" (click)="toggleMenu()">registry</a>
+    <a pageScroll href="#rsvp" [pageScrollAdjustHash]="true" [class.active]="this.activeSection=='rsvp'" (click)="toggleMenu()">rsvp</a>
+    <a pageScroll href="#photos" [pageScrollAdjustHash]="true" [class.active]="this.activeSection=='photos'" (click)="toggleMenu()">photos</a>  
+    </div>
+    <div class="logo">
+      <div class=monogram></div>
+    </div>
+    
   </div>
+
   
 </div>
 <!-- <div class=menu-container>

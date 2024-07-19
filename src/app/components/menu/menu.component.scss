@@ -117,6 +117,27 @@
           display: none;
       }
       .mobile-header{
+          .body{
+              display: flex;
+          }
+          .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+          }
+        .monogram{
+            margin: 20px;
+            margin-bottom: 10px;
+            // img{
+                height:150px;
+                min-height: 150px;
+                width:150px;
+                background-image: url('~src/assets/images/av-logo-white.png');
+                background-size: cover;
+            // }
+           
+        } 
           .icon{
             fill: white;
             position: absolute;
@@ -136,7 +157,7 @@
             display: block;
             height: 45px;  
             &:has(.menu-items.expanded){
-                height: 465px;
+                height: 400px;
             }
             img{
                 width: 55px;
@@ -164,13 +185,14 @@
           display: flex;
           flex-direction: column;
           transition: height 200ms ease;
+          width: 40%;
           img{
             width: 55px;
             height: 55px;
             margin: 5px 10px 5px 10px ;
         }
           &.expanded{
-              height: 422px;
+              height: 300px;
                 // padding-top: 45px;
           }
       }
@@ -179,10 +201,88 @@
   and (min-device-width : 768px) 
   and (max-device-width : 1024px) 
   and (orientation : portrait) {
-      .header{
-          a{
-              font-size: 12px;
+    .header{
+        display: none;
+    }
+    .mobile-header{
+        .body{
+            display: flex;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+        }
+        .monogram{
+            margin: 20px;
+            margin-bottom: 10px;
+            // img{
+                height:150px;
+                min-height: 150px;
+                width:150px;
+                background-image: url('~src/assets/images/av-logo-white.png');
+                background-size: cover;
+            // }
+           
+        } 
+        .icon{
+          fill: white;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          height: 20px;
+          width: 20px;
+        }
+        height: 0px;
+        background: $rust;
+        .center h1{
+            font-size: 20px;
+            color: white;
+            font-family: "Tropical", serif;
+        }
+      //   &.expanded{
+          display: block;
+          height: 45px;  
+          &:has(.menu-items.expanded){
+              height: 400px;
           }
+          img{
+              width: 55px;
+              height: 55px;
+              margin: 5px 10px 5px 10px ;
+          }
+          a{
+              color: white;
+              &.visited{
+                  color: white;
+              }
+              &.active{
+                  &::before{
+                      border-top: 1px solid white;
+                  }
+              }
+          }
+      //   }
+        
+        
+    }
+    .menu-items{
+        height: 0px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: height 200ms ease;
+        width: 40%;
+        img{
+          width: 55px;
+          height: 55px;
+          margin: 5px 10px 5px 10px ;
       }
+        &.expanded{
+            height: 300px;
+              // padding-top: 45px;
+        }
+    }
   }
   
