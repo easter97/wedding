@@ -57,6 +57,15 @@
     h2{
       text-transform: uppercase;
     }
+    .icon{
+      width:100%;
+      display: flex;
+      justify-content: center;
+    }
+    .faq-icon{
+      color: $forest;
+      margin: 1rem;
+    }
 
 
     .example-accordion {

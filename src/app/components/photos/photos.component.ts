@@ -11,6 +11,7 @@ export class PhotosComponent implements OnInit {
     "./assets/images/gallery/amalfi-1.JPG",
     "./assets/images/gallery/amalfi-2.JPG",
     "./assets/images/gallery/amalfi-3.JPG",
+    "./assets/images/gallery/austin.JPG",
     "./assets/images/gallery/christmas.JPG",
     "./assets/images/gallery/easter.jpg",
     "./assets/images/gallery/engagement-1.jpg",

@@ -1,6 +1,7 @@
 
     <ng-container *ngFor="let category of faqs">
       <cdk-accordion class="example-accordion">
+        <div class=icon><i class="{{category.icon}} fa-lg faq-icon"></i></div>
         <h2>{{category.name}}</h2>
         <cdk-accordion-item
           *ngFor="let faq of category.questions"

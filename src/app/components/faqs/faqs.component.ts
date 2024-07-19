@@ -10,6 +10,7 @@ export class FaqsComponent implements OnInit {
   faqs = [
     {
       name: 'RSVP',
+      icon: 'fa-solid fa-envelopes-bulk',
       questions: [
         {
           question: "What date should I RSVP by?",
@@ -29,7 +30,8 @@ export class FaqsComponent implements OnInit {
       ],
     },
     {
-      name: 'booking',
+      name: 'travel & booking',
+      icon: 'fa-solid fa-hotel',
       questions: [
         {
           question: "How much should I expect to spend on travel and lodging?",
@@ -54,6 +56,7 @@ export class FaqsComponent implements OnInit {
     },
     {
       name: 'Location',
+      icon: 'fa-regular fa-map',
       questions: [
         {
           question: "Will your wedding be indoors or outdoors?",
@@ -76,7 +79,8 @@ export class FaqsComponent implements OnInit {
       ]
     },
     {
-      name: 'miscellanous', 
+      name: 'miscellaneous', 
+      icon: 'fa-solid fa-suitcase',
       questions: [
         {
           question: "What is the dress code for your wedding?",

@@ -1,10 +1,11 @@
 @import '../../../vars.scss';
 .container{
     min-height: 100vh;
-    background: linear-gradient(0deg, white 75%, $neutral-background 75%);
+    background: linear-gradient(0deg, $sage 70%, $neutral-background 70%);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     .content{
         display: flex;
         align-items: center;
@@ -15,9 +16,9 @@
     }
     .image{
         position: relative;
-        height: 600px;
-        width: 400px;
-        min-width: 400px;
+        height: 35rem;
+        width: 25rem;
+        min-width: 25rem;
         img{
             position: absolute;
             top: 0;
@@ -40,10 +41,11 @@
         }
     }
     .message{
-        margin: 100px;
+        margin-left: 5rem;
         max-width: 600px;
         text-align: center;
         line-height: 40px;
+        color: $neutral-background;
         button{
             font-size: 20px;
         }

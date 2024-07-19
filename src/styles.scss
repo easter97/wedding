@@ -110,6 +110,10 @@
     font-size: 20px;
     line-height: 25px;
     cursor: pointer;
+    &.light{
+      background-color: $neutral-background;
+      color: $forest;
+    }
     &:hover{
       background-color: $terracotta;
       color: white;
@@ -133,6 +137,9 @@
     &:hover{
       color: white;
     }
+  }
+  .fa-solid, .fa-regular{
+    color: $sand;
   }
 /* Small devices such as large phones (640px and up) */
 @media only screen and (min-width: 40em) {

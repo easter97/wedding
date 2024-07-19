@@ -1,5 +1,6 @@
 <div class=container>
     <div class=content>
+        <i class="fa-solid fa-plane-up fa-2x"></i>
         <h1>Travel</h1>
         <div class=desc>For your convience, we have retained the services of a travel agent to assist in booking your transportation and lodging.</div>
         <div class=info>
@@ -7,7 +8,7 @@
 
                 <div class=text>
                     <h2>Resort</h2>
-                    <h4>Lodging</h4>
+                    <h4>Booking & Room Block</h4>
                     <p>We are excited to invite you to our wedding at the fabulous Secrets Maroma hotel in Riviera Maya! We have partnered with Hola Weddings and they have helped us secure rooms at the hotel at preferential rates. They will also assist you with any questions, send you hints and tips about travel, and help you schedule your airport transportation.</p>
                     <p>Our booking website can be found below. Please use this site to book your rooms.</p>
                     
@@ -50,6 +51,7 @@
         </div>
     </div>
     <div class="updates-preview content" *ngIf="updates.length != 0">
+        <i class="fa-solid fa-comment-dots fa-2x"></i>
         <h1>Updates</h1>
         <h4>Check here to find the latest updates on travel, booking, and more. You can recieve these updates via email by including your email address in your RSVP.</h4>
         <ng-container *ngIf="updates.length > 0">
@@ -67,6 +69,7 @@
         </div>
     </div>
     <div class='faq content'>
+        <i class="fa-solid fa-person-circle-question fa-2x"></i>
         <h1>Frequently Asked Questions</h1>
         <h4>Click to see responses</h4>
         <app-faqs></app-faqs>
