@@ -137,8 +137,12 @@
           
           
     }
+    
 }
 .mobile-photo{
+    display: none;
+}
+.overlay{
     display: none;
 }
 
@@ -148,11 +152,11 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
     .mobile-photo{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $sage;
-        height: 100svh;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        display: block;
+        height: 100vh;
         width: 100vw;
         .photo{
            width: 100%; /* Set the desired width */
@@ -167,6 +171,37 @@ and (orientation : portrait) {
                 
               } 
         }
+        .overlay{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            opacity: 0.95;
+            -webkit-opacity: 0.95; /* WebKit browser e.g. Safari */
+            color: $neutral-background;
+            position: absolute;
+            top: 10%;
+        }
+        .monogram{
+            margin: 20px;
+            margin-bottom: 10px;
+            // img{
+                height:350px;
+                min-height: 350px;
+                width:350px;
+                background-image: url('~src/assets/images/av-logo-white.png');
+                background-size: cover;
+            // }
+           
+        } 
+        .date{
+            font-size:2rem;
+            letter-spacing: 10px;
+            margin: 5px;
+            opacity: 0.5;
+            -webkit-opacity: 0.5; /* WebKit browser e.g. Safari */
+        } 
         
     }
     .home-container{
@@ -285,21 +320,14 @@ and (max-width: 64em) {
 
 @media (max-width: 768px) {
     .home-container{
-        padding-top: var(--menu-height);
-        // color: white;
-        // background-image: url('https://i.pinimg.com/564x/d9/6b/c8/d96bc8b9643f8790f90c810e815241f3.jpg');
-        // background-size: cover;
-        // text-shadow: black 1px 0 10px;
+
         .content{
-            // margin-top: 60px;
             flex-wrap: wrap;
-            // width: 100%;
-            height: calc(90svh - var(--menu-height));
+            height: 90svh;
             
             .name{
                 font-size: 45px;
                 text-shadow: none;
-                // color: white;
                 opacity: 0.5;
                 -webkit-opacity: 0.5; /* WebKit browser e.g. Safari */
                 &.a{
@@ -351,7 +379,7 @@ and (max-width: 64em) {
                     // border-color: white;
                 }
                 .info{
-                    margin: 1.5rem;
+                    margin: 1rem;
                     font-size: 12px;
                     line-height: 20px;
                     p{
@@ -369,11 +397,58 @@ and (max-width: 64em) {
             
         }
     }
-    .mobile-photo{
+    .mobile-background{
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        background-color: $sage;
+        .overlay{
+            display: block;
+            opacity: 0.5;
+            -webkit-opacity: 0.5; /* WebKit browser e.g. Safari */
+            color: $neutral-background;
+            position: relative;
+            top: 15%;
+        }
+        .monogram{
+            margin: 20px;
+            margin-bottom: 10px;
+            // img{
+                height:150px;
+                min-height: 150px;
+                width:150px;
+                background-image: url('~src/assets/images/av-logo-white.png');
+                background-size: cover;
+            // }
+           
+        } 
+        .date{
+            font-size:1rem;
+            letter-spacing: 10px;
+            margin: 5px;
+            opacity: 0.5;
+            -webkit-opacity: 0.5; /* WebKit browser e.g. Safari */
+        } 
+        // padding-top: var(--menu-height);
+        width: 100%; /* Set the desired width for the event container */
+            height: 100vh; /* Set the desired height for the event container */
+            // overflow: hidden; /* Hide any content that exceeds the container dimensions */
+            // position: absolute; /* Establish a positioning context */
+        // .image{
+        //     width: 100%;
+        //     height: 100%;
+            background-image: url('https://i.pinimg.com/564x/6d/c2/64/6dc264af09bddb53c629fef88f8e1c4f.jpg');
+            background-size: cover;
+        // }
+            
+    }
+    .hide-mobile{
+        display: none;
+    }
+    .mobile-photo{
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        display: block;
         height: 100vh;
         width: 100vw;
         .photo{
@@ -389,6 +464,37 @@ and (max-width: 64em) {
                 
               } 
         }
+        .overlay{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            opacity: 0.95;
+            -webkit-opacity: 0.95; /* WebKit browser e.g. Safari */
+            color: $neutral-background;
+            position: absolute;
+            top: 10%;
+        }
+        .monogram{
+            margin: 20px;
+            margin-bottom: 10px;
+            // img{
+                height:150px;
+                min-height: 150px;
+                width:150px;
+                background-image: url('~src/assets/images/av-logo-white.png');
+                background-size: cover;
+            // }
+           
+        } 
+        .date{
+            font-size:1rem;
+            letter-spacing: 10px;
+            margin: 5px;
+            opacity: 0.5;
+            -webkit-opacity: 0.5; /* WebKit browser e.g. Safari */
+        } 
         
     }
 
