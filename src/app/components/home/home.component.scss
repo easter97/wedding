@@ -32,7 +32,7 @@
 
     .content{
         display: flex;
-        width: 95%;
+        width: 50%;
         justify-content: space-around;
         align-items: center;
         height: 80vh;
@@ -98,6 +98,7 @@
                 } 
                 h1{
                     margin: .5rem;
+                    color: black;
                 } 
             }
             .divider{
@@ -164,6 +165,7 @@
 }
 .info{
     height: 80vh;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -356,34 +358,27 @@ and (orientation : portrait) {
         
     }
     .home-container{
+        flex-wrap: wrap;
         // color: white;
         // background-image: url('https://images.squarespace-cdn.com/content/v1/62965e811f7199435ae4367a/1698538903095-QWNMJ4VQJ59H6DCQLDMU/4+tips+on+How+to+Style+an+engagement+session+-+houston+wedding+and+couples+photographer+%288%29.jpg');
         // background-size: cover;
         // text-shadow: black 1px 0 10px;
+        .info{
+            width: 100%;
+            height: unset;
+        }
         .content{
+            width: 100%;
             .name{
                 // font-size: 45px;
                 text-shadow: none;
                 // color: white;
                 opacity: 0.5;
                 -webkit-opacity: 0.5; /* WebKit browser e.g. Safari */
-                // &.a{
-                //     // top: 100px;
-                //     left: -175px;
-                // }
-                // &.v{
-                //     // top: 70svh;
-                //     right: -175px;
-                // }
+
             }
-            // .std{
-            //     .monogram{
-            //         background-image: url('~src/assets/images/av-logo-white.png');
-            //     }
-            //     .divider{
-            //         border-color: white;
-            //     }
-            // }
+
+
             .photo{
                 display:none;
             }  
@@ -472,11 +467,16 @@ and (max-width: 64em) {
 @media (max-width: 768px) {
     .home-container{
         flex-wrap: wrap;
+        .info{
+            width: 100%;
+            height: unset;
+            margin-bottom: 350px;
+        }
 
         .content{
             flex-wrap: wrap;
-            height: 90svh;
-            
+            // height: 90svh;
+            width: 100%;
             .name{
                 font-size: 45px;
                 text-shadow: none;
@@ -491,6 +491,7 @@ and (max-width: 64em) {
                     right: -75px;
                 }
             }
+           
             .std{
                 order: -1;
                 padding: 2rem;

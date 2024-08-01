@@ -43,8 +43,11 @@
       z-index: 999;
       height: 0px;
       position: fixed;
-      background-color: $sand;
-    backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.2);
+    //   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    //   border: 1px solid rgba(255, 255, 255, 0.3);
     //   border-bottom: 1px solid black;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
       overflow: hidden;
@@ -92,7 +95,7 @@
             color: black;
         }
         &.active{
-            color: $sage;
+            color: $rust;
             // &::before {
             //     content: "";
             //     align-self: center;
@@ -172,9 +175,7 @@
                     color: white;
                 }
                 &.active{
-                    &::before{
-                        border-top: 1px solid white;
-                    }
+                    color: $dark-background
                 }
             }
         //   }
@@ -260,9 +261,7 @@
                   color: white;
               }
               &.active{
-                  &::before{
-                      border-top: 1px solid white;
-                  }
+                  color: $dark-background;
               }
           }
       //   }

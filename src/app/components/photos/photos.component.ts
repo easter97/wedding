@@ -44,7 +44,6 @@ export class PhotosComponent implements OnInit {
     "../../../assets/images/gallery/AllieRyannPhoto-DallasWeddingPhotographer-3213.jpg",
     "../../../assets/images/gallery/AllieRyannPhoto-DallasWeddingPhotographer-3218.jpg",
     "../../../assets/images/gallery/AllieRyannPhoto-DallasWeddingPhotographer-3234.jpg",
-    "../../../assets/images/gallery/AllieRyannPhoto-DallasWeddingPhotographer-3349.jpg",
     "../../../assets/images/gallery/AllieRyannPhoto-DallasWeddingPhotographer-3395.jpg",
     "../../../assets/images/gallery/AllieRyannPhoto-DallasWeddingPhotographer-3409.jpg",
     "../../../assets/images/gallery/AllieRyannPhoto-DallasWeddingPhotographer-3425.jpg",
