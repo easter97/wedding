@@ -43,7 +43,8 @@
       z-index: 999;
       height: 0px;
       position: fixed;
-      background-color: $rust;
+      background-color: $sand;
+    backdrop-filter: blur(10px);
     //   border-bottom: 1px solid black;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
       overflow: hidden;
@@ -62,20 +63,21 @@
       }
       &.expanded{
         //   visibility: visible;
-          height: 80px;
+          height: 50px;
       }
       img{
-          width: 60px;
-          height: 60px;
+          width: 40px;
+          height: 40px;
       }
       a{
           margin:.75rem;
-        color:white;
+        // color:white;
         text-decoration: none;
         text-transform: uppercase;
         font-style: italic;
         font-family: "Kerad";
         display: flex;
+        color: black;
         &::before {
             content: "";
             align-self: center;
@@ -87,25 +89,25 @@
                 margin-right: 8px;
           }
         &.visited{
-            color: white;
+            color: black;
         }
         &.active{
-            
-            &::before {
-                content: "";
-                align-self: center;
-                // background-color: $moon;
-                border-top: 1px solid white;
-                height: 0px;
-                width: 15px;
-                // border-radius: 100%;
-                display: inline-block;
-                margin-right: 8px;
-                // box-shadow: 0 0 5px lighten(whitesmoke, 30%), 0 0 10px 1px whitesmoke;
-              }
+            color: $sage;
+            // &::before {
+            //     content: "";
+            //     align-self: center;
+            //     // background-color: $moon;
+            //     border-top: 1px solid white;
+            //     height: 0px;
+            //     width: 15px;
+            //     // border-radius: 100%;
+            //     display: inline-block;
+            //     margin-right: 8px;
+            //     // box-shadow: 0 0 5px lighten(whitesmoke, 30%), 0 0 10px 1px whitesmoke;
+            //   }
         }
         &:hover{
-            color: $coral;
+            color: $terracotta;
         }
     }
   }

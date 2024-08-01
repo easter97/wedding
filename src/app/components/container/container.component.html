@@ -5,9 +5,7 @@
  <div >
 
     <app-menu></app-menu>
-    <app-home id=home (showRsvp)="displayRsvp()"></app-home>
-    
-    <app-big-day id=bigDay></app-big-day>
+    <app-home (showRsvp)="displayRsvp()" (showHome)="displayHome()"></app-home>
     <app-eclipse id=ourStory></app-eclipse>
     <app-travel id=travel></app-travel>
     <app-schedule id=schedule></app-schedule>

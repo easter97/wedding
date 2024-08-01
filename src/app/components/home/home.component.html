@@ -3,16 +3,24 @@
         <app-carousel></app-carousel>
       </div>
     <div class=overlay>
-        <div class=monogram>
-        <!-- <img src="./assets/images/AV-clear.png" />  -->
+
+        <div class="logo">
+            <div class=monogram>
+                <!-- <img src="./assets/images/AV-clear.png" />  -->
+                </div>
+                <div class=date>
+                    10.11.2025
+                </div>  
         </div>
-        <div class=date>
-            10.11.2025
-        </div>   
+        <i class="fa-solid fa-angle-down fa-beat fa-lg" (click)="displayHome()"></i> 
     </div>
     
   </div>
-<div class=home-container>
+  <!-- <div class=header-photo>
+    <div class=monogram>
+        </div>
+  </div> -->
+<div class=home-container id=home>
     <div class=content>
         <!-- <div class=photo>
             <img class=image src="https://images.squarespace-cdn.com/content/v1/62965e811f7199435ae4367a/1698538903095-QWNMJ4VQJ59H6DCQLDMU/4+tips+on+How+to+Style+an+engagement+session+-+houston+wedding+and+couples+photographer+%288%29.jpg?"/>
@@ -45,54 +53,75 @@
             <!-- <div class='name a'>Amanda</div>
         <div class='name v'>Volney</div> -->
         </div>
-        <div class=photo>
+        <!-- <div class=photo>
             <app-carousel></app-carousel>
-        </div>
+        </div> -->
         
     </div>
-
-
-    <!-- <div class=columns>
-        <div class="details column">
-            <div class=vertical-line></div>
-            <h2>The Details</h2>
-            <div class="detail">
-                <div class=detail-header>ceremony:</div>
-                <p>8/01/25 @ Excellence Playa Mujeres</p>
+    <div class=info>
+        <div class=details>
+            <h2>Our Wedding Party</h2>
+            <div class="party">
+                <div class=person>
+                    <div class=image>
+                      <img src="https://source.unsplash.com/random/300x300/?people" />  
+                    </div>
+                    
+                    <div class=name>Ezra Richardson</div>
+                    <div class=title>Best Man</div>
+                </div>
+                <div class=person>
+                    <div class=image>
+                      <img src="https://source.unsplash.com/random/300x300/?people&1" />  
+                    </div>
+                    
+                    <div class=name>Eric Samuelson</div>
+                    <div class=title>Groomsman</div>
+                </div>
+                <div class=person>
+                    <div class=image>
+                      <img src="https://source.unsplash.com/random/300x300/?people&2" />  
+                    </div>
+                    
+                    <div class=name>Ethan Berney</div>
+                    <div class=title>Groomsman</div>
+                </div>
+                <div class=person>
+                    <div class=image>
+                      <img src="https://source.unsplash.com/random/300x300/?people&3" />  
+                    </div>
+                    
+                    <div class=name>Nic Rhodes</div>
+                    <div class=title>Officiant</div>
+                </div>
+                <div class=person>
+                    <div class=image>
+                      <img src="https://source.unsplash.com/random/300x300/?people&4" />  
+                    </div>
+                    
+                    <div class=name>Ali Henkemeyer</div>
+                    <div class=title>Maid of Honor</div>
+                </div>
+                <div class=person>
+                    <div class=image>
+                      <img src="https://source.unsplash.com/random/300x300/?people&5" />  
+                    </div>
+                    
+                    <div class=name>Abby Richardson</div>
+                    <div class=title>Bridesmaid</div>
+                </div>
+                <div class=person>
+                    <div class=image>
+                      <img src="https://source.unsplash.com/random/300x300/?people&6" />  
+                    </div>
+                    
+                    <div class=name>Marae Rhodes</div>
+                    <div class=title>Bridesmaid</div>
+                </div>
             </div>
-            <div class=detail>
-                <div class=detail-header>hotel info:</div>
-                <p>www.excellenceresorts.com</p>
-            </div>
-        </div>
-        <div class="photo column">
-
-        <div class=monogram>
-            <img src="./assets/images/av-logo-white.png" /> 
-        </div>
-            <img class=image src="https://images.squarespace-cdn.com/content/v1/62965e811f7199435ae4367a/1698538903095-QWNMJ4VQJ59H6DCQLDMU/4+tips+on+How+to+Style+an+engagement+session+-+houston+wedding+and+couples+photographer+%288%29.jpg?"/>
-            <div class=description>Amanda <span>+</span> Volney</div>
-            <div class=info>
-                <h2>Join Us</h2>
-                <span>10.11.2025</span>
-                <span class=divider></span>
-                <span>Playa Mujures, Cancun</span>
-                <span class=divider></span>
-                <span>5pm</span>
-            </div>
-        </div>
-        <div class="rsvp column">
-            <h2>We can't wait to celebrate with you</h2>
-            <div class=vertical-line></div>
-            <button (click)="displayRsvp()">RSVP</button>
-            
-        </div>
+        </div> 
+        <div class=divider></div>
+        <app-countdown></app-countdown>
     </div>
-     -->
 </div>
-<!-- <div class=mobile-photo>
-    <div class=photo>
-      <app-carousel></app-carousel>
-    </div>
-    
-</div> -->
+
