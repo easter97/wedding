@@ -194,9 +194,21 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
     .container{
         height: auto;
+        .content{
+            flex-wrap: wrap; 
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(0deg, $neutral-background 80%, $sand 80%);
+         }
+           .events{
+            width:100%;
+            margin-top: 1rem;
+        }
     }
-    .events{
-        width:100%;
+    
+    .image{
+        order: -1;
+        height: 55vh;
     }
     
 }
@@ -209,7 +221,6 @@ and (orientation : landscape) {
         height: auto;
     }
     .image{
-        order: -1;
         height: 55vh;
     }
 }
