@@ -58,14 +58,7 @@
             flex-wrap: wrap;
         }
         .image{
-            position: relative;
-    height: 450px;
-    width: 300px;
-    min-width: 300px;
-            img{
-                // width: 250px;
-                //         height: auto;
-            }
+            height: 55vh;
         } 
         .message{
             font-size: 14px;
@@ -85,10 +78,7 @@ and (orientation : portrait) {
             flex-wrap: wrap;
         }
         .image{
-            img{
-                // height: 50svh;
-                // width: auto;
-            }
+            height: 55vh;
         } 
         .message{
             font-size: 14px;
@@ -109,12 +99,6 @@ and (orientation : landscape) {
             flex-wrap: nowrap;
         }
         
-        .image{
-            img{
-                // height: 60svh;
-                // width: auto;
-            }
-        } 
         .message{
             font-size: 14px;
             line-height: 20px;
