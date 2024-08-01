@@ -50,4 +50,16 @@ export class ContainerComponent {
     
   }
 
+  displayHome(){
+    // console.log('display')
+    // this.showRsvp=true;
+    // setTimeout(()=>{
+        this.pageScrollService.scroll({
+        document: this.document,
+        scrollTarget: '#home',
+      });
+    // })
+    
+  }
+
 }

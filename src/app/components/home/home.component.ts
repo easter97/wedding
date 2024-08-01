@@ -8,6 +8,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   @Output() showRsvp = new EventEmitter<any>();
+  @Output() showHome = new EventEmitter<any>();
 
   constructor() { }
 
@@ -16,6 +17,10 @@ export class HomeComponent implements OnInit {
 
   displayRsvp(){
     this.showRsvp.emit();
+  }
+
+  displayHome(){
+    this.showHome.emit();
   }
 
 }

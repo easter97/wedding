@@ -56,6 +56,7 @@
     }
     h2{
       text-transform: uppercase;
+      color: $rose;
     }
     .icon{
       width:100%;
@@ -63,7 +64,7 @@
       justify-content: center;
     }
     .faq-icon{
-      color: $forest;
+      color: $rose;
       margin: 1rem;
     }
 
@@ -162,7 +163,7 @@
       .question-header:hover {
         cursor: pointer;
         .question{
-          color: $rose;
+          color: $rust;
         }
         .arrow-icon{
           svg{
