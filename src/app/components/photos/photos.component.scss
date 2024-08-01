@@ -6,8 +6,8 @@ img {
   .masonry {
     width: 60%;
       column-count: 3;
-      column-gap: 12px;
-      padding: 12px;
+      column-gap: 6px;
+      padding: 6px;
       
   }
   .container{
@@ -28,7 +28,7 @@ img {
   
   .masonry .mItem {
     display: inline-block;
-    margin-bottom: 12px;
+    margin-bottom: 3px;
     width: 100%;
   }
   
