@@ -1,8 +1,98 @@
 /* Layout */
 @import '../../../vars.scss';
+// keyframes
+@keyframes cresent {
+	0% {
+	  transform: translate(200px, -200px) scale(0.9);
+	  text-shadow: none;
+	  color: $neutral-background;
+	}
+	100% {
+	  transform: translate(0px, 0px) scale(1.02);
+	  text-shadow: 0 0 10px lighten($moon, 30%), 0 0 80px $moon;
+	  color: $background;
+	}
+	// 60% {
+	//   transform: translate(0px, 0px) scale(1.02);
+	//   box-shadow: 0 0 10px lighten($moon, 30%), 0 0 80px 8px $moon;
+	//   background-color: $peak;
+	// }
+	// 100% {
+	//   transform: translate(200px, -200px) scale(0.9);
+	//   box-shadow: none;
+	// }
+  }
+  @keyframes cresent-out {
+	0% {
+		transform: translate(0px, 0px) scale(1.02);
+		text-shadow: 0 0 10px lighten($moon, 30%), 0 0 80px $moon;
+		color: $background;
+	  }
+	  100% {
+		transform: translate(-300px, 300px) scale(0.9);
+		text-shadow: none;
+		color: $neutral-background;
+	  }
+  }
+  @keyframes bg-in {
+	0% {
+	  background-color: #dfd7cf;
+	  color: $beaver;
+	}
+	100% {
+	  background-color: $sky-dark;
+	  color: white;
+	//   text-shadow: black 1px 0 10px;
+	}
+  }
+  @keyframes bg-out {
+	
+	0% {
+	  background-color: $sky-dark;
+	  color: white;
+	//   text-shadow: black 1px 0 10px;
+	}
+	100% {
+	  background-color: $neutral-background;
+	  color: $beaver;
+	}
+  }
 
 .container {
 	// background: linear-gradient(0deg, $rose 45%, $neutral-background 45%);
+	position: relative;
+	transition: all 2s ease;
+	overflow: hidden;
+	color: $beaver;
+&.animate-in{
+	animation: 4s bg-in linear forwards;
+	.image-box{
+        img{
+			background-image: url("~src/assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3384-2.jpg");
+        }
+	}
+}
+&.animate-out{
+  animation: 4s bg-out linear forwards;
+}
+.animate-moon {
+	// &::before{
+		animation: 3s cresent linear forwards;
+	//   }
+  }
+  .animate-moon-out{
+	// &::before{
+		animation: 3.2s cresent-out linear forwards;
+	//   }
+  }
+  .fa-heart{
+	  position: absolute;
+	  top: 50px;
+  }
+  h1{
+	  color: unset;
+  }
+  
 	box-sizing: border-box;
 	min-height: 100vh;
 	padding-top: var(--menu-height);
@@ -15,18 +105,21 @@
 		justify-content: center;
 		align-items: center;
 	}
-	.image{
-        position: relative;
-        height: 35rem;
-        width: 25rem;
-        min-width: 25rem;
+	.image-box{
+		height: 35rem;
+		width: 40%; /* Set the desired width for the event container */
+		overflow: hidden; /* Hide any content that exceeds the container dimensions */
+		position: relative; /* Establish a positioning context */
+		margin: 1rem;
         img{
-            position: absolute;
-            top: 0;
-            left: 0;
+			transition: all 5s ease;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ensures images cover the entire container while maintaining aspect ratio */
+			object-fit: cover; /* Ensures images cover the entire container while maintaining aspect ratio */
+			object-position: center; /* Position the image at the center of the container */
+			background-size: cover; /*
+			display: block; /* Ensure the image is displayed as a block element */
+			background-image: url("~src/assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3384.jpg");
         }
         .text{
             position: absolute;
@@ -49,7 +142,7 @@
 		}
 		p{
 			text-align: justify;
-			color: $beaver;
+			// color: $beaver;
 		}
 	}
 }
@@ -60,6 +153,14 @@
 	}
 	.container{
 		.content{
+			width: 100%;
+			margin-top: 0;
+		}
+		h1{
+			margin-top: 50px;
+		}
+		.image-box{
+			margin-bottom: 0;
 			width: 100%;
 		}
 	}
