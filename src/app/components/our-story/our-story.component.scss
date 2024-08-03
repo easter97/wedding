@@ -74,6 +74,11 @@
 }
 &.animate-out{
   animation: 4s bg-out linear forwards;
+  .image-box{
+	img{
+		background-image: url("~src/assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3384.jpg");
+	}
+}
 }
 .animate-moon {
 	// &::before{
