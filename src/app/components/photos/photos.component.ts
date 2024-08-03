@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-photos',
@@ -54,9 +55,43 @@ export class PhotosComponent implements OnInit {
   
   
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openDialog(image): void {
+    const dialogRef = this.dialog.open(PhotoModal, {
+      maxHeight: '80%',
+      minHeight: '80%',
+      maxWidth: '80vw',
+      data: image,
+      panelClass: 'modal-container', // Add a custom class here
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+
+}
+
+@Component({
+  selector: 'photo-modal',
+  templateUrl: 'photo-modal.component.html',
+  styleUrls: ['./photo-modal.scss']
+})
+export class PhotoModal {
+
+  constructor(
+    public dialogRef: MatDialogRef<PhotoModal>,
+    @Inject(MAT_DIALOG_DATA) public data: any) {}
+    ngOnInit(){
+      // this.dialogRef.updateSize('80%', '80%');
+    }
+
+  onNoClick(): void {
+    this.dialogRef.close();
   }
 
 }

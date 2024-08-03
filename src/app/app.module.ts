@@ -26,6 +26,7 @@ import { AuthService } from './auth/auth.service';
 import { AuthGuard } from './auth/auth.guard';
 import { FormsModule } from '@angular/forms';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     CdkAccordionModule,
     LazyLoadImageModule,
     FormsModule,
+    MatDialogModule,
   ],
   providers: [ AuthService, AuthGuard
   ],

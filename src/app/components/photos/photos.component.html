@@ -2,9 +2,10 @@
   <i class="fa-solid fa-camera-retro fa-2x"></i>
 <h1>Photos</h1>
 <div class="masonry">
-    <div class="mItem" *ngFor="let image of images">
+    <div class="mItem" *ngFor="let image of images" (click)="openDialog(image)">
       <img offset="300" [lazyLoad]="image">
     </div>
   
   </div>  
+  <div class=background></div>
 </div>

@@ -91,6 +91,10 @@
   }
   h1{
 	  color: unset;
+	  &.title{
+		 margin-top: 50px; 
+	  }
+	  
   }
   
 	box-sizing: border-box;

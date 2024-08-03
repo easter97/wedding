@@ -2,12 +2,17 @@
 img {
     width: 100%;
   }
+  ::ng-deep .mat-mdc-dialog-surface.mdc-dialog__surface{
+    overflow: visible !important;
+}
   
   .masonry {
     width: 60%;
       column-count: 3;
       column-gap: 6px;
       padding: 6px;
+      z-index: 2;
+      margin-bottom: 150px;
       
   }
   .container{
@@ -20,6 +25,16 @@ img {
     box-sizing: border-box;
     height: 100%;
     padding-top: var(--menu-height);
+    position: relative;
+    .background{
+      background-image: url('~src/assets/images/background.png');
+      min-height: 100vh;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      width: 100vw;
+    }
+
     h1{
       margin: 0px;
       padding: 20px;
@@ -30,6 +45,10 @@ img {
     display: inline-block;
     margin-bottom: 3px;
     width: 100%;
+    transition: transform .2s; /* Animation */
+    &:hover{
+      transform: scale(1.02);
+    }
   }
   
   @media (max-width: 1199px) {
