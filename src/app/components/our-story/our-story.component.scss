@@ -67,16 +67,22 @@
 &.animate-in{
 	animation: 4s bg-in linear forwards;
 	.image-box{
-        img{
-			background-image: url("~src/assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3384-2.jpg");
+        img.color{
+			opacity: 0;
+		}
+		img.bw{
+			opacity: 1;
         }
 	}
 }
 &.animate-out{
   animation: 4s bg-out linear forwards;
   .image-box{
-	img{
-		background-image: url("~src/assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3384.jpg");
+	img.color{
+		opacity: 1;
+	}
+	img.bw{
+		opacity: 0;
 	}
 }
 }
@@ -126,9 +132,17 @@
             height: 100%;
 			object-fit: cover; /* Ensures images cover the entire container while maintaining aspect ratio */
 			object-position: center; /* Position the image at the center of the container */
-			background-size: cover; /*
+			background-size: cover;
+			position:absolute;
 			display: block; /* Ensure the image is displayed as a block element */
-			background-image: url("~src/assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3384.jpg");
+			&.color{
+				background-image: url("~src/assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3384.jpg");
+				opacity: 1;
+			}
+			&.bw{
+				background-image: url("~src/assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3384-2.jpg");
+				opacity: 0;
+			}
         }
         .text{
             position: absolute;
