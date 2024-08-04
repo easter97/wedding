@@ -69,9 +69,13 @@
 	.image-box{
         img.color{
 			opacity: 0;
+			-moz-opacity: 0; /* Firefox and Mozilla browsers */
+			-webkit-opacity: 0; /* WebKit browser e.g. Safari */
 		}
 		img.bw{
 			opacity: 1;
+			-moz-opacity: 1; /* Firefox and Mozilla browsers */
+			-webkit-opacity: 1; /* WebKit browser e.g. Safari */
         }
 	}
 }
@@ -80,9 +84,13 @@
   .image-box{
 	img.color{
 		opacity: 1;
+		-moz-opacity: 1; /* Firefox and Mozilla browsers */
+		-webkit-opacity: 1; /* WebKit browser e.g. Safari */
 	}
 	img.bw{
 		opacity: 0;
+		-moz-opacity: 0; /* Firefox and Mozilla browsers */
+		-webkit-opacity: 0; /* WebKit browser e.g. Safari */
 	}
 }
 }
@@ -138,10 +146,14 @@
 			&.color{
 				background-image: url("~src/assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3384.jpg");
 				opacity: 1;
+				-moz-opacity: 1; /* Firefox and Mozilla browsers */
+   				-webkit-opacity: 1; /* WebKit browser e.g. Safari */
 			}
 			&.bw{
 				background-image: url("~src/assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3384-2.jpg");
 				opacity: 0;
+				-moz-opacity: 0; /* Firefox and Mozilla browsers */
+   				-webkit-opacity: 0; /* WebKit browser e.g. Safari */
 			}
         }
         .text{
