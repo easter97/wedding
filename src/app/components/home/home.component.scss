@@ -186,6 +186,7 @@ i{
     
 }
 .info{
+    flex-grow: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -219,20 +220,8 @@ i{
                 align-items: center;
                 justify-content: center;
                 margin: .5rem;
-                .image{
-                    width: 75px; /* Set the desired width for the event container */
-                    height: 75px; /* Set the desired height for the event container */
-                    overflow: hidden; /* Hide any content that exceeds the container dimensions */
-                    position: relative; /* Establish a positioning context */
-                    border-radius: 100%;
-                    margin: 10px;
-                }
-                img{
-                    width: 100%; /* Ensure the image occupies 100% of the container's width */
-                    height: 100%; /* Ensure the image occupies 100% of the container's height */
-                    object-fit: cover; /* Maintain the aspect ratio of the image and cover the entire container */
-                    object-position: center; /* Position the image at the center of the container */
-                    display: block; /* Ensure the image is displayed as a block element */
+                svg{
+                    margin: 1rem;
                 }
                 .name,.title{
                     text-align: center;
