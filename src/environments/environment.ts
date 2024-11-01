@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   secretToken: "YXYyMDI1",
-  password: "av2025"
+  password: "AV2025"
 };
 
 /*

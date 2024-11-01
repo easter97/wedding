@@ -14,9 +14,7 @@ export class FaqsComponent implements OnInit {
       questions: [
         {
           question: "What date should I RSVP by?",
-          answer: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
-          excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
-          veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?`,
+          answer: `We request that our guests please RSVP by April 25, 2025. Booking your room and travel before this date helps you save money and gives the bride and groom a clear picture of attendance.`,
         },
         {
           question: "Can I bring a plus one?",
@@ -25,7 +23,7 @@ export class FaqsComponent implements OnInit {
         {
           question: "Can I bring my children?",
           answer: `<p>Our chosen resort in Cancun is an adults-only venue, so unfortunately, we are unable to accomodate children at our wedding. This includes all children under the age of 18.</p>
-          <p>For those above the age of 18, only individuals whose names are specifically included on the invitation are invited. While we'll miss all your little ones, we look forward to celebrating with the whole family stateside.</p>`
+          <p>For those above the age of 18, only individuals whose names are specifically included on the invitation are invited. While we'll miss all your little ones, we look forward to celebrating with your whole family stateside.</p>`
         },
       ],
     },
@@ -52,6 +50,32 @@ export class FaqsComponent implements OnInit {
           question: "How long should I stay at the resort?",
           answer: `<p>The length of your stay is entirely up to you and your party. We would love for our guests to use this opportunity to relax and vacation as long as they would like. You can check the schedule of events on this site to determine when you would like to arrive so you can RSVP accordingly. </p> <p>We recommend our guests plan for a three days stay to enjoy all the resort has to offer and ensure room for any potential complications with travel.      </p>`
         },
+        {
+          question: "What if I am unable to attend and need to cancel?",
+          answer: `
+          Of course we recommend our guests are certain of their travel when they RSVP and book lodging, but we know life happens! If you find yourself unable to attend after you previously RSVP'd or booked lodging, please update your RSVP on this site or email us at <a href="mailto:wedding@amandaeaster.com">wedding@amandaeaster.com</a> if the RSVP date has passed. You can also purchase travel insurance at the time of booking if your travel plans are uncertain.
+          <br><br>
+          Our travel agency's cancellation policy:
+          <ul>
+            <li>Before May 25, 2025 - There is no fee for canceling your reservation. You will get a full refund of your deposit.</li>
+            <li>From May 26 until July 22, 2025  - There will be a penalty charge of 2 nights of stay per room.</li>
+            <li>From July 23, 2025, until your travel dates - The booking is paid in full and non-refundable.</li>
+          </ul>  
+          `
+        },
+        {
+          question: "Are there payment plans available?",
+          answer: `
+          Our travel agency offers our guests a payment plan to help reduce the up-front cost of booking.
+          <br><br>
+          Deposit and payment plan information:
+          <ul>
+            <li>1st Deposit: To hold your room we will need a deposit of $200 USD per room.</li>
+            <li>2nd Deposit: Due by May 26, 2025 - $550 USD per person.</li>
+            <li>Final Payment: The remaining balance will be due by July 23, 2025.</li>
+          </ul>
+          `
+        }
       ]
     },
     {
@@ -70,7 +94,7 @@ export class FaqsComponent implements OnInit {
         },
         {
           question: "Do I need a passport to travel to Mexico?",
-          answer: `    Yes, you need a passport to travel to Mexico - please make sure to start your application process and/or check the expiration dates on your current passport! The Mexican government only requires that your passport is valid for the length of your trip. Current turnaround times on US passports are 6-8 weeks for routine applications and 2-3 weeks for expedited, which can be done for an additional fee.      `
+          answer: `    Yes, you need a passport to travel to Mexico - please make sure to start your application process and/or check the expiration dates on your current passport! The Mexican government only requires that your passport is valid for the length of your trip. Current turnaround times on US passports are 4-6 weeks for routine applications and 2-3 weeks for expedited, which can be done for an additional fee.      `
         },
         {
           question: "Will I be safe in Mexico?",
@@ -99,7 +123,10 @@ export class FaqsComponent implements OnInit {
                 <li>dressy sandals, chunky heels, and wedges - keep in mind you will be walking in sand!</li>
                 <li>beachy accessories, like a raffia clutch</li>
           </ul> 
-          Keep in mind Mexico will most likely be hot and humid, we want our guests to be as comfortable as possible! You can find more examples of guest attire on our <a href="https://www.pinterest.com/AmandaaLionn/wedding/guest-attire/" target="_blank">Pinterest board.</a>`
+          Keep in mind Mexico will most likely be hot and humid, we want our guests to be as comfortable as possible! You can find more examples of guest attire on our <a href="https://www.pinterest.com/AmandaaLionn/wedding/guest-attire/" target="_blank">Pinterest board.</a>
+          <br><br>
+          The resort restaurants have a variety of dress codes you can view <a href="https://www.hyattinclusivecollection.com/en/resorts-hotels/secrets/mexico/maroma-beach-riviera-cancun/dining-drinks/">here</a>. From what we have found, these policies seem to be fairly lenient (especially with regard to women's fashion), but make sure you pack accordingly!
+          `
         },
         
         {
@@ -109,12 +136,30 @@ export class FaqsComponent implements OnInit {
         
         {
           question: "What should I pack?",
-          answer: `  tip money      `
+          answer: `
+            While the resort has plenty of amenities, we want our guests to come prepared! Here are a few items we recommend packing:
+            <ul>
+              <li><strong>Sunscreen</strong> - Cancun is beautiful and sunny! Make sure to include plenty of sunscreen in your luggage to ensure your skin is protected.</li>
+              <li><strong>Bug spray</strong> - Some of the more vegative parts of the resort have mosquitos, so it's nice to be prepared.</li>
+              <li><strong>Tip & spending money</strong> - While this is absolutely not required, we like to include some singles in our luggage for tipping workers that go above and beyond as well as our cleaning staff. Some excursions will require a Mexico tourism fee to be paid in cash or pesos. If you plan on taking an excursion, consider bringing some spending money in cash to avoid ATM fees at the resort. The front desk of the resort can usually break large bills in USD as well as convert your cash to pesos if you desire; however, we find that the USD works perfectly fine and is usually preferred!</li>
+              <li><strong>Medication</strong> - Make sure to pack in medications you take daily as well as over-the-counter medicine like Ibuprofen, Tums, Dramamine (if you plan on taking any excursions via boat, we HIGHLY recommend this one), etc.</li>
+              <li><strong>Cover-ups and beach clothing</strong> - Most restaurants require guests to cover up while they dine. Pack a quick and easy cover up to put on after exiting the pool for lunch!</li>
+              <li><strong>For men, a collared shirt</strong> - There are a couple of nice restaurants on resort that require men to wear a collared shirt when they dine.</li>
+            </ul> 
+            While some of these will be available on-resort for those who need them, they will be much more expensive to purchase there.
+            <br><br>
+            Things you <u>don't</u> need to pack (unless you want to!):
+            <ul>
+              <li><strong>Towels</strong> - The resort will provide clean towels for guests available by all pool areas</li>
+              <li><strong>Beverages</strong> - The resort serves bottled water at all restaurants and stocks your mini fridge daily with still and sparkling water, soda, and beer. Coffee is available at the cafe or can be made in your room. Other beverages like juices, cocktails, and more can be found on resort as well.</li>
+              <li><strong>Hair Dryers</strong> - The resort provides each room with a hair dryer. Feel free to bring your own if you have a preference!</li>
+            </ul>
+          `
         },
         {
           question: "I have more questions about your wedding, who can I reach out to?",
           answer: `<p>Updates regarding travel, booking, deadlines, and more will be posted above this FAQ section periodically. You can also subscribe to these updates by including your email address in your RSVP.</p>
-          <p>For questions regarding travel or the resort we advise you to contact our travel agent Lety at hola@holaweddings.com, 1-888-472-7077 or +52 5510361373. If you need to contact us directly regarding the wedding you can email wedding@amandaeaster.com.      </p>`
+          <p>For questions regarding travel or the resort we advise you to contact our travel agent Lety at hola@holaweddings.com, 1-888-472-7077 or +52 5510361373. If you need to contact us directly regarding the wedding you can email <a href="mailto:wedding@amandaeaster.com">wedding@amandaeaster.com</a>.      </p>`
         },
       ]
     },
