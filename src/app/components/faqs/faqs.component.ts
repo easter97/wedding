@@ -14,7 +14,7 @@ export class FaqsComponent implements OnInit {
       questions: [
         {
           question: "What date should I RSVP by?",
-          answer: `We request that our guests please RSVP by April 25, 2025. Booking your room and travel before this date helps you save money and gives the bride and groom a clear picture of attendance.`,
+          answer: `We request that our guests please RSVP and book their lodging by April 25, 2025. Booking before this date helps you save money with our preferred rate room block and gives the bride and groom a clear picture of attendance. We plan to release any unused rooms in our room block after this date.`,
         },
         {
           question: "Can I bring a plus one?",
@@ -40,7 +40,9 @@ export class FaqsComponent implements OnInit {
           </ul>
           <p>Guests may choose to spend more on things like upgraded rooms (Preferred Club) or excursions. Since the resort is all inclusive, no need to worry about food and drink, once you arrive you are set!</p>
           <p>For a couple staying at the resort for 3 nights we would estimate a total cost of $2400.</p>
-          <p>For an individual staying at the resort for 3 nights we would estimate a total cost of $1500.</p>`
+          <p>For an individual staying at the resort for 3 nights we would estimate a total cost of $1500.</p>
+          <p><strong>We want all of our guests to feel comfortable and enjoy their time in paradise! If this travel isn't in the cards for you this year we understand and look forward to celebrating with you another time.</strong></p>
+          `
         },
         {
           question: "Do I need to book through the travel agent?",
