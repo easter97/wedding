@@ -161,7 +161,7 @@ export class FaqsComponent implements OnInit {
         {
           question: "I have more questions about your wedding, who can I reach out to?",
           answer: `<p>Updates regarding travel, booking, deadlines, and more will be posted above this FAQ section periodically. You can also subscribe to these updates by including your email address in your RSVP.</p>
-          <p>For questions regarding travel or the resort we advise you to contact our travel agent Lety at hola@holaweddings.com, 1-888-472-7077 or +52 5510361373. If you need to contact us directly regarding the wedding you can email <a href="mailto:wedding@amandaeaster.com">wedding@amandaeaster.com</a>.      </p>`
+          <p>For questions regarding travel or the resort we advise you to contact our travel agent Paulette at hola@holaweddings.com, 1-888-472-7077 or +52 5510361373. If you need to contact us directly regarding the wedding you can email <a href="mailto:wedding@amandaeaster.com">wedding@amandaeaster.com</a>.      </p>`
         },
       ]
     },

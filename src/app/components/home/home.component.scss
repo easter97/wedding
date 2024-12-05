@@ -50,7 +50,7 @@ i{
             flex-grow: 1;
             position: relative;
             z-index: 5;
-            // min-height: 100svh;
+            min-height: 100svh; // until we add more details under
             height: 100%;
             padding: 1rem;
             &:before {
