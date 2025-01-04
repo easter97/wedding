@@ -141,6 +141,7 @@
 			object-fit: cover; /* Ensures images cover the entire container while maintaining aspect ratio */
 			object-position: center; /* Position the image at the center of the container */
 			background-size: cover;
+			background-position: bottom;
 			position:absolute;
 			display: block; /* Ensure the image is displayed as a block element */
 			&.color{

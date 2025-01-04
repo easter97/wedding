@@ -50,7 +50,7 @@ i{
             flex-grow: 1;
             position: relative;
             z-index: 5;
-            min-height: 100svh; // until we add more details under
+            // min-height: 100svh; // until we add more details under
             height: 100%;
             padding: 1rem;
             &:before {
@@ -66,7 +66,7 @@ i{
                 box-sizing: border-box;
                 background-size: cover;
                 background-repeat: no-repeat;
-                z-index: 0;
+                z-index: -1;
             
               }
             .monogram{
