@@ -31,7 +31,24 @@ i{
     justify-content: center;
     box-sizing: border-box;
     flex-direction: column;
+    position: relative;
+    &:before {
 
+        filter: saturate(100%)  brightness(100%) opacity(40%) blur(2px);
+        background-image: url("~src/assets/images/beach-palm.jpg");
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: -1;
+    
+      }
 
     .content{
         display: flex;
@@ -50,25 +67,10 @@ i{
             flex-grow: 1;
             position: relative;
             z-index: 5;
-            // min-height: 100svh;
+            // min-height: 100svh; // until we add more details under
             height: 100%;
             padding: 1rem;
-            &:before {
 
-                filter: saturate(0%) hue-rotate(-39.6deg) brightness(100%) opacity(20%) blur(2px);
-                background-image: url("~src/assets/images/palm.jpeg");
-                content: " ";
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                box-sizing: border-box;
-                background-size: cover;
-                background-repeat: no-repeat;
-                z-index: 0;
-            
-              }
             .monogram{
                 margin: .5rem;
                 width: 80px;
@@ -115,18 +117,22 @@ i{
                 .and{
                     font-size: 3rem;
                     font-family: "Tropical";
-                    color: $dark-background;
+                    color: black;
+                    opacity: .4;
                 } 
                 h1{
                     margin: .5rem;
                     color: black;
-                    // font-size: 1.3rem;
+                    font-size: 1.75rem;
                 } 
             }
             .divider{
                 height: 0;
                 width: 20%;
                 border-top: 1px solid black;
+                margin: 15px;
+            }
+            .rsvp{
                 margin: 15px;
             }
             .std-info{
@@ -192,13 +198,8 @@ i{
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    background-color: $sage;
-    color: $neutral-background;
-    h1{
-        color: $neutral-background;
-        margin: .2rem;
-    }
-    .divider{
+    color: $forest;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(252,252,251,0.6) 19%,rgba(249,248,247,1) 40%,rgba(241,238,234,1) 100%);    .divider{
         width: 75%;
         height: 0px;
         margin: 1rem;
@@ -209,6 +210,10 @@ i{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        .details-title{
+            color: $sage;
+            font-size: 1.25rem;
+        }
         .party{
             display: flex;
             flex-wrap: wrap;
@@ -220,6 +225,11 @@ i{
                 align-items: center;
                 justify-content: center;
                 margin: .5rem;
+                .party-icon{
+                    height: 50px;
+                    margin: 10px;
+                    opacity: .75;
+                }
                 svg{
                     margin: 1rem;
                 }
@@ -234,7 +244,7 @@ i{
                     margin: 3px;
                 }
                 .title{
-                    color: $sand;
+                    color: $sage;
                     font-family: "Kerad";
                     font-style: italic;
                     text-transform: uppercase;
@@ -512,7 +522,7 @@ and (max-width: 64em) {
             .std{
                 order: -1;
                 padding: 1rem;
-                // height: 100%;
+                min-height: 100svh;
               .monogram{
                     margin: 20px;
                     margin-bottom: 10px;
@@ -566,6 +576,9 @@ and (max-width: 64em) {
             }
             
         }
+        // .details{
+        //     min-height: 100svh;
+        // }
     }
     .mobile-background{
         display: flex;
