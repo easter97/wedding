@@ -27,6 +27,9 @@ import { AuthGuard } from './auth/auth.guard';
 import { FormsModule } from '@angular/forms';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { WeddingPartyComponent } from './components/wedding-party/wedding-party.component';
+import { TabComponent } from './components/wedding-party/tabs/tab.component';
+import { TabsComponent } from './components/wedding-party/tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +49,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     PasswordComponent,
     ContainerComponent,
     CarouselComponent,
+    WeddingPartyComponent,
+    TabComponent,
+    TabsComponent,
   ],
   imports: [
     BrowserModule,

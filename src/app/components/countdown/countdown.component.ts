@@ -38,23 +38,37 @@ export class CountdownComponent {
 
   ngAfterViewInit() {
     setInterval(() => {
-      this.tickTock();
-      this.difference = this.targetTime - this.now;
-      this.difference = this.difference / (1000 * 60 * 60 * 24);
-
-      !isNaN(this.days.nativeElement.innerText)
-        ? (this.days.nativeElement.innerText = Math.floor(this.difference))
-        : (this.days.nativeElement.innerHTML = `<img src="https://i.gifer.com/VAyR.gif" />`);
+      this.tickTock(); // Call tickTock to update time calculations
     }, 1000);
   }
+  
 
   tickTock() {
-    this.date = new Date();
-    this.now = this.date.getTime();
-    this.days.nativeElement.innerText = Math.floor(this.difference);
-    this.hours.nativeElement.innerText = 23 - this.date.getHours();
-    this.minutes.nativeElement.innerText = 60 - this.date.getMinutes();
-    // this.seconds.nativeElement.innerText = 60 - this.date.getSeconds();
+    const now = new Date().getTime();
+    const difference = this.targetDate.getTime() - now; // Difference in milliseconds
+  
+    if (difference <= 0) {
+      // If countdown is over, set all to 0
+      this.days.nativeElement.innerText = 0;
+      this.hours.nativeElement.innerText = 0;
+      this.minutes.nativeElement.innerText = 0;
+      return;
+    }
+  
+    // Calculate days, hours, and minutes from the difference
+    const totalSeconds = Math.floor(difference / 1000);
+    const totalMinutes = Math.floor(totalSeconds / 60);
+    const totalHours = Math.floor(totalMinutes / 60);
+    const days = Math.floor(totalHours / 24);
+  
+    const hours = totalHours % 24; // Remaining hours after removing full days
+    const minutes = totalMinutes % 60; // Remaining minutes after removing full hours
+  
+    // Update UI
+    this.days.nativeElement.innerText = days;
+    this.hours.nativeElement.innerText = hours;
+    this.minutes.nativeElement.innerText = minutes;
   }
+  
 
 }

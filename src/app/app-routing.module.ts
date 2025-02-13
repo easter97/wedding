@@ -6,11 +6,13 @@ import { PasswordComponent } from './components/password/password.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContainerComponent } from './components/container/container.component';
 import { GiftListComponent } from './components/gift-list/gift-list.component';
+import { WeddingPartyComponent } from './components/wedding-party/wedding-party.component';
 
 const routes: Routes = [
   { path: '' , redirectTo:'/password', pathMatch:'full'},
   { path: 'password' , component: PasswordComponent},
   { path: 'registry', component: GiftListComponent},
+  { path: 'weddingparty', component: WeddingPartyComponent},
   { path: 'home', component: ContainerComponent, canActivate: [AuthGuard] }
 ];
 

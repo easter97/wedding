@@ -1,0 +1,30 @@
+@import "../../../../vars.scss";
+.tab-close {
+    color: gray;
+    text-align: right;
+    cursor: pointer;
+  }
+ul{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    li{
+        margin: 1rem;
+        border-bottom: 2px solid transparent;
+        text-transform: uppercase;
+        font-family: "Kerad";
+        color: $dark-background;
+        font-size: 1.5rem;
+        &:hover{
+            cursor: pointer;
+            color: $dune;
+        }
+        &.active{
+            color: $beaver;
+            border-bottom: 2px solid $beaver;
+        }
+    }
+}
