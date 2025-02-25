@@ -32,6 +32,22 @@ export class FaqsComponent implements OnInit {
       icon: 'fa-solid fa-hotel',
       questions: [
         {
+          question: "When should I buy my flights?",
+          answer: `
+          <p>Your mileage might vary on the best time to book flights, but from Dallas to Mexico we tend to find about 3-4 months in advance is the sweet spot for pricing. Anything earlier may not have all routes posted or higher average pricing.</p>
+          <p>We recommend using a website like <a target="_blank" href="https://hopper.com/">Hopper</a> or <a target="_blank" href="https://www.google.com/travel/flights/saves?gl=US&hl=en-US">Google Flights</a> that will track your desired route and let you know when the best time to book is!</p>
+          `
+        },
+        {
+          question: "When should I book my rooms?",
+          answer: `
+          <p>As soon as you RSVP yes! Book your lodging through our travel partners to reserve your spot at our wedding.</p>
+          <p>This let's us know you're serious about attending and gives us the opportunity to add any additional rooms to our block as needed to make sure all of our guests get the best rates. You'll pay a $200 per room deposit to reserve your lodging,  which is fully refundable if you need to cancel before May 25, 2025.</p>
+          <p>Not sure yet? That's ok! </p>
+          <p><strong>Just make sure you RSVP AND book lodging before our RSVP date of April 25, 2025, as we will drop unused rooms from our block after then.</strong></p>
+          `
+        },
+        {
           question: "How much should I expect to spend on travel and lodging?",
           answer: `<p>While prices are variable based on travel dates and room preference, here is what we would advise our guests to budget.</p>
           <ul>
@@ -77,7 +93,7 @@ export class FaqsComponent implements OnInit {
             <li>Final Payment: The remaining balance will be due by July 23, 2025.</li>
           </ul>
           `
-        }
+        },
       ]
     },
     {
