@@ -18,78 +18,21 @@
                         <div class="tl-container">
                             <div class="wrapper">
                               <ul class="sessions">
-                                <div class=big-time>Saturday, October 11</div>
-                                <li>
-                                  <div class="time">Any Time</div>
-                                  <h2>Bridal Party Arrives In Mexico</h2>
-                                  <p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>
-                                </li>
-                                <li>
-                                    <div class="time">Evening</div>
-                                    <h2>Drinks</h2>
-                                    <p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>
-                                </li>
-                                <li class="end">
-                                    <div class="time">Evening</div>
-                                    <h2>Dinner</h2>
-                                    <p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>
-                                </li>
-        
-                                <div class=big-time>Wednesday, October 8</div>
-                                <li>
-                                    <div class="time">Morning</div>
-                                    <h2>Breakfast</h2>
-                                    <p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>
-                                </li>
-                                <li>
-                                    <div class="time">Afternoon (Time TBD)</div>
-                                    <h2>Boat Day</h2>
-                                    <p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>
-                                </li>
-                                <li class=end>
-                                    <div class="time">Evening (Time TBD)</div>
-                                    <h2>Desires Night Club</h2>
-                                    <p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>
-                                </li>
-        
-                                <div class=big-time>Thursday, October 9</div>
-                                <li>
-                                    <div class="time">11 AM</div>
-                                    <h2>Spa Day / Golf?</h2>
-                                    <p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>
-                                </li>
-        
-                                <div class=big-time>Friday, October 10</div>
-                                <li>
-                                    <div class="time">TBD</div>
-                                    <h2>Rehearsal</h2>
-                                    <p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>
-                                </li>
-                                <li class=end>
-                                <div class="time">TBD</div>
-                                <h2>Rehearsal Dinner</h2>
-                                <p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>
-                                </li>
-        
-                                <div class=big-time>Saturday, October 11</div>
-                                <li>
-                                    <div class=time>8:00 AM</div>
-                                    <h2>Bridesmaids Getting Ready</h2>
-                                    <p>Makeup</p>
-                                </li>
-                                <li>
-                                    <h2>Ceremony</h2>
-                                    <p>Celebrate our wedding ceremony on the beach</p>
-                                </li>
-                                <li>
-                                    <!-- <div class=time>October 11</div> -->
-                                    <h2>Cocktail Hour</h2>
-                                    <p>Immediately following our ceremony we will be hosting a cocktail hour on the beach with light hours devours.</p>
-                                </li>
-                                <li>
-                                    <!-- <div class=time>October 11</div> -->
-                                    <h2>Reception</h2>
-                                    <p>We will have dinner, drinks, and dancing!</p>
+                                  <div class=timeline-header>
+                                        <!-- <i class="fa-solid fa-chevron-left fa-1x"></i>
+                                        <div class=big-time>{{timeline[currentDay].date}}</div>
+                                        <i class="fa-solid fa-chevron-right fa-1x"></i> -->
+                                        <select class=big-time [(ngModel)]="currentDay">
+                                            <option *ngFor="let day of timeline" [ngValue]="day">{{day.date}}</option>
+                                        </select>
+                                    </div>
+                                <li 
+                                    *ngFor="let event of currentDay.events; index as i"
+                                    [ngClass]="{ 'end' : i == currentDay.events.length}"
+                                >
+                                  <div class="time">{{event.time}}</div>
+                                  <h2>{{event.title}}</h2>
+                                  <div class=content [innerHTML]="event.description"></div>
                                 </li>
                               </ul>
                             </div>
@@ -110,8 +53,12 @@
                             <div class=checks>
                                 <ul>
                                     <li *ngFor="let listItem of item.listItems; let  j = index">
-                                      <input type="checkbox" id="cb{{i}}{{j}}" name="cb{{i}}{{j}}" [attr.checked]="item.percentage == 100 ? true : undefined">
-                                      <label for="cb{{i}}{{j}}">{{listItem}}</label>
+                                      
+                                      <span class="cb-wrapper">
+                                          <input type="checkbox" id="cb{{i}}{{j}}" name="cb{{i}}{{j}}" [attr.checked]="item.percentage == 100 ? true : undefined">
+                                        <label for="cb{{i}}{{j}}">{{listItem}}</label>
+                                    </span>
+                                      
                                     </li>
                                   </ul>
                             </div>
@@ -122,20 +69,76 @@
             </div>
         </app-tab>
         <app-tab tabTitle="Packing List">
+            Filter By
+            <div class=filters-list>
+                <div class="chips">
+                    <div class="packing-audience">
+                        <i class="fa-solid fa-user"></i>
+                        <span 
+                            class="chip dark audience-chip" 
+                            *ngFor="let person of allAudiences" 
+                            [ngClass]="{ 'selected': person.selected }"
+                            (click)="person.selected = !person.selected"
+                        >{{person.name}} </span>
+                        
+                    </div>
+                    <div class="packing-events">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span 
+                            class="chip dark event-chip" 
+                            *ngFor="let event of allEvents" 
+                            [ngClass]="{ 'selected': event.selected }"
+                            (click)="event.selected = !event.selected"
+                        >{{event.name}} </span>
+                        
+                    </div>
+                </div>
+            </div>
             <div class=checklist>
                 <div class=list>
                     <div class=checks>
-                        <ng-container *ngFor="let list of packing; let  i = index">
-                            <h2>{{list.tag}}</h2>
+                        <div *ngIf="getFilteredPacking().length ==0">
+                            No results for that filter combination
+                        </div>
+                        <ng-container *ngFor="let item of getFilteredPacking(); let  i = index">        
                             <ul>
-                                <li *ngFor="let item of list.items; let  j = index">
-                                    <input type="checkbox" id="pcb{{i}}{{j}}" name="pcb{{i}}{{j}}">
-                                    <label for="pcb{{i}}{{j}}">{{item}}</label>
+                                <li>
+                                    <span class="cb-wrapper">
+                                        <input class=big type="checkbox" id="pcb{{i}}" name="pcb{{i}}">
+                                        <label for="pcb{{i}}">
+                                            <div class="cb-text">
+                                                <span>{{item.item}}</span>
+                                                <span class="notes">{{item.notes}}</span>
+                                            </div>
+                                            
+                                            <div class="chips">
+                                                <div class="packing-audience">
+                                                    <i class="fa-solid fa-user"></i>
+                                                    <span class="chip audience-chip" *ngFor="let person of item.audience">{{person}} </span>
+                                                    
+                                                </div>
+                                                <div class="packing-events">
+                                                    <i class="fa-regular fa-calendar"></i>
+                                                    <span class="chip event-chip" *ngFor="let event of item.events">{{event}} </span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </span>
+                                    
+                            
                                 </li>
                             </ul>
                         </ng-container>
                     </div>
                 </div>
+            </div>
+        </app-tab>
+        <app-tab tabTitle="Roles & Responsibilities">
+            <div class="docs-container">
+                <iframe 
+                width="800" height="2000" frameborder="0"
+                src="https://docs.google.com/document/d/e/2PACX-1vQpWVUVGBgoeVKBrs44a81eD75QvUOKYcH_B1YGaIlzdnp6FKBZQ59FJMUhDql7YufGFEgj1cLl9YV7/pub?embedded=true"></iframe>
             </div>
         </app-tab>
     </app-tabs>

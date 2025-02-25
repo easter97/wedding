@@ -65,6 +65,14 @@ $timeline: #CCD5DB;
           }
     }
 }
+.timeline-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i{
+        margin: 0px 50px;
+    }
+}
 .timeline{
     background: rgba(255, 255, 255, 0.2);
     // background: $dark-background;
@@ -74,6 +82,7 @@ $timeline: #CCD5DB;
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 15px;
     border-radius: 20px;
+    width: 80%;
     @mixin tablet-and-up {
         @media screen and (min-width: 769px) { @content; }
     }
@@ -167,12 +176,23 @@ $timeline: #CCD5DB;
     }
     .big-time{
         text-transform: uppercase;
-            font-family: 'Kerad';
-            font-style: italic;
-            text-align: center;
-            color: $beaver;
-            font-size: 1rem;
-            margin: 1.2rem 0;
+        font-family: 'Kerad';
+        font-style: italic;
+        text-align: center;
+        color: $beaver;
+        font-size: 1rem;
+        margin: 1.2rem 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 15px;
+        &:hover{
+            color: $forest;
+        }
+        &:focus{
+            outline: none;
+            color: $forest;
+        }
            
       @include mobile-and-up{
         font-size: 1.2rem;
@@ -288,14 +308,16 @@ $timeline: #CCD5DB;
     .checks{
         ul {
             list-style: none;
-            margin: 0;
-            background: #ffffff;
+            margin: 5px;
+            background: white;
+            border-radius: 10px;
             padding: 0;
             width: 100%;
             box-sizing: border-box;
           
-            li {
+            .cb-wrapper {
               position: relative;
+              width: 100%;
             }
           }
           
@@ -311,6 +333,12 @@ $timeline: #CCD5DB;
             transform: translateY(-50%);
             left: 1rem;
             outline: none;
+
+            &.big{
+                width: 1.5rem;
+                height: 1.5rem;
+                top: 2rem;
+            }
           
             &:checked {
               background-color: $dark-background;
@@ -321,6 +349,13 @@ $timeline: #CCD5DB;
                 color: $dark-background;
                 font-weight: 600;
                 background-color: $light-background;
+                .chip{
+                    background-color: $dark-background;
+                    color: $light-background;
+                }
+                i{
+                    color: $dark-background;
+                }
               }
           
               &:focus,
@@ -350,22 +385,77 @@ $timeline: #CCD5DB;
               border-color: $dark-background;
             }
           }
+          li{
+            border-bottom: 2px solid $neutral-background;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            i{
+                margin-right: 12px;
+                font-size: .9rem;
+            }
+          }
           
           label {
             font-family: "Lora", serif;
-            padding: 0.75rem 1rem 0.75rem calc(1.5rem * 2.25);
+            border-radius: 10px;
+            padding: 0.75rem 1rem 0.75rem calc(2rem * 2.25);
             display: inline-block;
             font-size: 17px;
             width: 100%;
             user-select: none;
-            border-bottom: 2px solid $neutral-background;
+            
             cursor: pointer;
             box-sizing: border-box;
           
             &:hover {
               border-bottom-color: var(--c1);
             }
+            .notes{
+                margin-left: 15px;
+                font-size: .8rem;
+                color: $dark-background;
+            }
           }
           
     }
+}
+.chip{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 2px 5px;
+    border-radius: 20px;
+    min-width: 50px;
+    background-color: $neutral-background;
+    margin: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Kerad";
+    color: $beaver;
+    font-size: .8rem;
+
+    &.dark{
+        background: $sage;
+        color: $neutral-background;
+        &:hover{
+            background: $accent-dark;
+            cursor: pointer;
+        }
+        &.selected{
+            background: $forest;
+        }
+    }
+}
+.chips{
+    display: flex;
+    > * {
+        margin-right: 12px;
+    }
+}
+.docs-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
