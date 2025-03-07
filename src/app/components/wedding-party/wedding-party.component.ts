@@ -8,22 +8,26 @@ import { Component } from '@angular/core';
 export class WeddingPartyComponent {
 
   packing = [
-    {item: "Swimsuits", notes: "3-4", audience:['All'], events: ['Boat Day', 'General']},
-    {item: "Rehearsal Dinner Attire", notes: "1", events: ['Rehearsal Dinner'], audience:['All']},
-    {item: "Sunscreen", notes: "1 bottle liquid, 2-3 spray", events: ['Boat Day', 'General'], audience:['All']},
-    {item: "Bug Spray", notes: "1", audience: ['All'], events: ["General"]},
-    {item: "Tip Money", notes: "Your discretion, we recommend $30 in small bills for tipping housekeeping or bar tenders", events: ['General'], audience:['All']},
+    {item: "Swimsuits", notes: "We recommend 3-4 suits, humidity makes things hard to dry", audience:['Everyone'], events: ['Boat Day', 'General']},
+    {item: "Rehearsal Dinner Outfit", notes: "Beach Cocktail Attire", events: ['Rehearsal Dinner'], audience:['Everyone']},
+    {item: "Sunscreen", notes: "We recommend 1 bottle liquid or 2-3 spray", events: ['Boat Day', 'General'], audience:['Everyone']},
+    {item: "Bug Spray", notes: "Not needed often, but the more vegative areas of the resport can be bad", audience: ['Everyone'], events: ["General"]},
+    {item: "Tip Money", notes: "Your discretion, we recommend $30 in small bills for tipping housekeeping or bartenders", events: ['General'], audience:['Everyone']},
     {item: "Makeup", notes: "", events: ['General'], audience:['Women']},
     {item: "Hair Styling Tools", notes: "", events: ['Rehearsal Dinner', 'Wedding Day'], audience:['Women']},
-    {item: "Swim Coverup", notes: "", events: ['General'], audience:['All']},
+    {item: "Swim Coverup", notes: "Most restaurants require a coverup to dine", events: ['General'], audience:['Everyone']},
     {item: "Bridesmaid Dress", notes: "", events: ['Wedding Day'], audience:['Bridesmaids']},
-    {item: "Brown Loafers", quantity: "", events: ['Wedding Day'], audience:['Groomsman']},
+    {item: "Brown Loafers", quantity: "", events: ['Wedding Day'], audience:['Groomsmen']},
+    {item: "Undershirt", quantity: "We recommend more than one, it's hot!", events: ['Wedding Day', 'Rehearsal Dinner', 'General'], audience:['Groomsmen', 'Men']},
+    {item: "Groomsman Shirt", quantity: "The linen shirt that was purchased for all groomsmen", events: ['Wedding Day'], audience:['Groomsmen']},
+    {item: "Groomsman Pants", quantity: "The linen pants that were purchased for all groomsmen", events: ['Wedding Day'], audience:['Groomsmen']},
     {item: "Collared Shirt", quantity: "", events: ['General'], audience:['Men']},
+    {item: "Passport", quantity: "", events: ['General'], audience:['Everyone']},
   ]
   checklist = [
     {
-      title: "7-9 Months Before",
-      target: '2025-03-11',
+      title: "6-9 Months Before",
+      target: '2025-04-11',
       percentage: null,
       listItems: [
         "RSVP",
@@ -36,15 +40,19 @@ export class WeddingPartyComponent {
       target: '2025-05-11',
       percentage: null,
       listItems: [
-        "Buy Clothing",
+        "Bridesmaids find, approve, and purchase dress",
+        'Groomsmen complete the <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfE2TEbnG8x_BUj5bV_H-JAH1S00NWXbpYkTbtgGoz3nr39TQ/viewform?usp=sharing">groomsmen sizing form</a>',
       ]
     },
     {
-      title: "2-4 Months Before",
+      title: "2-5 Months Before",
       target: '2025-08-11',
       percentage: null,
       listItems: [
         "Book Flights",
+        "Schedule airport transportation with our travel agent",
+        "Groomsmen receive and confirm correct fit for shirt & pants",
+        'Bachelor party attendees complete the <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScovONUVA6L4sitLX-iCSP-7DACOdbKqf10idNkrxUKaD9kcw/viewform?usp=sharing">bachelor party form</a>'
       ]
     },
     {
@@ -52,7 +60,7 @@ export class WeddingPartyComponent {
       target: '2025-09-11',
       percentage: null,
       listItems: [
-        "Test",
+        "Start Packing!",
       ]
     },
     {
@@ -60,7 +68,7 @@ export class WeddingPartyComponent {
       target: '2025-09-11',
       percentage: null,
       listItems: [
-        "Test",
+        "Start Packing!",
       ]
     },
   ];
@@ -129,64 +137,188 @@ export class WeddingPartyComponent {
     { 
       date: "Saturday, October 11", 
       events: [
-        { time: '11:30 AM', 
+        { 
+          time: '11:30 AM', 
           title: 'Bridesmaids Report to Bridal Suite', 
-          description: `<p>amanda's room</p>`
+          location: "Bridal Suite",
+          description: `<p>Bridesmaids arrive to get ready</p>`
         },
         { 
           time: '12:00 PM', 
           title: "Bride's Makeup", 
-          description: `<p>makeup</p>`
+          location: "Bridal Suite",
+          description: `<p>Makeup begins</p>`
         },
         { 
           time: '1:00 PM', 
-          title: "Bride's Hair", 
-          description: `<p>Bridal hair</p>
-          <p>Getting ready photos begin</p>`
+          title: "Bride's Hair & Getting Ready Photos", 
+          location: "Bridal Suite",
+          description: `<p>Hair styling & getting ready photos</p>`
         },
         { 
           time: '1:30 PM', 
           title: "Groomsmen Get Dressed", 
-          description: `<p>report to somewhere</p>`
+          location: "Groom's Suite",
+          description: `<p>Groomsmen report to get dressed</p>`
         },
         { 
           time: '2:00 PM', 
           title: "First Look with Groom", 
-          description: `<p>location</p>`
+          location: "[TBD - Scenic Location]",
+          description: `<p>Private first look</p>`
         },
         { 
           time: '2:15 PM', 
           title: "Bridal Party Portraits", 
-          description: `<p>location</p>`
+          location: "[TBD - Scenic Spot]",
+          description: `<p>Photos with entire bridal party</p>`
         },
         { 
           time: '3:00 PM', 
           title: "Bride & Groom Portraits", 
-          description: `<p>location</p>`
+          location: "[TBD - Scenic Spot]",
+          description: `<p>Couple’s portraits</p>`
+        },
+        { 
+          time: '3:30 PM', 
+          title: "Family Photos", 
+          location: "[TBD - Scenic Spot]",
+          description: `<p>Family formal photos</p>`
         },
         { 
           time: '3:45 PM', 
           title: "Prepare for Ceremony", 
-          description: `<p>Relax</p>
-          <p>Hair & makeup touchups</p>
-          <p>Usher reports to beach to start seating guests</p>`
+          location: "Bridal & Groom Suites",
+          description: `<p>Relax, touch-ups, usher seating guests</p>`
         },
         { 
           time: '4:00 PM', 
-          title: "Ceremony Starts", 
-          description: `<p>location</p>`
+          title: "Line up for Ceremony", 
+          location: "The beach",
+          description: `<p>Entrance Order:</p>
+          <ul>
+            <li>Nic (Officiant)</li>
+            <li>Volney (Groom) + John & Laura (Parents)</li>
+            <li>Esther (Mother of the Bride) + Andrew (Usher)</li>
+            <li>Uriah + Abby + Gabriel</li>
+            <li>Ethan + Marae + Eric</li>
+            <li>Ali (Maid of Honor) + Ezra (Best Man)</li>
+            <li>Amanda (Bride) + Jason (Father)</li>
+          </ul>
+          `
+        },
+        { 
+          time: '4:30 PM', 
+          title: "Ceremony Ends / Family Photos & Cocktail Hour Setup", 
+          location: "The beach",
+          description: `<p>Family photos continue, cocktail area gets set up</p>`
         },
         { 
           time: '5:00 PM', 
           title: "Cocktail Hour Starts", 
-          description: `<p>location</p>`
+          location: "the beach",
+          description: `<p>Guests enjoy drinks & hors d'oeuvres</p>`
+        },
+        { 
+          time: '5:15 PM', 
+          title: "Golden Hour Photos", 
+          location: "The Beach",
+          description: `<p>golden hour photos</p>`
+        },
+        { 
+          time: '5:45 PM', 
+          title: "Reception Setup Final Touches", 
+          location: "Oceana Terrace",
+          description: `<p>Final reception preparations</p>`
+        },
+        { 
+          time: '5:50 PM', 
+          title: "Bride & Groom Private Moment", 
+          location: "Bridal Suite",
+          description: `<p>Couple enjoys a quiet moment</p>`
         },
         { 
           time: '6:00 PM', 
           title: "Reception Starts", 
-          description: `<p>location</p>`
+          location: "Oceana Terrace",
+          description: `<p>Guests enter for dinner & dancing</p>`
         },
-      ]
+        { 
+          time: '6:05 PM', 
+          title: "Bridal Party & Grand Entrance", 
+          location: "Oceana Terrace",
+          description: `<p>Bridal party makes their entrance</p>`
+        },
+        { 
+          time: '6:10 PM', 
+          title: "First Dance", 
+          location: "Oceana Terrace",
+          description: `<p>Couple’s first dance</p>`
+        },
+        { 
+          time: '6:15 PM', 
+          title: "Mother + Son Dance", 
+          location: "Oceana Terrace",
+          description: `<p>Groom dances with his mother</p>`
+        },
+        { 
+          time: '6:20 PM', 
+          title: "Father + Daughter Dance", 
+          location: "Oceana Terrace",
+          description: `<p>Bride dances with her father</p>`
+        },
+        { 
+          time: '6:30 PM', 
+          title: "Dinner Service Begins", 
+          location: "Oceana Terrace",
+          description: `<p>Guests are served dinner</p>`
+        },
+        { 
+          time: '7:15 PM', 
+          title: "Maid of Honor & Best Man Speeches", 
+          location: "Oceana Terrace",
+          description: `<p>Speeches & toasts</p>`
+        },
+        { 
+          time: '7:30 PM', 
+          title: "Cake Cutting", 
+          location: "Oceana Terrace",
+          description: `<p>Couple cuts the cake</p>`
+        },
+        { 
+          time: '7:45 PM', 
+          title: "Open Dance Floor", 
+          location: "Oceana Terrace",
+          description: `<p>Dancing begins!</p>`
+        },
+        { 
+          time: '8:30 PM', 
+          title: "Bouquet Toss", 
+          location: "Oceana Terrace",
+          description: `<p>All single ladies gather</p>`
+        },
+        { 
+          time: '9:30 PM', 
+          title: "Last Call & Final Dance", 
+          location: "Oceana Terrace",
+          description: `<p>Last song of the night</p>`
+        },
+        { 
+          time: '9:50 PM', 
+          title: "Couple’s Grand Exit", 
+          location: "Oceana Terrace",
+          description: `<p>Send-off with sparklers</p>`
+        },
+        { 
+          time: '10:00 PM', 
+          title: "Reception Ends", 
+          location: "Oceana Terrace",
+          description: `<p>Event officially concludes</p>`
+        }
+    ]
+    
+    
+    
     },
   ];
 

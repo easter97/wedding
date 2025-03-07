@@ -10,9 +10,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-tab',
   styles: [
     `
-    .pane{
-      padding: 1em;
-    }
+    
   `
   ],
   template: `

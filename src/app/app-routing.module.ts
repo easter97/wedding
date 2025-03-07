@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: '' , redirectTo:'/password', pathMatch:'full'},
   { path: 'password' , component: PasswordComponent},
   { path: 'registry', component: GiftListComponent},
-  { path: 'weddingparty', component: WeddingPartyComponent},
+  { path: 'weddingparty', component: WeddingPartyComponent, canActivate: [AuthGuard] },
   { path: 'home', component: ContainerComponent, canActivate: [AuthGuard] }
 ];
 

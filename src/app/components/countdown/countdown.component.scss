@@ -9,7 +9,7 @@
 
     // border-radius: 6px;
     // padding: 25px;
-    font-family: "Kerad";
+    font-family: $paragraph;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,11 +45,10 @@
              font-size: 1rem;
             font-style: italic;
             text-transform: uppercase; 
-            color: $forest;
           }
           p{
               font-size: 2rem;
-              color: $forest;
+              font-family: "Kerad";
           }
           
         //   font: normal 40px Kerad, sans-serif;

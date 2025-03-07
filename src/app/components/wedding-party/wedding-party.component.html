@@ -1,11 +1,162 @@
 <div class="container">
     <div class=page-header>
         <div class=header-content>
-            <h1>Wedding Party Information</h1>
-        <app-countdown></app-countdown>
+            <img class="logo" src="./assets/images/AV-clear.png" /> 
         </div>
     </div>
+    
+    
     <app-tabs>
+        <app-tab tabTitle="Home">
+            <div class=grid>
+                <div class=schedule>
+                    <h2>Wedding Party information</h2>
+                    <p>This page contains more specific information for members of our wedding party including groomsman, bridesmaids, and family members with responsibilities on the big day.</p>
+                </div>
+                <div class=right>
+                    <div class=countdown>
+                        <app-countdown></app-countdown>
+                        <span>until I do</span>
+                    </div>
+                    <div class=groupme>
+                       <p>Groupme for bridesmaids / groomsman</p>
+                       <img class="group-qr" src="./assets/images/bridal-group.JPG" /> 
+                       <a href="https://groupme.com/join_group/106298052/rtdPbSh3">Join Here</a>
+                       <p>We'll have another for all people</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class=photos>
+                <h2>Bridesmaids</h2>
+                <div class="party">
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/ali.jpg" />
+                        </div>
+                        <div class=name>Ali Henkemeyer</div>
+                        <div class=title>Maid of Honor</div>
+                    </div>
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/abby.jpg" />
+                        </div>
+                        <div class=name>Abby Richardson</div>
+                        <div class=title>Bridesmaid</div>
+                    </div>
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/marae.jpg" />
+                        </div>
+                        <div class=name>Marae Rhodes</div>
+                        <div class=title>Bridesmaid</div>
+                    </div>
+                </div>
+
+                <h2>Groomsmen</h2>
+                <div class="party">
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/ez.jpg" />
+                        </div>
+                        <div class=name>Ezra Richardson</div>
+                        <div class=title>Best Man</div>
+                    </div>
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/gabe.jpg" />
+                        </div>
+                        <div class=name>Gabriel Richardson</div>
+                        <div class=title>Groomsman</div>
+                    </div>
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/uriah.jpg" />
+                        </div>
+                        <div class=name>Uriah Richardson</div>
+                        <div class=title>Groomsman</div>
+                    </div>
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/eric.jpg" />
+                        </div>
+                        <div class=name>Eric Samuelson</div>
+                        <div class=title>Groomsman</div>
+                    </div>
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/ethan.jpg" />
+                        </div>
+                        <div class=name>Ethan Berney</div>
+                        <div class=title>Groomsman</div>
+                    </div>
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/nic.jpg" />
+                        </div>
+                        <div class=name>Nic Rhodes</div>
+                        <div class=title>Groomsman & Officiant</div>
+                    </div>
+                </div>
+
+                <h2>Family</h2>
+                <div class="party">
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/jason.jpg" />
+                        </div>
+                        <div class=name>Jason Easter</div>
+                        <div class=title>Father of the Bride</div>
+                    </div>
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/esther.jpg" />
+                        </div>
+                        <div class=name>Esther Easter</div>
+                        <div class=title>Mother of the Bride</div>
+                    </div>
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/andrew.jpg" />
+                        </div>
+                        <div class=name>Andrew Easter</div>
+                        <div class=title>Brother of the Bride & Usher</div>
+                    </div>
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/john.jpg" />
+                        </div>
+                        <div class=name>John Richardson</div>
+                        <div class=title>Father of the Groom</div>
+                    </div>
+                    <div class=person>
+                        <div class="profile">
+                            <img src="../../../assets/images/party/laura.jpg" />
+                        </div>
+                        <div class=name>Laura Richardson</div>
+                        <div class=title>Mother of the Groom</div>
+                    </div>
+                </div>
+            </div>
+            <div class=footer>
+                <div class=cell>
+                    <div class=cell-background></div>
+                    
+                        <a routerLink="/" class=lodging>
+                            <i class="fa-2x fa-solid fa-arrow-left"></i>
+                            <h2>Back to Main Site</h2>
+                        </a>
+                </div>
+                <div class=cell>
+                    <div class=cell-background></div>
+                    <div class=map>
+                        <h2>Secrets Maroma, Riviera Cancun</h2>
+                        <a href="https://all-maps.com/wp-content/uploads/2024/08/Printable-Secrets-Maroma-Beach-Riviera-Cancun-Map-PDF-2023.pdf" target="_blank">Resort Map</a>
+                    </div>
+                </div>
+                
+            </div>
+        </app-tab>
         <app-tab tabTitle="Attire">
             <div class="slides-container">
                 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQyjBy6IcLXTnfi6EYq7L9H2idH9svBEbcD_32bmnYAbZ4AxK-0X8f6YviTWwqSV3q9-hw4AUz08r9X/embed?start=false&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -16,23 +167,32 @@
                 <div class="events">
                     <div class=timeline>
                         <div class="tl-container">
+                            <div class=tl-header>
+                                <i class="fa-solid fa-2x fa-calendar"></i> 
+                                <div class=select-header>
+                                  <select class=big-time [(ngModel)]="currentDay">
+                                      <option *ngFor="let day of timeline" [ngValue]="day">
+                                          {{day.date}}
+                                      </option>
+                                  </select>
+                              </div>
+                            </div>
+                            
                             <div class="wrapper">
                               <ul class="sessions">
-                                  <div class=timeline-header>
-                                        <!-- <i class="fa-solid fa-chevron-left fa-1x"></i>
-                                        <div class=big-time>{{timeline[currentDay].date}}</div>
-                                        <i class="fa-solid fa-chevron-right fa-1x"></i> -->
-                                        <select class=big-time [(ngModel)]="currentDay">
-                                            <option *ngFor="let day of timeline" [ngValue]="day">{{day.date}}</option>
-                                        </select>
-                                    </div>
                                 <li 
                                     *ngFor="let event of currentDay.events; index as i"
                                     [ngClass]="{ 'end' : i == currentDay.events.length}"
                                 >
-                                  <div class="time">{{event.time}}</div>
-                                  <h2>{{event.title}}</h2>
+                                <div class="time">{{event.time}}</div>
+                                <div class=indent>
+                                    <h2 class=event-title>{{event.title}}</h2>
+                                    <div class="event-group location" *ngIf="event.location">
+                                        <i class="fa-md fa-solid fa-location-dot"></i>
+                                        <span>{{event.location}}</span>
+                                    </div>
                                   <div class=content [innerHTML]="event.description"></div>
+                                </div>
                                 </li>
                               </ul>
                             </div>
@@ -56,7 +216,7 @@
                                       
                                       <span class="cb-wrapper">
                                           <input type="checkbox" id="cb{{i}}{{j}}" name="cb{{i}}{{j}}" [attr.checked]="item.percentage == 100 ? true : undefined">
-                                        <label for="cb{{i}}{{j}}">{{listItem}}</label>
+                                        <label for="cb{{i}}{{j}}" [innerHtml]="listItem"></label>
                                     </span>
                                       
                                     </li>
@@ -69,10 +229,10 @@
             </div>
         </app-tab>
         <app-tab tabTitle="Packing List">
-            Filter By
+            <span>Filter By</span>
             <div class=filters-list>
                 <div class="chips">
-                    <div class="packing-audience">
+                    <div class="category packing-audience">
                         <i class="fa-solid fa-user"></i>
                         <span 
                             class="chip dark audience-chip" 
@@ -82,7 +242,7 @@
                         >{{person.name}} </span>
                         
                     </div>
-                    <div class="packing-events">
+                    <div class="category packing-events">
                         <i class="fa-regular fa-calendar"></i>
                         <span 
                             class="chip dark event-chip" 
@@ -112,12 +272,12 @@
                                             </div>
                                             
                                             <div class="chips">
-                                                <div class="packing-audience">
+                                                <div class="category packing-audience">
                                                     <i class="fa-solid fa-user"></i>
                                                     <span class="chip audience-chip" *ngFor="let person of item.audience">{{person}} </span>
                                                     
                                                 </div>
-                                                <div class="packing-events">
+                                                <div class="category packing-events">
                                                     <i class="fa-regular fa-calendar"></i>
                                                     <span class="chip event-chip" *ngFor="let event of item.events">{{event}} </span>
                                                     
@@ -140,6 +300,10 @@
                 width="800" height="2000" frameborder="0"
                 src="https://docs.google.com/document/d/e/2PACX-1vQpWVUVGBgoeVKBrs44a81eD75QvUOKYcH_B1YGaIlzdnp6FKBZQ59FJMUhDql7YufGFEgj1cLl9YV7/pub?embedded=true"></iframe>
             </div>
+        </app-tab>
+        <app-tab tabTitle="FAQs">
+            <br>
+            <app-faqs class="faqs" [displayBridalFaqs]="true"></app-faqs>
         </app-tab>
     </app-tabs>
 

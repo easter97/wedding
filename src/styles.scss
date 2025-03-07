@@ -52,7 +52,12 @@
 
   html{
     font-size: 14px;
+    width:100%; margin:0;
   }
+  * {
+    box-sizing: border-box;
+  }
+  
   h1{
     font-family: 'Argue';
     letter-spacing: 2px;
