@@ -23,6 +23,9 @@
             margin-top: var(--menu-height);;
             background-color: $rose;
             color: $neutral-background;
+            i, h1{
+                color: $neutral-background;
+            }
             .divider{
                 width: 80%;
                 height: 0px;
@@ -37,6 +40,7 @@
             }
             .update-title{
                 color: $neutral-background;
+                margin-bottom: 0;
             }
             .update-body{
                 width: 80%;
@@ -46,6 +50,7 @@
                 text-transform: uppercase;
                 color: $neutral-background;
                 font-size: .75rem;
+                letter-spacing: 2px;
             }
             .updates-nav{
                 display: flex;

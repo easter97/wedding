@@ -254,63 +254,15 @@ export class FaqsComponent implements OnInit {
       ]
     },
     {
-      name: 'miscellaneous', 
+      name: 'Resort & Lodging', 
       icon: 'fa-solid fa-suitcase',
       questions: [
         {
-          question: "What is the dress code for your wedding?",
-          answer: `        The dress code for our wedding is beach cocktail attire or semi-formal beach wedding attire. A beach cocktail dress code gives you the flexibility to choose a vibrant color or bold print. For menswear, we recommend:
-          <ul>
-              <li>classic long-sleeve button-downs, colorful blazers, and patterned sport coats</li>
-              <li>ties are optional, but welcome</li>
-              <li>breathable fabric such as linen, khaki, or seersucker</li>
-              <li>dressy pants</li>
-              <li>closed-toe shoes, such as a loafers, dress shoes, and deck shoes</li>
-          </ul>
-          For women we recommend: 
-          <ul>
-                <li>semi-formal dresses, maxi or midi</li>
-                <li>jumpsuits and dressy separates</li>
-                <li>dressy sandals, chunky heels, and wedges - keep in mind you will be walking in sand!</li>
-                <li>beachy accessories, like a raffia clutch</li>
-          </ul> 
-          Keep in mind Mexico will most likely be hot and humid, we want our guests to be as comfortable as possible! You can find more examples of guest attire on our <a href="https://www.pinterest.com/AmandaaLionn/wedding/guest-attire/" target="_blank">Pinterest board.</a>
-          <br><br>
-          The resort restaurants have a variety of dress codes you can view <a href="https://www.hyattinclusivecollection.com/en/resorts-hotels/secrets/mexico/maroma-beach-riviera-cancun/dining-drinks/">here</a>. From what we have found, these policies seem to be fairly lenient (especially with regard to women's fashion), but make sure you pack accordingly!
-          `
-        },
-        
-        {
-          question: "Will there be other events to attend on the wedding weekend?",
-          answer: `    You can view a list of wedding weekend events on the schedule section of the site. All other days we encourage our guests to mingle with each other and enjoy the numerous events the resort hosts like water aerobics, yoga, beach soccer, and more. Our guests should feel free to find us and chat whenever we are available.      `
-        },
-        
-        {
-          question: "What should I pack?",
+          question: "My significant other / plus one won't be joining me until later in the week, how do I proceed with booking my room at the resort?",
           answer: `
-            While the resort has plenty of amenities, we want our guests to come prepared! Here are a few items we recommend packing:
-            <ul>
-              <li><strong>Sunscreen</strong> - Cancun is beautiful and sunny! Make sure to include plenty of sunscreen in your luggage to ensure your skin is protected.</li>
-              <li><strong>Bug spray</strong> - Some of the more vegative parts of the resort have mosquitos, so it's nice to be prepared.</li>
-              <li><strong>Tip & spending money</strong> - While this is absolutely not required, we like to include some singles in our luggage for tipping workers that go above and beyond as well as our cleaning staff. Some excursions will require a Mexico tourism fee to be paid in cash or pesos. If you plan on taking an excursion, consider bringing some spending money in cash to avoid ATM fees at the resort. The front desk of the resort can usually break large bills in USD as well as convert your cash to pesos if you desire; however, we find that the USD works perfectly fine and is usually preferred!</li>
-              <li><strong>Medication</strong> - Make sure to pack in medications you take daily as well as over-the-counter medicine like Ibuprofen, Tums, Dramamine (if you plan on taking any excursions via boat, we HIGHLY recommend this one), etc.</li>
-              <li><strong>Cover-ups and beach clothing</strong> - Most restaurants require guests to cover up while they dine. Pack a quick and easy cover up to put on after exiting the pool for lunch!</li>
-              <li><strong>For men, a collared shirt</strong> - There are a couple of nice restaurants on resort that require men to wear a collared shirt when they dine.</li>
-            </ul> 
-            While some of these will be available on-resort for those who need them, they will be much more expensive to purchase there.
-            <br><br>
-            Things you <u>don't</u> need to pack (unless you want to!):
-            <ul>
-              <li><strong>Towels</strong> - The resort will provide clean towels for guests available by all pool areas</li>
-              <li><strong>Beverages</strong> - The resort serves bottled water at all restaurants and stocks your mini fridge daily with still and sparkling water, soda, and beer. Coffee is available at the cafe or can be made in your room. Other beverages like juices, cocktails, and more can be found on resort as well.</li>
-              <li><strong>Hair Dryers</strong> - The resort provides each room with a hair dryer. Feel free to bring your own if you have a preference!</li>
-            </ul>
+          <p>We're working with our travel partners now to figure out the best way to handle this booking. As of now, our best guess is that you will need two bookings, one for the dates you are reserving a single and one for the dates you are reserving a double.</p>
+          <p>For example, if you arrive on October 7th but your roommate doesn't arrive until October 10th, you may need to make a reservation for October 7-9 as a single and October 10-12 as a double. We will update our party when we have more information on how to book for this combination!</p>
           `
-        },
-        {
-          question: "I have more questions about your wedding, who can I reach out to?",
-          answer: `<p>Updates regarding travel, booking, deadlines, and more will be posted above this FAQ section periodically. You can also subscribe to these updates by including your email address in your RSVP.</p>
-          <p>For questions regarding travel or the resort we advise you to contact our travel agent Leticia at hola@holaweddings.com, 1-888-472-7077 or +52 5510361373. If you need to contact us directly regarding the wedding you can email <a href="mailto:wedding@amandaeaster.com">wedding@amandaeaster.com</a>.      </p>`
         },
       ]
     },

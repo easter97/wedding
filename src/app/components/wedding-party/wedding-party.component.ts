@@ -55,22 +55,22 @@ export class WeddingPartyComponent {
         'Bachelor party attendees complete the <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScovONUVA6L4sitLX-iCSP-7DACOdbKqf10idNkrxUKaD9kcw/viewform?usp=sharing">bachelor party form</a>'
       ]
     },
-    {
-      title: "1 Month Before",
-      target: '2025-09-11',
-      percentage: null,
-      listItems: [
-        "Start Packing!",
-      ]
-    },
-    {
-      title: "1 Week Before",
-      target: '2025-09-11',
-      percentage: null,
-      listItems: [
-        "Start Packing!",
-      ]
-    },
+    // {
+    //   title: "1 Month Before",
+    //   target: '2025-09-11',
+    //   percentage: null,
+    //   listItems: [
+    //     "Start Packing!",
+    //   ]
+    // },
+    // {
+    //   title: "1 Week Before",
+    //   target: '2025-09-11',
+    //   percentage: null,
+    //   listItems: [
+    //     "Start Packing!",
+    //   ]
+    // },
   ];
   timeline = [
     { 
