@@ -48,7 +48,7 @@ export class FaqsComponent implements OnInit {
           <p>As soon as you RSVP yes! Book your lodging through our travel partners to reserve your spot at our wedding.</p>
           <p>This let's us know you're serious about attending and gives us the opportunity to add any additional rooms to our block as needed to make sure all of our guests get the best rates. You'll pay a $200 per room deposit to reserve your lodging,  which is fully refundable if you need to cancel before May 25, 2025.</p>
           <p>Not sure yet? That's ok! </p>
-          <p><strong>Just make sure you RSVP AND book lodging before our RSVP date of April 25, 2025, as we will drop unused rooms from our block after then.</strong></p>
+          <p><strong>Just make sure you RSVP AND book lodging before our RSVP date of April 25, 2025, as we will drop unused rooms from our block after then. We will not count your RSVP until we have confirmed your room booking.</strong></p>
           `
         },
         {
@@ -66,7 +66,9 @@ export class FaqsComponent implements OnInit {
         },
         {
           question: "Do I need to book through the travel agent?",
-          answer: `Our guests will be responsible for booking air travel themselves to allow for the greatest flexibility in schedule and payment options (miles, points, etc.). We do recommend our guests book the lodging through our travel agents as we have reserved rooms at a discounted rate. This also helps the bride and groom keep track of confirmed bookings and guest schedules.`
+          answer: `<p>Our guests will be responsible for booking air travel themselves to allow for the greatest flexibility in schedule and payment options (miles, points, etc.). We do recommend our guests book the lodging through our travel agents as they can coordinate your stay and transportation. This also helps the bride and groom keep track of confirmed bookings and guest schedules.</p>
+          
+          <p>Should you choose to reserve your rooms directly through the resort or through a third party site, please send us an email at <a href="mailto:wedding@amandaeaster.com">wedding@amandaeaster.com</a> so that we can confirm your RSVP.</p>`
         },
         {
           question: "How long should I stay at the resort?",
