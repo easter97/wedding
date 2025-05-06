@@ -1,0 +1,20 @@
+<div class=container>
+    <div class="updates-preview content" *ngIf="updates.length != 0">
+        <i class="fa-solid fa-comment-dots fa-2x"></i>
+        <h1>Updates</h1>
+        <h4>Check here to find the latest updates on travel, booking, and more. You can recieve updates like these via email by including your email address in your RSVP.</h4>
+        <ng-container *ngIf="updates.length > 0">
+            <div class=divider></div>
+            
+            <h2 class="update-title">{{updates[updateIndex].title}}</h2>
+            <p class="date">{{updates[updateIndex].date}}</p>
+            <p class="update-body" [innerHtml]="updates[updateIndex].body"></p>
+            <div class=divider></div>
+        </ng-container>
+        <div class="updates-nav" *ngIf="updates.length > 1">
+            <button (click)="updatesIndex(1)">Back</button>
+            <p>{{updates.length-updateIndex}} of {{updates.length}}</p>
+            <button (click)="updatesIndex(-1)">Next</button>
+        </div>
+    </div>    
+</div>

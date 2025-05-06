@@ -30,6 +30,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { WeddingPartyComponent } from './components/wedding-party/wedding-party.component';
 import { TabComponent } from './components/wedding-party/tabs/tab.component';
 import { TabsComponent } from './components/wedding-party/tabs/tabs.component';
+import { UpdatesComponent } from './components/updates/updates.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { TabsComponent } from './components/wedding-party/tabs/tabs.component';
     WeddingPartyComponent,
     TabComponent,
     TabsComponent,
+    UpdatesComponent
   ],
   imports: [
     BrowserModule,

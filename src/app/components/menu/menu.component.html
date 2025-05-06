@@ -1,9 +1,9 @@
 <div class="header expanded">
   <div class=left>
-    
+    <a pageScroll href="#updates"  [class.active]="this.activeSection=='updates'">Updates</a>
     <a pageScroll href="#travel"  [class.active]="this.activeSection=='travel'">travel & FAQs</a>
     <a pageScroll href="#ourStory"  [class.active]="this.activeSection=='ourStory'">our story</a>
-    <a pageScroll href="#schedule"  [class.active]="this.activeSection=='schedule'">schedule</a>
+    
 
   </div>
   
@@ -14,9 +14,8 @@
     <!-- <h1>Volney</h1> -->
   </div>
   <div class=right>
-
+    <a pageScroll href="#schedule"  [class.active]="this.activeSection=='schedule'">schedule</a>
   <a pageScroll href="#registry"  [class.active]="this.activeSection=='registry'">registry</a>
-  <a pageScroll href="#rsvp"  [class.active]="this.activeSection=='rsvp'">rsvp</a>
   <a pageScroll href="#photos"  [class.active]="this.activeSection=='photos'">photos</a>  
   </div>
   
@@ -33,11 +32,11 @@
   <div class=body>
     <div class=menu-items [class.expanded]="displayMenu" >
     <a pageScroll href="#home" [class.active]="this.activeSection=='home'" (click)="toggleMenu()">home</a>
+    <a pageScroll href="#updates"  [class.active]="this.activeSection=='updates'">Updates</a>
     <a pageScroll href="#travel"  [class.active]="this.activeSection=='travel'" (click)="toggleMenu()">travel & FAQs</a>
     <a pageScroll href="#ourStory"  [class.active]="this.activeSection=='ourStory'" (click)="toggleMenu()">our story</a>
     <a pageScroll href="#schedule"  [class.active]="this.activeSection=='schedule'" (click)="toggleMenu()">schedule</a>
     <a pageScroll href="#registry"  [class.active]="this.activeSection=='registry'" (click)="toggleMenu()">registry</a>
-    <a pageScroll href="#rsvp"  [class.active]="this.activeSection=='rsvp'" (click)="toggleMenu()">rsvp</a>
     <a pageScroll href="#photos"  [class.active]="this.activeSection=='photos'" (click)="toggleMenu()">photos</a>  
     </div>
     <div class="logo">
