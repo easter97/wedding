@@ -85,10 +85,10 @@
                     </div>
                     <div class=person>
                         <div class="profile">
-                            <img src="../../../assets/images/party/ethan.jpg" />
+                            <img src="../../../assets/images/party/andrew.jpg" />
                         </div>
-                        <div class=name>Ethan Berney</div>
-                        <div class=title>Groomsman</div>
+                        <div class=name>Andrew Easter</div>
+                        <div class=title>Brother of the Bride & Groomsman</div>
                     </div>
                     <div class=person>
                         <div class="profile">
@@ -114,13 +114,6 @@
                         </div>
                         <div class=name>Esther Easter</div>
                         <div class=title>Mother of the Bride</div>
-                    </div>
-                    <div class=person>
-                        <div class="profile">
-                            <img src="../../../assets/images/party/andrew.jpg" />
-                        </div>
-                        <div class=name>Andrew Easter</div>
-                        <div class=title>Brother of the Bride & Usher</div>
                     </div>
                     <div class=person>
                         <div class="profile">
@@ -162,6 +155,46 @@
                 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQyjBy6IcLXTnfi6EYq7L9H2idH9svBEbcD_32bmnYAbZ4AxK-0X8f6YviTWwqSV3q9-hw4AUz08r9X/embed?start=false&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
             </div>
         </app-tab>
+        <!-- <app-tab tabTitle="Bachelorette Party">
+            <app-bachelorette></app-bachelorette>
+        </app-tab>
+         <app-tab tabTitle="Events">
+            <div>
+                <h1>Events</h1>
+                <div class="event">
+                    <img src="../../../assets/images/last toast-blue.png" />
+                    <div class="details">
+                        <h2>Bachelor & Bachelorette Party</h2>
+                        <p>Get ready to set sail! We're teaming up for a bachelor and bachelorette party at sea.</p>
+                        <p>We're inviting our wedding party to join us early in Mexico to celebrate the final days of our single lives.</p>
+                        <div class="date-time">Tuesday, October 7th</div>
+                        <p>test</p>
+                        <div class="date-time">Wednesday, October 8th</div>
+                        <p>We will enjoy a private boat ride bringing the bachelor and bachelorette parties together for an unforgettable adventure</p>
+                        <div class="date-time">Thursday, October 9th</div>
+                        <p>test</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="details">
+                        <h2>Welcome Cocktail Hour</h2>
+                        <div class="date-time">Thursday, October 9th &#64; 5PM</div>
+                        <p>All of our guests are invited to join us at the Rendezvous bar located in the main lobby for a welcome cocktail.</p>
+                        <p>Get to know your fellow guests and chat with the bride and groom before their big day!</p>
+                    </div>
+                    <img src="../../../assets/images/cocktails.png" />
+                </div>
+                <div class="event">
+                    <img src="../../../assets/images/last toast-blue.png" />
+                    <div class="details">
+                        <h2>Rehearsal Dinner</h2>
+                        <div class="date-time">Friday, October 10th</div>
+                        <p>Get ready to set sail! Volney and Amanda are teaming up for a bachelor and bachelorette party at sea.</p>
+                        <p>We're inviting our wedding party to join us early in Mexico to celebrate the final days of our single lives. October 8th, where we will enjoy a private boat ride bringing the bachelor and bachelorette parties together for an unforgettable adventure.</p>
+                    </div>
+                </div>
+            </div>
+        </app-tab> -->
         <app-tab tabTitle="Schedule & Timeline">
             <div class=dates>
                 <div class="events">
@@ -199,33 +232,6 @@
                           </div> 
                     </div>
                 </div>
-            </div>
-        </app-tab>
-        <app-tab tabTitle="Checklist">
-            <div class=checklist>
-                <div class=list>
-                    <ol style="--length: 100" role="list">
-                        <li *ngFor="let item of checklist; let  i = index" [style.--i]="item.percentage">
-                            <div class=header>
-                                <i class="fa-solid fa-check fa-2x"></i>
-                                <h3>{{item.title}}</h3>
-                            </div>
-                            <div class=checks>
-                                <ul>
-                                    <li *ngFor="let listItem of item.listItems; let  j = index">
-                                      
-                                      <span class="cb-wrapper">
-                                          <input type="checkbox" id="cb{{i}}{{j}}" name="cb{{i}}{{j}}" [attr.checked]="item.percentage == 100 ? true : undefined">
-                                        <label for="cb{{i}}{{j}}" [innerHtml]="listItem"></label>
-                                    </span>
-                                      
-                                    </li>
-                                  </ul>
-                            </div>
-                        </li>
-                        
-                    </ol>
-                    </div>
             </div>
         </app-tab>
         <!-- <app-tab tabTitle="Packing List">

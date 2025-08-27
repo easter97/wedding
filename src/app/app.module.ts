@@ -31,6 +31,7 @@ import { WeddingPartyComponent } from './components/wedding-party/wedding-party.
 import { TabComponent } from './components/wedding-party/tabs/tab.component';
 import { TabsComponent } from './components/wedding-party/tabs/tabs.component';
 import { UpdatesComponent } from './components/updates/updates.component';
+import { BacheloretteComponent } from './components/wedding-party/bachelorette/bachelorette.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { UpdatesComponent } from './components/updates/updates.component';
     WeddingPartyComponent,
     TabComponent,
     TabsComponent,
-    UpdatesComponent
+    UpdatesComponent,
+    BacheloretteComponent
   ],
   imports: [
     BrowserModule,

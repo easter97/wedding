@@ -1,0 +1,109 @@
+<div class="intro">
+    <div class="group">
+        <div class="name">Amanda's</div>
+        <div class="title">Bach Party</div>
+    </div>
+    <div class="date">October 7-9</div>
+</div>
+<div class="timeline">
+    <div class="dates">
+        <div class="timeline-date">
+            <div class="day">tuesday</div>
+            <div class="event"><div class="time">Any time:</div> Bridal party arrives in Mexico</div>
+            <div class="event"><div class="time">6PM:</div> Cocktails at Rendezvous</div>
+            <div class="event"><div class="time">7PM:</div> Dinner at Bordeaux</div>
+            <div class="event"><div class="time">10PM:</div> Karaoke at Desires Night Club</div>
+        </div>
+        <div class="timeline-date">
+            <div class="day">wednesday</div>
+            <div class="event"><div class="time">9:30AM:</div> Brunch at World Cafe</div>
+            <div class="event"><div class="time">2PM:</div> Shuttle to Puerto Morelos</div>
+            <div class="event"><div class="time">2:30PM:</div> Catamaran</div>
+            <div class="event"><div class="time">6:30PM:</div> Shuttle back to resort</div>
+            <div class="event"><div class="time">8:30PM:</div> Hibachi Dinner</div>
+            <div class="event"><div class="time">10PM:</div> Silent Disco</div>
+        </div>
+        <div class="timeline-date">
+            <div class="day">thursday</div>
+            <div class="event"><div class="time">2:30PM:</div> Kayak tour</div>
+            <div class="event"><div class="time">3PM:</div> Beach & Pool Day</div>
+            <div class="event"><div class="time">8PM:</div> Dinner at Portofino</div>
+        </div>
+    </div>
+    <div class="disclaimer">*resort activities subject to change based on availability and weather</div>
+    
+</div>
+<div class="costs">
+    <div class="costs-title">
+        <span class="cost">Costs </span><span class="expect">to expect</span>
+    </div>
+    <div class="grid">
+        <div class="column">
+            <div class="column-title">item</div>
+             <div class="column-title price-title">price</div>
+            <div class="item">
+                <div class="item-name">Travel</div>
+                <div class="description">Shuttle to Puerto Morelos</div>
+            </div>
+            <div class="price">$15 per person</div>
+            <div class="item">
+                <div class="item-name">Boat</div>
+                <div class="description">
+                    <div>Dock Fee</div>
+                    <div>Open Bar</div>
+                    <div>Snacks</div>
+                </div>
+            </div>
+            <div class="price">$60 per person</div>
+            <div class="item">
+                <div class="item-name">Extra</div>
+                <div class="description">Spa Appointment</div>
+            </div>
+            <div class="price">$60</div>
+        </div>
+    </div>
+    <div class="total">
+        <div class="title">Total</div>
+        <div class="total-cost">$75</div>
+    </div>
+    <div class="disclaimer">
+        <p>We’ve worked hard to keep these costs minimal because we know you’re already investing your time, energy, and money to travel to Mexico and spend several days with us. Your presence means the world to us, and we want this day to be fun, relaxing, and stress-free for everyone. We’ve done our best to cover as much as we can throughout the trip to keep additional costs to a minimum.</p>
+    </div>
+</div>
+<div class="outfits">
+    <div class="outfit-title">Outfit Inspiration</div>
+    <div class="inspiration">
+        <div class="column">
+            <div class="title">tuesday</div>
+            <img src='../../../../assets/images/seashells.jpeg' />
+            <p>Think beachy elegance with a romantic twist. Dress in neutrals, soft metallics like gold or mother-of-pearl, and embrace textures like raffia, seashell accents, or crochet. </p>
+            <p>Flowy fabrics, beachy accessories, and sunset-ready glam are perfect for this dreamy seaside vibe.</p>
+        </div>
+        <div class="column">
+            <div class="title">wednesday</div>
+            <img src='../../../../assets/images/something-blue.jpeg' />
+            <p>It’s boat day! Time to break out your blue swimsuits—any shade goes, from sky to navy. Patterns and metallics are totally welcome too.</p>
+            <p>For this evening, no specific theme. Just wear something cute and fun that you feel good in!</p>
+        </div>
+        <div class="column">
+            <div class="title">thursday</div>
+            <img src='../../../../assets/images/black-outfits.jpeg' />
+            <p>For the grand finale, we’re going all black to mourn the death of Amanda's single life. Go bold, go glam, go a little edgy—just make sure it’s head-to-toe black. </p>
+        </div>
+    </div>
+    <p class="disclaimer">These themes are totally optional! Please don’t feel pressure to buy anything new, just do your best with what you already have. The goal is to have fun and feel good. Only one request: please avoid wearing white—save that for the bride!</p>
+</div>
+<div class="packing">
+    <div class="title">
+        Extras
+    </div>
+    <div class="subtitle">
+        Packing Checklist
+    </div>
+    <div class="checklist">
+        <div class="item" *ngFor="let item of packingList; index as i">
+            <input type="checkbox" id="item{{i}}" name="item{{i}}" >
+            <label for="item{{i}}">{{item}}</label>
+        </div>
+    </div>
+</div>

@@ -90,19 +90,37 @@ export class WeddingPartyComponent {
           title: 'Dinner', 
           description: `<p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>`
         },
+        { 
+          time: '10:00 PM', 
+          title: 'Karaoke', 
+          location: 'Desires Bar',
+          description: `<p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>`
+        },
       ]
     },
     { 
       date: "Wednesday, October 8", 
       events: [
-        { time: 'Morning', 
-          title: 'Breakfast', 
+        { 
+          time: '2:00 PM', 
+          title: 'Shuttle to Puerto Morelos', 
+          location: 'Main Lobby',
+        },
+        { 
+          time: '2:30 PM', 
+          title: 'Catamaran', 
+          location: 'Puerto Morelos',
           description: `<p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>`
         },
         { 
-          time: 'Afternoon (Time TBD)', 
-          title: 'Boat Day', 
-          description: `<p>Join us this evening as we welcome our guests to our wedding weekend. Get to know one another and make plans for the days to come!</p>`
+          time: '6:30 PM', 
+          title: 'Shuttle to Resort', 
+        },
+        { 
+          time: '8:00 PM', 
+          title: 'Dinner (Bridesmaids)', 
+          location: 'Bordeaux',
+          description: `<p>The bridesmaids will meet at Bordeaux (French cuisine) for dinner.</p>`
         },
         { 
           time: 'Evening (Time TBD)', 
@@ -146,7 +164,7 @@ export class WeddingPartyComponent {
         { 
           time: '12:00 PM', 
           title: "Bride's Makeup", 
-          location: "Bridal Suite",
+          location: "Spa",
           description: `<p>Makeup begins</p>`
         },
         { 
@@ -165,35 +183,37 @@ export class WeddingPartyComponent {
           time: '2:00 PM', 
           title: "First Look with Groom", 
           location: "[TBD - Scenic Location]",
-          description: `<p>Private first look</p>`
         },
         { 
           time: '2:15 PM', 
           title: "Bridal Party Portraits", 
           location: "[TBD - Scenic Spot]",
-          description: `<p>Photos with entire bridal party</p>`
         },
         { 
           time: '3:00 PM', 
           title: "Bride & Groom Portraits", 
           location: "[TBD - Scenic Spot]",
-          description: `<p>Couple’s portraits</p>`
         },
         { 
           time: '3:30 PM', 
           title: "Family Photos", 
           location: "[TBD - Scenic Spot]",
-          description: `<p>Family formal photos</p>`
         },
         { 
           time: '3:45 PM', 
           title: "Prepare for Ceremony", 
           location: "Bridal & Groom Suites",
-          description: `<p>Relax, touch-ups, usher seating guests</p>`
+          description: `<p>Relax, touch-ups</p>`
         },
         { 
           time: '4:00 PM', 
-          title: "Line up for Ceremony", 
+          title: "Guests Arrive at Ceremony", 
+          location: "The Beach",
+          description: `<p>Usher helps seat guests</p>`
+        },
+        { 
+          time: '4:15 PM', 
+          title: "Ceremony", 
           location: "The beach",
           description: `<p>Entrance Order:</p>
           <ul>
@@ -208,13 +228,12 @@ export class WeddingPartyComponent {
           `
         },
         { 
-          time: '4:30 PM', 
-          title: "Ceremony Ends / Family Photos & Cocktail Hour Setup", 
+          time: '4:45 PM', 
+          title: "Ceremony Ends / Photos", 
           location: "The beach",
-          description: `<p>Family photos continue, cocktail area gets set up</p>`
         },
         { 
-          time: '5:00 PM', 
+          time: '4:45 PM', 
           title: "Cocktail Hour Starts", 
           location: "the beach",
           description: `<p>Guests enjoy drinks & hors d'oeuvres</p>`
@@ -223,91 +242,65 @@ export class WeddingPartyComponent {
           time: '5:15 PM', 
           title: "Golden Hour Photos", 
           location: "The Beach",
-          description: `<p>golden hour photos</p>`
         },
         { 
           time: '5:45 PM', 
-          title: "Reception Setup Final Touches", 
-          location: "Oceana Terrace",
-          description: `<p>Final reception preparations</p>`
+          title: "Cocktail Hour Ends", 
+          location: "The Beach",
+          description: `<p>Guests make their way to the reception</p>`
         },
         { 
-          time: '5:50 PM', 
+          time: '5:45 PM', 
           title: "Bride & Groom Private Moment", 
           location: "Bridal Suite",
           description: `<p>Couple enjoys a quiet moment</p>`
         },
         { 
           time: '6:00 PM', 
-          title: "Reception Starts", 
+          title: "Reception Starts, Bridal Party & Grand Entrance", 
           location: "Oceana Terrace",
-          description: `<p>Guests enter for dinner & dancing</p>`
+          description: `<p>Guests can find their seats at reception area. Bridal party makes their entrance.</p>`
         },
         { 
           time: '6:05 PM', 
-          title: "Bridal Party & Grand Entrance", 
-          location: "Oceana Terrace",
-          description: `<p>Bridal party makes their entrance</p>`
-        },
-        { 
-          time: '6:10 PM', 
-          title: "First Dance", 
-          location: "Oceana Terrace",
-          description: `<p>Couple’s first dance</p>`
-        },
-        { 
-          time: '6:15 PM', 
-          title: "Mother + Son Dance", 
-          location: "Oceana Terrace",
-          description: `<p>Groom dances with his mother</p>`
-        },
-        { 
-          time: '6:20 PM', 
-          title: "Father + Daughter Dance", 
-          location: "Oceana Terrace",
-          description: `<p>Bride dances with her father</p>`
-        },
-        { 
-          time: '6:30 PM', 
           title: "Dinner Service Begins", 
           location: "Oceana Terrace",
-          description: `<p>Guests are served dinner</p>`
+          description: `<p>Father of the Bride makes a toast, guests are served dinner</p>`
+        },
+        { 
+          time: '6:45 PM', 
+          title: "Maid of Honor & Best Man Speeches", 
+          location: "Oceana Terrace",
+        },
+        { 
+          time: '7:00 PM', 
+          title: "Cake Cutting", 
+          location: "Oceana Terrace",
+        },
+        { 
+          time: '7:05 PM', 
+          title: "First Dance", 
+          location: "Oceana Terrace",
         },
         { 
           time: '7:15 PM', 
-          title: "Maid of Honor & Best Man Speeches", 
+          title: "Mother + Son Dance", 
           location: "Oceana Terrace",
-          description: `<p>Speeches & toasts</p>`
         },
         { 
-          time: '7:30 PM', 
-          title: "Cake Cutting", 
+          time: '7:20 PM', 
+          title: "Father + Daughter Dance", 
           location: "Oceana Terrace",
-          description: `<p>Couple cuts the cake</p>`
         },
         { 
-          time: '7:45 PM', 
+          time: '7:25 PM', 
           title: "Open Dance Floor", 
           location: "Oceana Terrace",
-          description: `<p>Dancing begins!</p>`
         },
         { 
-          time: '8:30 PM', 
-          title: "Bouquet Toss", 
+          time: '9:55 PM', 
+          title: "Final Song of the Night", 
           location: "Oceana Terrace",
-          description: `<p>All single ladies gather</p>`
-        },
-        { 
-          time: '9:30 PM', 
-          title: "Last Call & Final Dance", 
-          location: "Oceana Terrace",
-          description: `<p>Last song of the night</p>`
-        },
-        { 
-          time: '9:50 PM', 
-          title: "Couple’s Grand Exit", 
-          location: "Oceana Terrace",
-          description: `<p>Send-off with sparklers</p>`
         },
         { 
           time: '10:00 PM', 

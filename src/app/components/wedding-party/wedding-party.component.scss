@@ -383,25 +383,27 @@ $timeline: #CCD5DB;
     .indent{
       margin-left: 10px;
       .content{
-        font-size: .9rem;
+        font-size: .8rem;
         font-family: $paragraph;
         ::ng-deep p{
-          font-size: .9rem;
+          font-size: .8rem;
+          margin: 10px 0;
         }
       }
     }
     .event-title{
         text-align: left;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-transform: uppercase;
         font-family: 'Kerad';
         color: $sage;
         font-style: italic;
+        margin:10px 0;
     }
     .time{
       text-align: left;
-      font-size: 1.2rem;
-      line-height: 1.7rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
       text-transform: uppercase;
       font-family: 'Argue';
       color: $forest;
@@ -417,7 +419,7 @@ $timeline: #CCD5DB;
         color: $sage;
       }
       &.location{
-        font-size: .9rem;
+        font-size: .8rem;
       }
     }
     .big-time{
@@ -453,11 +455,29 @@ $timeline: #CCD5DB;
     p{
       color: #4f4f4f;
       line-height: 1.5;
-      margin-top:0.4rem;
     //   @include mobile-only{
-        font-size: .75rem;
+        font-size: .8rem;
     //   }
     }
+}
+.event{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  img{
+    width: 30vw;
+  }
+  h2{
+    text-transform: uppercase;
+    font-family: 'Kerad';
+    text-align: left;
+  }
+  .date-time{
+    text-transform: uppercase;
+    font-family: 'Kerad';
+    text-align: left;
+    color: $sage;
+  }
 }
 .list{
     p {
