@@ -44,6 +44,12 @@
             .update-body{
                 width: 80%;
                 text-align: justify;
+                ::ng-deep a{
+                    color: $neutral-background;
+                    &:hover{
+                        color: $terracotta;
+                    }
+                }
             }
             .date{
                 text-transform: uppercase;
