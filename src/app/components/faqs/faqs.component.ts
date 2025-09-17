@@ -132,14 +132,22 @@ export class FaqsComponent implements OnInit {
       questions: [
         {
           question: "What is the dress code for your wedding?",
-          answer: `        The dress code for our wedding is beach cocktail attire or semi-formal beach wedding attire. A beach cocktail dress code gives you the flexibility to choose a vibrant color or bold print. For menswear, we recommend:
-          <ul>
-              <li>classic long-sleeve button-downs, colorful blazers, and patterned sport coats</li>
-              <li>ties are optional, but welcome</li>
-              <li>breathable fabric such as linen, khaki, or seersucker</li>
-              <li>dressy pants</li>
-              <li>closed-toe shoes, such as a loafers, dress shoes, and deck shoes</li>
-          </ul>
+          answer: `
+          <p>Our wedding dress code is beach cocktail attire (semi-formal with a tropical twist). Think polished and celebratory, but comfortable in the warm weather. Feel free to bring in color, prints, and personality.</p>
+          
+          <p>
+            For menswear, we recommend:
+            <ul>
+                <li>Classic long-sleeve button-down shirts</li>
+                <li>Short-sleeve button-downs in a stylish print or layered open over a dressy tee</li>
+                <li>Upscale short-sleeve polos (crisp and refined—skip casual golf or athletic polos)</li>
+                <li>Breathable fabrics such as linen, khaki, or seersucker</li>
+                <li>Dress pants (no jeans, please!)</li>
+                <li>Closed-toe shoes like loafers, dress shoes, or deck shoes</li>
+                <li>Optional, but encouraged: colorful blazers, patterned sport coats, or ties</li>
+            </ul>
+          </p>
+          
           For women we recommend: 
           <ul>
                 <li>semi-formal dresses, maxi or midi</li>
