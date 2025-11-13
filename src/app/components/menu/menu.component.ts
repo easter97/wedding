@@ -27,13 +27,6 @@ export class MenuComponent {
     else if (this.isElementInViewport(document.getElementById('video'))) {
       this.activeSection = 'video';
     }
-    else if (this.isElementInViewport(document.getElementById('ourStory'))) {
-      this.activeSection = 'ourStory';
-    }
-
-    else if (this.isElementInViewport(document.getElementById('registry'))) {
-      this.activeSection = 'registry';
-    }
     else if (this.isElementInViewport(document.getElementById('photos'))) {
       this.activeSection = 'photos';
     }

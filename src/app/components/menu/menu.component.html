@@ -1,7 +1,6 @@
 <div class="header expanded">
   <div class=left>
     <a pageScroll href="#video"  [class.active]="this.activeSection=='video'">our wedding video</a>
-    <a pageScroll href="#ourStory"  [class.active]="this.activeSection=='ourStory'">our story</a>
     
 
   </div>
@@ -13,7 +12,6 @@
     <!-- <h1>Volney</h1> -->
   </div>
   <div class=right>
-  <a pageScroll href="#registry"  [class.active]="this.activeSection=='registry'">registry</a>
   <a pageScroll href="#photos"  [class.active]="this.activeSection=='photos'">photos</a>  
   </div>
   
@@ -31,8 +29,6 @@
     <div class=menu-items [class.expanded]="displayMenu" >
     <a pageScroll href="#home" [class.active]="this.activeSection=='home'" (click)="toggleMenu()">home</a>
     <a pageScroll href="#video"  [class.active]="this.activeSection=='video'">our wedding video</a>
-    <a pageScroll href="#ourStory"  [class.active]="this.activeSection=='ourStory'" (click)="toggleMenu()">our story</a>
-    <a pageScroll href="#registry"  [class.active]="this.activeSection=='registry'" (click)="toggleMenu()">registry</a>
     <a pageScroll href="#photos"  [class.active]="this.activeSection=='photos'" (click)="toggleMenu()">photos</a>  
     </div>
     <div class="logo">

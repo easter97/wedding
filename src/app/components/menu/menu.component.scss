@@ -55,8 +55,10 @@
       .left, .right{
           display: flex;
           align-items: center;
-          justify-content: space-between;
           width: 40%;
+      }
+      .left{
+        justify-content: flex-end;
       }
       .center{
           display: flex;

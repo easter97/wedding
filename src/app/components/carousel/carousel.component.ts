@@ -10,9 +10,9 @@ import { interval } from 'rxjs';
 })
 export class CarouselComponent implements OnInit {
   images: string[] = [
-  "./assets/images/AllieRyannPhoto-DallasWeddingPhotographer-2977.jpg",
-  "./assets/images/AllieRyannPhoto-DallasWeddingPhotographer-2567.jpg",
-  "./assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3090.jpg",
+  "./assets/images/wedding-photos/SP-A&amp_V-NJ-12.jpg",
+  "./assets/images/wedding-photos/SP-A&amp_V-NJ-17.jpg",
+  "./assets/images/wedding-photos/SP-A&amp_V-NJ-28.jpg",
 ];
   currentIndex = 0;
 
