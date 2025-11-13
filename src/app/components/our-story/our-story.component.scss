@@ -145,13 +145,11 @@
 			position:absolute;
 			display: block; /* Ensure the image is displayed as a block element */
 			&.color{
-				background-image: url("~src/assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3384.jpg");
 				opacity: 1;
 				-moz-opacity: 1; /* Firefox and Mozilla browsers */
    				-webkit-opacity: 1; /* WebKit browser e.g. Safari */
 			}
 			&.bw{
-				background-image: url("~src/assets/images/AllieRyannPhoto-DallasWeddingPhotographer-3384-2.jpg");
 				opacity: 0;
 				-moz-opacity: 0; /* Firefox and Mozilla browsers */
    				-webkit-opacity: 0; /* WebKit browser e.g. Safari */
