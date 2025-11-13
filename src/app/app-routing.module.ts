@@ -5,7 +5,7 @@ import { GiftListComponent } from './components/gift-list/gift-list.component';
 
 
 const routes: Routes = [
-  { path: '**', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'registry', component: GiftListComponent},
   { path: 'home', component: ContainerComponent }
 ];
