@@ -24,26 +24,15 @@ export class MenuComponent {
       this.activeSection = 'home';
     } 
 
-    else if (this.isElementInViewport(document.getElementById('bigDay'))) {
-      this.activeSection = 'bigDay';
+    else if (this.isElementInViewport(document.getElementById('video'))) {
+      this.activeSection = 'video';
     }
     else if (this.isElementInViewport(document.getElementById('ourStory'))) {
       this.activeSection = 'ourStory';
     }
-    else if (this.isElementInViewport(document.getElementById('travel'))) {
-      this.activeSection = 'travel';
-    }
-
-
-    else if (this.isElementInViewport(document.getElementById('schedule'))) {
-      this.activeSection = 'schedule';
-    }
 
     else if (this.isElementInViewport(document.getElementById('registry'))) {
       this.activeSection = 'registry';
-    }
-    else if (this.isElementInViewport(document.getElementById('rsvp'))) {
-      this.activeSection = 'rsvp';
     }
     else if (this.isElementInViewport(document.getElementById('photos'))) {
       this.activeSection = 'photos';

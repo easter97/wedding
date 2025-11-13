@@ -32,6 +32,7 @@ import { TabComponent } from './components/wedding-party/tabs/tab.component';
 import { TabsComponent } from './components/wedding-party/tabs/tabs.component';
 import { UpdatesComponent } from './components/updates/updates.component';
 import { BacheloretteComponent } from './components/wedding-party/bachelorette/bachelorette.component';
+import { VideoComponent } from './components/video/video.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { BacheloretteComponent } from './components/wedding-party/bachelorette/b
     TabComponent,
     TabsComponent,
     UpdatesComponent,
-    BacheloretteComponent
+    BacheloretteComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,

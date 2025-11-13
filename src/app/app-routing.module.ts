@@ -9,11 +9,9 @@ import { GiftListComponent } from './components/gift-list/gift-list.component';
 import { WeddingPartyComponent } from './components/wedding-party/wedding-party.component';
 
 const routes: Routes = [
-  { path: '' , redirectTo:'/password', pathMatch:'full'},
-  { path: 'password' , component: PasswordComponent},
+  { path: '*' , redirectTo:'/home', pathMatch:'full'},
   { path: 'registry', component: GiftListComponent},
-  { path: 'weddingparty', component: WeddingPartyComponent, canActivate: [AuthGuard] },
-  { path: 'home', component: ContainerComponent, canActivate: [AuthGuard] }
+  { path: 'home', component: ContainerComponent }
 ];
 
 @NgModule({
